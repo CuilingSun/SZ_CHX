@@ -110,6 +110,18 @@
             white-space: nowrap;
         }
 
+        .materials-th-chemical-en,
+        .materials-th-chemical-zh,
+        .materials-th-wear-en,
+        .materials-th-wear-zh {
+            display: block;
+        }
+
+        .materials-th-chemical-zh,
+        .materials-th-wear-zh {
+            display: none;
+        }
+
         tbody tr:last-child th,
         tbody tr:last-child td {
             border-bottom: 0;
@@ -132,6 +144,37 @@
 
         span {
             color: $gray-700;
+        }
+    }
+
+    .materials-name-zh,
+    .material-card-zh {
+        display: none;
+    }
+
+    html[lang='zh-CN'] & {
+        .materials-name-zh {
+            display: inline;
+        }
+
+        .material-card-zh {
+            display: block;
+        }
+
+        .materials-th-chemical-en {
+            display: none;
+        }
+
+        .materials-th-chemical-zh {
+            display: block;
+        }
+
+        .materials-th-wear-en {
+            display: none;
+        }
+
+        .materials-th-wear-zh {
+            display: block;
         }
     }
 

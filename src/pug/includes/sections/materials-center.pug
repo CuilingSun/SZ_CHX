@@ -5,7 +5,6 @@ section.materials-page
                 a.materials-jump-link(href='#materialsCompare', data-i18n='materials.jump.compare', data-en='Quick Comparison', data-zh='快速对比') Quick Comparison
                 a.materials-jump-link(href='#materialsDetail', data-i18n='materials.jump.detail', data-en='Material Details', data-zh='材料详情') Material Details
                 a.materials-jump-link(href='#materialsScenes', data-i18n='materials.jump.scenes', data-en='Condition Guide', data-zh='工况推荐') Condition Guide
-                a.materials-jump-link(href='#materialsCta', data-i18n='materials.jump.cta', data-en='Contact Support', data-zh='联系支持') Contact Support
 
         section#materialsCompare.materials-compare-panel.page-section
             .materials-section-heading
@@ -18,14 +17,25 @@ section.materials-page
                         tr
                             th(data-i18n='materials.compare.material', data-en='Material', data-zh='材料') Material
                             each column in compareColumns
-                                th(data-i18n=`materials.compare.columns.${column.key}`, data-en=column.labelEn, data-zh=column.labelZh)= column.labelEn
+                                if column.key === 'chemical'
+                                    th.materials-th-chemical
+                                        span.materials-th-chemical-en Chemical
+                                        span.materials-th-chemical-en Resistance
+                                        span.materials-th-chemical-zh 耐腐蚀性
+                                else if column.key === 'wear'
+                                    th.materials-th-wear
+                                        span.materials-th-wear-en Wear
+                                        span.materials-th-wear-en Resistance
+                                        span.materials-th-wear-zh 耐磨性
+                                else
+                                    th(data-i18n=`materials.compare.columns.${column.key}`, data-en=column.labelEn, data-zh=column.labelZh)= column.labelEn
                     tbody
                         each item in materialsCompare
                             tr
                                 th(scope='row')
                                     .materials-table-material
                                         strong= item.nameEn
-                                        span(data-i18n=`materials.compare.${item.key}.nameZh`, data-en=item.nameZh, data-zh=item.nameZh)= item.nameZh
+                                        span.materials-name-zh(data-i18n=`materials.compare.${item.key}.nameZh`, data-en=item.nameZh, data-zh=item.nameZh)= item.nameZh
                                 td
                                     span(class=`materials-pill ${item.oilClass}`, data-i18n=`materials.compare.${item.key}.oil`, data-en=item.oilEn, data-zh=item.oilZh)= item.oilEn
                                 td

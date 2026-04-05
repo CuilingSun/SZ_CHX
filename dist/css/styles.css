@@ -11154,6 +11154,16 @@ header.masthead .masthead-heading {
   text-transform: uppercase;
   white-space: nowrap;
 }
+.materials-page .materials-table .materials-th-chemical-en,
+.materials-page .materials-table .materials-th-chemical-zh,
+.materials-page .materials-table .materials-th-wear-en,
+.materials-page .materials-table .materials-th-wear-zh {
+  display: block;
+}
+.materials-page .materials-table .materials-th-chemical-zh,
+.materials-page .materials-table .materials-th-wear-zh {
+  display: none;
+}
 .materials-page .materials-table tbody tr:last-child th,
 .materials-page .materials-table tbody tr:last-child td {
   border-bottom: 0;
@@ -11172,6 +11182,28 @@ header.masthead .masthead-heading {
 }
 .materials-page .materials-table-material span {
   color: #495057;
+}
+.materials-page .materials-name-zh,
+.materials-page .material-card-zh {
+  display: none;
+}
+html[lang=zh-CN] .materials-page .materials-name-zh {
+  display: inline;
+}
+html[lang=zh-CN] .materials-page .material-card-zh {
+  display: block;
+}
+html[lang=zh-CN] .materials-page .materials-th-chemical-en {
+  display: none;
+}
+html[lang=zh-CN] .materials-page .materials-th-chemical-zh {
+  display: block;
+}
+html[lang=zh-CN] .materials-page .materials-th-wear-en {
+  display: none;
+}
+html[lang=zh-CN] .materials-page .materials-th-wear-zh {
+  display: block;
 }
 .materials-page .materials-pill {
   display: inline-flex;

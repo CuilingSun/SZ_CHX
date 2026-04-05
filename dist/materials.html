@@ -62,7 +62,6 @@
                         <a class="materials-jump-link" href="#materialsCompare" data-i18n="materials.jump.compare" data-en="Quick Comparison" data-zh="快速对比">Quick Comparison</a>
                         <a class="materials-jump-link" href="#materialsDetail" data-i18n="materials.jump.detail" data-en="Material Details" data-zh="材料详情">Material Details</a>
                         <a class="materials-jump-link" href="#materialsScenes" data-i18n="materials.jump.scenes" data-en="Condition Guide" data-zh="工况推荐">Condition Guide</a>
-                        <!-- <a class="materials-jump-link" href="#materialsCta" data-i18n="materials.jump.cta" data-en="Contact Support" data-zh="联系支持">Contact Support</a> -->
                     </div>
                 </section>
                 <section class="materials-compare-panel page-section" id="materialsCompare">
@@ -78,8 +77,16 @@
                                     <th data-i18n="materials.compare.material" data-en="Material" data-zh="材料">Material</th>
                                     <th data-i18n="materials.compare.columns.oil" data-en="Oil Resistance" data-zh="耐油性">Oil Resistance</th>
                                     <th data-i18n="materials.compare.columns.temp" data-en="Temperature" data-zh="耐温性">Temperature</th>
-                                    <th data-i18n="materials.compare.columns.chemical" data-en="Chemical Resistance" data-zh="耐腐蚀性">Chemical Resistance</th>
-                                    <th data-i18n="materials.compare.columns.wear" data-en="Wear Resistance" data-zh="耐磨性">Wear Resistance</th>
+                                    <th class="materials-th-chemical">
+                                        <span class="materials-th-chemical-en">Chemical</span>
+                                        <span class="materials-th-chemical-en">Resistance</span>
+                                        <span class="materials-th-chemical-zh">耐腐蚀性</span>
+                                    </th>
+                                    <th class="materials-th-wear">
+                                        <span class="materials-th-wear-en">Wear</span>
+                                        <span class="materials-th-wear-en">Resistance</span>
+                                        <span class="materials-th-wear-zh">耐磨性</span>
+                                    </th>
                                     <th data-i18n="materials.compare.columns.cost" data-en="Cost" data-zh="成本">Cost</th>
                                     <th data-i18n="materials.compare.columns.typical" data-en="Typical Applications" data-zh="典型应用">Typical Applications</th>
                                 </tr>
@@ -89,7 +96,7 @@
                                     <th scope="row">
                                         <div class="materials-table-material">
                                             <strong>NBR</strong>
-                                            <span data-i18n="materials.compare.nbr.nameZh" data-en="丁腈橡胶" data-zh="丁腈橡胶">丁腈橡胶</span>
+                                            <span class="materials-name-zh" data-i18n="materials.compare.nbr.nameZh" data-en="丁腈橡胶" data-zh="丁腈橡胶">丁腈橡胶</span>
                                         </div>
                                     </th>
                                     <td><span class="materials-pill excellent" data-i18n="materials.compare.nbr.oil" data-en="Excellent" data-zh="优">Excellent</span></td>
@@ -105,7 +112,7 @@
                                     <th scope="row">
                                         <div class="materials-table-material">
                                             <strong>FKM / Viton</strong>
-                                            <span data-i18n="materials.compare.fkm.nameZh" data-en="氟橡胶" data-zh="氟橡胶">氟橡胶</span>
+                                            <span class="materials-name-zh" data-i18n="materials.compare.fkm.nameZh" data-en="氟橡胶" data-zh="氟橡胶">氟橡胶</span>
                                         </div>
                                     </th>
                                     <td><span class="materials-pill excellent" data-i18n="materials.compare.fkm.oil" data-en="Excellent" data-zh="优">Excellent</span></td>
@@ -121,7 +128,7 @@
                                     <th scope="row">
                                         <div class="materials-table-material">
                                             <strong>Silicone</strong>
-                                            <span data-i18n="materials.compare.silicone.nameZh" data-en="硅橡胶" data-zh="硅橡胶">硅橡胶</span>
+                                            <span class="materials-name-zh" data-i18n="materials.compare.silicone.nameZh" data-en="硅橡胶" data-zh="硅橡胶">硅橡胶</span>
                                         </div>
                                     </th>
                                     <td><span class="materials-pill medium" data-i18n="materials.compare.silicone.oil" data-en="Fair" data-zh="一般">Fair</span></td>
@@ -137,7 +144,7 @@
                                     <th scope="row">
                                         <div class="materials-table-material">
                                             <strong>HNBR</strong>
-                                            <span data-i18n="materials.compare.hnbr.nameZh" data-en="氢化丁腈橡胶" data-zh="氢化丁腈橡胶">氢化丁腈橡胶</span>
+                                            <span class="materials-name-zh" data-i18n="materials.compare.hnbr.nameZh" data-en="氢化丁腈橡胶" data-zh="氢化丁腈橡胶">氢化丁腈橡胶</span>
                                         </div>
                                     </th>
                                     <td><span class="materials-pill excellent" data-i18n="materials.compare.hnbr.oil" data-en="Excellent" data-zh="优">Excellent</span></td>
@@ -153,7 +160,7 @@
                                     <th scope="row">
                                         <div class="materials-table-material">
                                             <strong>EPDM</strong>
-                                            <span data-i18n="materials.compare.epdm.nameZh" data-en="三元乙丙橡胶" data-zh="三元乙丙橡胶">三元乙丙橡胶</span>
+                                            <span class="materials-name-zh" data-i18n="materials.compare.epdm.nameZh" data-en="三元乙丙橡胶" data-zh="三元乙丙橡胶">三元乙丙橡胶</span>
                                         </div>
                                     </th>
                                     <td><span class="materials-pill weak" data-i18n="materials.compare.epdm.oil" data-en="Weak" data-zh="弱">Weak</span></td>
@@ -169,7 +176,7 @@
                                     <th scope="row">
                                         <div class="materials-table-material">
                                             <strong>PU</strong>
-                                            <span data-i18n="materials.compare.pu.nameZh" data-en="聚氨酯" data-zh="聚氨酯">聚氨酯</span>
+                                            <span class="materials-name-zh" data-i18n="materials.compare.pu.nameZh" data-en="聚氨酯" data-zh="聚氨酯">聚氨酯</span>
                                         </div>
                                     </th>
                                     <td><span class="materials-pill good" data-i18n="materials.compare.pu.oil" data-en="Good" data-zh="良">Good</span></td>
@@ -185,7 +192,7 @@
                                     <th scope="row">
                                         <div class="materials-table-material">
                                             <strong>CR</strong>
-                                            <span data-i18n="materials.compare.cr.nameZh" data-en="氯丁橡胶" data-zh="氯丁橡胶">氯丁橡胶</span>
+                                            <span class="materials-name-zh" data-i18n="materials.compare.cr.nameZh" data-en="氯丁橡胶" data-zh="氯丁橡胶">氯丁橡胶</span>
                                         </div>
                                     </th>
                                     <td><span class="materials-pill medium" data-i18n="materials.compare.cr.oil" data-en="Moderate" data-zh="中">Moderate</span></td>
