@@ -11910,51 +11910,99 @@ section#contact {
 section#contact .section-heading {
   color: #fff;
 }
-section#contact form#contactForm .form-group {
-  margin-bottom: 1.5rem;
+section#contact .section-subheading {
+  color: rgba(255, 255, 255, 0.72) !important;
 }
-section#contact form#contactForm .form-group input,
-section#contact form#contactForm .form-group textarea {
-  padding: 1.25rem;
+section#contact .contact-panel {
+  margin-top: 1rem;
 }
-section#contact form#contactForm .form-group input.form-control {
-  height: auto;
-}
-section#contact form#contactForm .form-group-textarea {
+section#contact .contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
   height: 100%;
 }
-section#contact form#contactForm .form-group-textarea textarea {
+section#contact .contact-info-card,
+section#contact .contact-support-card {
   height: 100%;
-  min-height: 10rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
-section#contact form#contactForm p.help-block {
-  margin: 0;
+section#contact .contact-info-card-wide {
+  grid-column: 1/-1;
 }
-section#contact form#contactForm .form-control:focus {
-  border-color: #ffc800;
-  box-shadow: none;
-}
-section#contact form#contactForm ::-webkit-input-placeholder {
+section#contact .contact-info-label,
+section#contact .contact-support-kicker {
+  margin-bottom: 0.55rem;
+  color: #ffc800;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.8rem;
   font-weight: 700;
-  color: #ced4da;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
-section#contact form#contactForm :-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
+section#contact .contact-info-value {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.75;
 }
-section#contact form#contactForm ::-moz-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
+section#contact .contact-info-value p {
+  margin-bottom: 0;
 }
-section#contact form#contactForm :-ms-input-placeholder {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  color: #ced4da;
+section#contact .contact-info-link {
+  color: #fff;
+  text-decoration: none;
+}
+section#contact .contact-info-link:hover, section#contact .contact-info-link:focus {
+  color: #ffc800;
+}
+section#contact .contact-support-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(160deg, rgba(255, 200, 0, 0.2), rgba(255, 255, 255, 0.05)), rgba(255, 255, 255, 0.06);
+}
+section#contact .contact-support-card h3, section#contact .contact-support-card .h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+section#contact .contact-support-card p:last-of-type {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.8;
+}
+section#contact .contact-support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.75rem;
 }
 
+@media (max-width: 991.98px) {
+  section#contact .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  section#contact .contact-info-card,
+  section#contact .contact-support-card {
+    padding: 1.2rem;
+  }
+  section#contact .contact-support-card h3, section#contact .contact-support-card .h3 {
+    font-size: 1.5rem;
+  }
+  section#contact .contact-support-actions .btn {
+    width: 100%;
+  }
+}
 .footer {
   text-align: center;
   font-size: 0.9rem;
