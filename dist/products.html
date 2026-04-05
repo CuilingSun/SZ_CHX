@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CHX - Products</title>
+        <script>
+            (function () {
+                try {
+                    var savedLanguage = localStorage.getItem('site-language');
+                    if (savedLanguage === 'zh') {
+                        document.documentElement.lang = 'zh-CN';
+                        document.documentElement.classList.add('language-pending');
+                    }
+                } catch (error) {}
+            })();
+        </script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body data-page="products" data-title-en="CHX - Products" data-title-zh="创鸿信 - 产品中心">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.svg" alt="Site logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span data-i18n="nav.menu" data-en="Menu" data-zh="菜单">Menu</span>
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home" data-en="Home" data-zh="首页">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about" data-en="About" data-zh="关于我们">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="products.html" data-i18n="nav.products" data-en="Products" data-zh="产品中心">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="materials.html" data-i18n="nav.materials" data-en="Materials" data-zh="材料与特性">Materials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="industries.html" data-i18n="nav.industries" data-en="Industries" data-zh="应用行业">Industries</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
+                        <li class="nav-item nav-language-item"><button class="nav-language-toggle" id="languageToggle" type="button" data-label-en="中文" data-label-zh="EN" aria-label="Switch language">中文</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="subpage-hero">
+            <div class="container">
+                <div class="subpage-hero-subheading" data-i18n="products.hero.eyebrow" data-en="Industrial Product Portfolio" data-zh="工业产品矩阵">Industrial Product Portfolio</div>
+                <div class="subpage-hero-heading text-uppercase" data-i18n="products.hero.title" data-en="Products" data-zh="产品中心">Products</div>
+                <p class="subpage-hero-copy mx-auto" data-i18n="products.hero.text" data-en="Explore our sealing and rubber component catalog through category filters, product cards, and dedicated detail pages." data-zh="通过左侧分类筛选、右侧产品卡片以及独立详情页，快速浏览我们的密封与橡胶制品目录。">Explore our sealing and rubber component catalog through category filters, product cards, and dedicated detail pages.</p>
+            </div>
+        </header>
+        <section class="page-section product-center" id="productCenter">
+            <div class="container">
+                <div class="row g-4 g-xl-5">
+                    <div class="col-lg-3">
+                        <aside class="product-sidebar">
+                            <p class="product-sidebar-kicker" data-i18n="productCenter.kicker" data-en="Category Filter" data-zh="分类筛选">Category Filter</p>
+                            <h2 class="product-sidebar-title" data-i18n="productCenter.title" data-en="Product Center" data-zh="产品中心">Product Center</h2>
+                            <p class="product-sidebar-copy" data-i18n="productCenter.text" data-en="Browse categories and quickly locate the product family you need." data-zh="通过左侧分类快速筛选，找到你需要的产品系列。">Browse categories and quickly locate the product family you need.</p>
+                            <div class="product-filter-list" role="tablist" aria-label="Product categories">
+                                <button class="product-filter-btn active" type="button" data-product-filter="all" data-i18n="productCenter.filter.all" data-en="All Products" data-zh="全部产品">All Products</button>
+                                <button class="product-filter-btn" type="button" data-product-filter="o-rings" data-i18n="productCenter.filter.oRings" data-en="O-Rings" data-zh="O型圈">O-Rings</button>
+                                <button class="product-filter-btn" type="button" data-product-filter="v-rings" data-i18n="productCenter.filter.vRings" data-en="V-Rings" data-zh="V型圈">V-Rings</button>
+                                <button class="product-filter-btn" type="button" data-product-filter="x-rings" data-i18n="productCenter.filter.xRings" data-en="X-Rings" data-zh="X型圈">X-Rings</button>
+                                <button class="product-filter-btn" type="button" data-product-filter="y-rings" data-i18n="productCenter.filter.yRings" data-en="Y-Rings" data-zh="Y型圈">Y-Rings</button>
+                                <button class="product-filter-btn" type="button" data-product-filter="flat-washers" data-i18n="productCenter.filter.flatWashers" data-en="Flat Washers" data-zh="平垫圈">Flat Washers</button>
+                                <button class="product-filter-btn" type="button" data-product-filter="rubber-products" data-i18n="productCenter.filter.rubberProducts" data-en="Rubber Products" data-zh="橡胶制品">Rubber Products</button>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="product-content-panel">
+                            <div class="product-content-header">
+                                <h3 class="product-content-heading" data-i18n="productCenter.gridTitle" data-en="Industrial Product Catalog" data-zh="工业产品目录">Industrial Product Catalog</h3>
+                                <p class="product-content-copy" data-i18n="productCenter.gridText" data-en="Each product card links to an individual detail page for specifications, use cases, and product highlights." data-zh="每个产品卡片都可进入独立详情页，查看规格、应用场景和产品亮点。">Each product card links to an individual detail page for specifications, use cases, and product highlights.</p>
+                            </div>
+                            <div class="product-grid">
+                                <a class="product-card" href="product-o-rings.html" data-product-category="o-rings">
+                                    <div class="product-card-media"><img src="assets/img/portfolio/1.jpg" alt="O-Rings" /></div>
+                                    <div class="product-card-body">
+                                        <p class="product-card-category" data-i18n="productCenter.card1.category" data-en="Sealing Ring Series" data-zh="密封圈系列">Sealing Ring Series</p>
+                                        <h4 class="product-card-title" data-i18n="productCenter.card1.title" data-en="O-Rings" data-zh="O型圈">O-Rings</h4>
+                                    </div>
+                                </a>
+                                <a class="product-card" href="product-v-rings.html" data-product-category="v-rings">
+                                    <div class="product-card-media"><img src="assets/img/portfolio/2.jpg" alt="V-Rings" /></div>
+                                    <div class="product-card-body">
+                                        <p class="product-card-category" data-i18n="productCenter.card2.category" data-en="Rotary Sealing Series" data-zh="旋转密封系列">Rotary Sealing Series</p>
+                                        <h4 class="product-card-title" data-i18n="productCenter.card2.title" data-en="V-Rings" data-zh="V型圈">V-Rings</h4>
+                                    </div>
+                                </a>
+                                <a class="product-card" href="product-x-rings.html" data-product-category="x-rings">
+                                    <div class="product-card-media"><img src="assets/img/portfolio/3.jpg" alt="X-Rings" /></div>
+                                    <div class="product-card-body">
+                                        <p class="product-card-category" data-i18n="productCenter.card3.category" data-en="Dynamic Seal Series" data-zh="动态密封系列">Dynamic Seal Series</p>
+                                        <h4 class="product-card-title" data-i18n="productCenter.card3.title" data-en="X-Rings" data-zh="X型圈">X-Rings</h4>
+                                    </div>
+                                </a>
+                                <a class="product-card" href="product-y-rings.html" data-product-category="y-rings">
+                                    <div class="product-card-media"><img src="assets/img/portfolio/4.jpg" alt="Y-Rings" /></div>
+                                    <div class="product-card-body">
+                                        <p class="product-card-category" data-i18n="productCenter.card4.category" data-en="Hydraulic Seal Series" data-zh="液压密封系列">Hydraulic Seal Series</p>
+                                        <h4 class="product-card-title" data-i18n="productCenter.card4.title" data-en="Y-Rings" data-zh="Y型圈">Y-Rings</h4>
+                                    </div>
+                                </a>
+                                <a class="product-card" href="product-flat-washers.html" data-product-category="flat-washers">
+                                    <div class="product-card-media"><img src="assets/img/portfolio/5.jpg" alt="Flat Washers" /></div>
+                                    <div class="product-card-body">
+                                        <p class="product-card-category" data-i18n="productCenter.card5.category" data-en="Auxiliary Seal Series" data-zh="辅助密封系列">Auxiliary Seal Series</p>
+                                        <h4 class="product-card-title" data-i18n="productCenter.card5.title" data-en="Flat Washers" data-zh="平垫圈">Flat Washers</h4>
+                                    </div>
+                                </a>
+                                <a class="product-card" href="product-rubber-products.html" data-product-category="rubber-products">
+                                    <div class="product-card-media"><img src="assets/img/portfolio/6.jpg" alt="Rubber Products" /></div>
+                                    <div class="product-card-body">
+                                        <p class="product-card-category" data-i18n="productCenter.card6.category" data-en="Custom Rubber Solutions" data-zh="定制橡胶方案">Custom Rubber Solutions</p>
+                                        <h4 class="product-card-title" data-i18n="productCenter.card6.title" data-en="Rubber Products" data-zh="橡胶制品">Rubber Products</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start" data-i18n="footer.copyright" data-en="Copyright © Your Website 2023" data-zh="版权所有 © Your Website 2023">Copyright &copy; Your Website 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!" data-i18n="footer.privacy" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!" data-i18n="footer.terms" data-en="Terms of Use" data-zh="使用条款">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- SB Forms JS-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

@@ -11,6 +11,10 @@ html {
     scroll-padding-top: 4.5rem;
 }
 
+html.language-pending body {
+    visibility: hidden;
+}
+
 body {
     position: relative;
     // Disabled for now due to incompatibility with ScrollSpy in Bootstrap 5.2.x

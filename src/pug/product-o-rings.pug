@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - O-Rings'
+    const pageTitleEn = 'CHX - O-Rings'
+    const pageTitleZh = '创鸿信 - O型圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.oRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'O-Rings'
+    const heroTitleZh = 'O型圈'
+    const heroTextEn = 'Standardized sealing rings for static and dynamic sealing applications across industrial systems.'
+    const heroTextZh = '适用于静密封和动密封场景的标准化密封圈产品。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/1.jpg'
+    const productNameEn = 'O-Rings'
+    const productNameZh = 'O型圈'
+    const productLeadEn = 'Widely used for reliable sealing in pneumatic, hydraulic, and mechanical assemblies.'
+    const productLeadZh = '广泛应用于气动、液压和机械装配中的基础密封场景。'
+    const productDescriptionEn = 'CHX O-Rings are available in multiple compounds and hardness levels to support durability, pressure resistance, and long service life.'
+    const productDescriptionZh = '创鸿信 O型圈可提供多种材料与硬度方案，以满足耐久性、耐压性和长期使用寿命要求。'
+    const featureTitle1En = 'Material Options'
+    const featureTitle1Zh = '材料选择'
+    const featureText1En = 'NBR, FKM, silicone, and other compounds for different media and temperatures.'
+    const featureText1Zh = '提供 NBR、FKM、硅胶等多种材质，适配不同介质与温度环境。'
+    const featureTitle2En = 'Stable Sealing'
+    const featureTitle2Zh = '稳定密封'
+    const featureText2En = 'Designed for dependable sealing performance in static grooves and mechanical joints.'
+    const featureText2Zh = '适用于静态沟槽和机械连接部位，具备稳定可靠的密封表现。'
+    const featureTitle3En = 'Flexible Sizing'
+    const featureTitle3Zh = '规格灵活'
+    const featureText3En = 'Supports standard and custom dimensions for diverse industrial equipment.'
+    const featureText3Zh = '支持标准规格与定制尺寸，适配多类工业设备。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

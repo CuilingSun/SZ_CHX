@@ -1,0 +1,23 @@
+-
+    const pageTitle = 'CHX - Contact'
+    const pageTitleEn = 'CHX - Contact'
+    const pageTitleZh = '创鸿信 - 联系我们'
+    const currentPage = 'contact'
+    const heroKey = 'contact.hero'
+    const heroEyebrowEn = 'Start A Conversation'
+    const heroEyebrowZh = '开始沟通'
+    const heroTitleEn = 'Contact'
+    const heroTitleZh = '联系我们'
+    const heroTextEn = 'Keep your contact form on its own page so visitors can reach out without scrolling through the homepage.'
+    const heroTextZh = '联系表单拥有独立页面后，访客无需滚动整页，也能更直接地向你发起咨询。'
+    const heroText = heroTextEn
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='contact', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/contact.pug
+        include includes/site-footer.pug

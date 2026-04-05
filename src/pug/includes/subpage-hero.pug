@@ -1,0 +1,6 @@
+header.subpage-hero
+    .container
+        .subpage-hero-subheading(data-i18n=`${heroKey}.eyebrow`, data-en=heroEyebrowEn, data-zh=heroEyebrowZh)= heroEyebrowEn
+        .subpage-hero-heading.text-uppercase(data-i18n=`${heroKey}.title`, data-en=heroTitleEn, data-zh=heroTitleZh)= heroTitleEn
+        if heroText
+            p.subpage-hero-copy.mx-auto(data-i18n=`${heroKey}.text`, data-en=heroTextEn, data-zh=heroTextZh)= heroTextEn

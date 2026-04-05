@@ -3,6 +3,38 @@
 // 
 
 window.addEventListener('DOMContentLoaded', event => {
+    const languageStorageKey = 'site-language';
+    const languageToggle = document.getElementById('languageToggle');
+
+    const applyLanguage = function (language) {
+        const normalizedLanguage = language === 'zh' ? 'zh' : 'en';
+        document.documentElement.lang = normalizedLanguage === 'zh' ? 'zh-CN' : 'en';
+
+        document.querySelectorAll('[data-i18n]').forEach((element) => {
+            const translation = normalizedLanguage === 'zh' ? element.dataset.zh : element.dataset.en;
+            if (translation) {
+                element.textContent = translation;
+            }
+        });
+
+        document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+            const translation = normalizedLanguage === 'zh' ? element.dataset.placeholderZh : element.dataset.placeholderEn;
+            if (translation) {
+                element.setAttribute('placeholder', translation);
+            }
+        });
+
+        if (languageToggle) {
+            languageToggle.textContent = normalizedLanguage === 'zh' ? languageToggle.dataset.labelZh : languageToggle.dataset.labelEn;
+        }
+
+        if (document.body.dataset.titleEn && document.body.dataset.titleZh) {
+            document.title = normalizedLanguage === 'zh' ? document.body.dataset.titleZh : document.body.dataset.titleEn;
+        }
+
+        localStorage.setItem(languageStorageKey, normalizedLanguage);
+        document.documentElement.classList.remove('language-pending');
+    };
 
     // Navbar shrink function
     var navbarShrink = function () {
@@ -45,5 +77,43 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+    const savedLanguage = localStorage.getItem(languageStorageKey);
+    applyLanguage(savedLanguage || 'en');
+
+    if (languageToggle) {
+        languageToggle.addEventListener('click', () => {
+            const nextLanguage = document.documentElement.lang === 'zh-CN' ? 'en' : 'zh';
+            applyLanguage(nextLanguage);
+        });
+    }
+
+    const productFilterButtons = document.querySelectorAll('[data-product-filter]');
+    const productCards = document.querySelectorAll('[data-product-category]');
+
+    if (productFilterButtons.length && productCards.length) {
+        const validFilters = new Set(Array.from(productFilterButtons).map((button) => button.dataset.productFilter));
+
+        const setProductFilter = function (filter) {
+            productFilterButtons.forEach((button) => {
+                button.classList.toggle('active', button.dataset.productFilter === filter);
+            });
+
+            productCards.forEach((card) => {
+                const matches = filter === 'all' || card.dataset.productCategory === filter;
+                card.hidden = !matches;
+            });
+        };
+
+        const queryFilter = new URLSearchParams(window.location.search).get('filter');
+        const initialFilter = validFilters.has(queryFilter) ? queryFilter : 'all';
+        setProductFilter(initialFilter);
+
+        productFilterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                setProductFilter(button.dataset.productFilter);
+            });
+        });
+    }
 
 });

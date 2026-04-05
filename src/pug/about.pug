@@ -1,0 +1,23 @@
+-
+    const pageTitle = 'CHX - About'
+    const pageTitleEn = 'CHX - About'
+    const pageTitleZh = '创鸿信 - 关于我们'
+    const currentPage = 'about'
+    const heroKey = 'about.hero'
+    const heroEyebrowEn = 'Our Story'
+    const heroEyebrowZh = '我们的故事'
+    const heroTitleEn = 'About'
+    const heroTitleZh = '关于我们'
+    const heroTextEn = 'Use this page for your brand story, timeline, mission, or company background.'
+    const heroTextZh = '这个页面适合承载品牌故事、发展时间线、使命理念和公司背景。'
+    const heroText = heroTextEn
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='about', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/about.pug
+        include includes/site-footer.pug

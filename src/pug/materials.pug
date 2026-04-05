@@ -1,0 +1,366 @@
+-
+    const pageTitle = 'CHX - Materials'
+    const pageTitleEn = 'CHX - Materials'
+    const pageTitleZh = '创鸿信 - 材料与特性'
+    const currentPage = 'materials'
+    const heroKey = 'materials.hero'
+    const heroEyebrowEn = 'Materials & Properties'
+    const heroEyebrowZh = 'Materials & Properties'
+    const heroTitleEn = 'Materials & Properties'
+    const heroTitleZh = '材料与特性'
+    const heroTextEn = 'Multiple rubber and sealing material solutions help you quickly identify the right compound based on oil resistance, temperature range, chemical exposure, and working conditions.'
+    const heroTextZh = '多种橡胶与密封材料解决方案，帮助您根据耐油性、耐温性、耐腐蚀性及应用工况快速选择合适材料。'
+    const heroText = heroTextEn
+
+    const compareColumns = [
+        { key: 'oil', labelEn: 'Oil Resistance', labelZh: '耐油性' },
+        { key: 'temp', labelEn: 'Temperature', labelZh: '耐温性' },
+        { key: 'chemical', labelEn: 'Chemical Resistance', labelZh: '耐腐蚀性' },
+        { key: 'wear', labelEn: 'Wear Resistance', labelZh: '耐磨性' },
+        { key: 'cost', labelEn: 'Cost', labelZh: '成本' },
+        { key: 'typical', labelEn: 'Typical Applications', labelZh: '典型应用' }
+    ];
+
+    const materialsCompare = [
+        {
+            key: 'nbr',
+            nameEn: 'NBR',
+            nameZh: '丁腈橡胶',
+            oilEn: 'Excellent',
+            oilZh: '优',
+            oilClass: 'excellent',
+            tempEn: '-30°C to 100°C',
+            tempZh: '-30°C 至 100°C',
+            tempClass: 'good',
+            chemicalEn: 'Moderate',
+            chemicalZh: '中',
+            chemicalClass: 'medium',
+            wearEn: 'Good',
+            wearZh: '良',
+            wearClass: 'good',
+            costEn: 'Low',
+            costZh: '低',
+            costClass: 'low',
+            typicalEn: 'O-rings, oil seals, hydraulic seals',
+            typicalZh: 'O 型圈、油封、液压密封件'
+        },
+        {
+            key: 'fkm',
+            nameEn: 'FKM / Viton',
+            nameZh: '氟橡胶',
+            oilEn: 'Excellent',
+            oilZh: '优',
+            oilClass: 'excellent',
+            tempEn: '-20°C to 200°C',
+            tempZh: '-20°C 至 200°C',
+            tempClass: 'excellent',
+            chemicalEn: 'Excellent',
+            chemicalZh: '优',
+            chemicalClass: 'excellent',
+            wearEn: 'Good',
+            wearZh: '良',
+            wearClass: 'good',
+            costEn: 'High',
+            costZh: '高',
+            costClass: 'high',
+            typicalEn: 'High-temperature oil seals, chemical equipment seals',
+            typicalZh: '高温油封、化工设备密封'
+        },
+        {
+            key: 'silicone',
+            nameEn: 'Silicone',
+            nameZh: '硅橡胶',
+            oilEn: 'Fair',
+            oilZh: '一般',
+            oilClass: 'medium',
+            tempEn: '-60°C to 200°C',
+            tempZh: '-60°C 至 200°C',
+            tempClass: 'excellent',
+            chemicalEn: 'Good',
+            chemicalZh: '良',
+            chemicalClass: 'good',
+            wearEn: 'Fair',
+            wearZh: '一般',
+            wearClass: 'medium',
+            costEn: 'Medium',
+            costZh: '中',
+            costClass: 'medium',
+            typicalEn: 'Food-grade seals, medical parts, special-environment sealing',
+            typicalZh: '食品级密封、医疗部件、特殊环境密封'
+        },
+        {
+            key: 'hnbr',
+            nameEn: 'HNBR',
+            nameZh: '氢化丁腈橡胶',
+            oilEn: 'Excellent',
+            oilZh: '优',
+            oilClass: 'excellent',
+            tempEn: '-30°C to 150°C',
+            tempZh: '-30°C 至 150°C',
+            tempClass: 'good',
+            chemicalEn: 'Good',
+            chemicalZh: '良',
+            chemicalClass: 'good',
+            wearEn: 'Excellent',
+            wearZh: '优',
+            wearClass: 'excellent',
+            costEn: 'Medium-High',
+            costZh: '中高',
+            costClass: 'high',
+            typicalEn: 'Automotive systems, high-demand hydraulic seals',
+            typicalZh: '汽车系统、高要求液压密封'
+        },
+        {
+            key: 'epdm',
+            nameEn: 'EPDM',
+            nameZh: '三元乙丙橡胶',
+            oilEn: 'Weak',
+            oilZh: '弱',
+            oilClass: 'weak',
+            tempEn: '-40°C to 150°C',
+            tempZh: '-40°C 至 150°C',
+            tempClass: 'good',
+            chemicalEn: 'Excellent',
+            chemicalZh: '优',
+            chemicalClass: 'excellent',
+            wearEn: 'Good',
+            wearZh: '良',
+            wearClass: 'good',
+            costEn: 'Medium',
+            costZh: '中',
+            costClass: 'medium',
+            typicalEn: 'Outdoor sealing, water systems, steam environments',
+            typicalZh: '户外密封、水系统、水蒸气环境'
+        },
+        {
+            key: 'pu',
+            nameEn: 'PU',
+            nameZh: '聚氨酯',
+            oilEn: 'Good',
+            oilZh: '良',
+            oilClass: 'good',
+            tempEn: '-30°C to 100°C',
+            tempZh: '-30°C 至 100°C',
+            tempClass: 'good',
+            chemicalEn: 'Moderate',
+            chemicalZh: '中',
+            chemicalClass: 'medium',
+            wearEn: 'Excellent',
+            wearZh: '优',
+            wearClass: 'excellent',
+            costEn: 'Medium',
+            costZh: '中',
+            costClass: 'medium',
+            typicalEn: 'Hydraulic seals, high-pressure dynamic sealing',
+            typicalZh: '液压密封、高压动态密封'
+        },
+        {
+            key: 'cr',
+            nameEn: 'CR',
+            nameZh: '氯丁橡胶',
+            oilEn: 'Moderate',
+            oilZh: '中',
+            oilClass: 'medium',
+            tempEn: '-30°C to 120°C',
+            tempZh: '-30°C 至 120°C',
+            tempClass: 'good',
+            chemicalEn: 'Good',
+            chemicalZh: '良',
+            chemicalClass: 'good',
+            wearEn: 'Good',
+            wearZh: '良',
+            wearClass: 'good',
+            costEn: 'Medium',
+            costZh: '中',
+            costClass: 'medium',
+            typicalEn: 'General industrial sealing, weather-resistant rubber parts',
+            typicalZh: '通用工业密封、耐候橡胶部件'
+        }
+    ];
+
+    const materialCards = [
+        {
+            key: 'nbr',
+            nameEn: 'NBR',
+            nameZh: '丁腈橡胶',
+            introEn: 'A mainstream sealing material with strong oil resistance, balanced cost, and broad industrial applicability.',
+            introZh: '丁腈橡胶是工业密封中最常见的基础材料之一，具备优异的耐油性、良好的耐磨性以及较高的性价比。',
+            featuresEn: ['Excellent oil resistance', 'Good wear resistance', 'Stable processing performance', 'Suitable for general industrial sealing'],
+            featuresZh: ['耐油性能优异', '耐磨性良好', '加工性能稳定', '适合常规工业密封需求'],
+            tempEn: '-30°C to 100°C',
+            tempZh: '-30°C 至 100°C',
+            productsEn: ['O-Rings', 'Oil Seals', 'Hydraulic Seals'],
+            productsZh: ['O 型圈', '油封', '液压密封件'],
+            industriesEn: ['Mechanical equipment', 'Automotive', 'General industrial manufacturing'],
+            industriesZh: ['机械设备', '汽车', '通用工业制造'],
+            productLink: 'products.html?filter=o-rings',
+            productLabelEn: 'View Related Products',
+            productLabelZh: '查看相关产品'
+        },
+        {
+            key: 'fkm',
+            nameEn: 'FKM / Viton',
+            nameZh: '氟橡胶',
+            introEn: 'A high-performance elastomer for high temperature, fuel media, and harsh chemical environments.',
+            introZh: '氟橡胶适用于高温、耐油及化学介质要求较高的密封环境，是严苛工况下的重要选材之一。',
+            featuresEn: ['Excellent heat resistance', 'Strong chemical resistance', 'Outstanding fuel and oil compatibility', 'Suitable for severe operating conditions'],
+            featuresZh: ['耐高温性能突出', '耐化学腐蚀能力强', '适用于燃油及高温油介质', '适合严苛工况密封'],
+            tempEn: '-20°C to 200°C',
+            tempZh: '-20°C 至 200°C',
+            productsEn: ['High-temperature O-Rings', 'Automotive Oil Seals', 'Special Sealing Parts'],
+            productsZh: ['高温 O 型圈', '汽车油封', '特殊密封件'],
+            industriesEn: ['Petrochemical', 'Automotive', 'High-temperature equipment'],
+            industriesZh: ['石油化工', '汽车', '高温设备'],
+            productLink: 'products.html?filter=o-rings',
+            productLabelEn: 'View Related Products',
+            productLabelZh: '查看相关产品'
+        },
+        {
+            key: 'silicone',
+            nameEn: 'Silicone',
+            nameZh: '硅橡胶',
+            introEn: 'Known for wide temperature tolerance, softness, and insulation performance in special environments.',
+            introZh: '硅橡胶具有优异的耐高低温性能、柔软性和绝缘性，适合食品、医疗及特殊环境应用。',
+            featuresEn: ['Excellent high and low temperature range', 'Good environmental and electrical properties', 'Soft and elastic', 'Suitable for special environment sealing'],
+            featuresZh: ['耐高低温范围广', '环保及绝缘性能好', '柔软弹性佳', '适用于特殊环境密封'],
+            tempEn: '-60°C to 200°C',
+            tempZh: '-60°C 至 200°C',
+            productsEn: ['Rubber products', 'Special O-Rings', 'Non-standard seals'],
+            productsZh: ['橡胶制品', '特殊 O 型圈', '非标密封件'],
+            industriesEn: ['Electronics', 'Medical support environments', 'Food-related equipment'],
+            industriesZh: ['电子', '医疗辅助环境', '食品相关设备'],
+            productLink: 'products.html?filter=rubber-products',
+            productLabelEn: 'View Related Products',
+            productLabelZh: '查看相关产品'
+        },
+        {
+            key: 'hnbr',
+            nameEn: 'HNBR',
+            nameZh: '氢化丁腈橡胶',
+            introEn: 'An upgraded NBR-class material with stronger heat, aging, and oil resistance for higher-end applications.',
+            introZh: 'HNBR 在耐热、耐油和耐老化方面优于普通 NBR，适合可靠性要求更高的工业场景。',
+            featuresEn: ['Improved heat resistance over NBR', 'Excellent oil and aging resistance', 'Good mechanical strength', 'Suitable for high-demand industrial applications'],
+            featuresZh: ['耐热性优于普通 NBR', '耐油及耐老化能力更强', '机械性能优良', '适合高要求工业应用'],
+            tempEn: '-30°C to 150°C',
+            tempZh: '-30°C 至 150°C',
+            productsEn: ['Automotive oil seals', 'Hydraulic seals', 'Dynamic sealing parts'],
+            productsZh: ['汽车油封', '液压密封件', '动态密封件'],
+            industriesEn: ['Automotive', 'Mechanical equipment', 'Hydraulic systems'],
+            industriesZh: ['汽车', '机械设备', '液压系统'],
+            productLink: 'products.html?filter=y-rings',
+            productLabelEn: 'View Related Products',
+            productLabelZh: '查看相关产品'
+        },
+        {
+            key: 'epdm',
+            nameEn: 'EPDM',
+            nameZh: '三元乙丙橡胶',
+            introEn: 'A weather-resistant material suitable for water, steam, ozone, and outdoor applications, but not strong-oil environments.',
+            introZh: 'EPDM 具有出色的耐候、耐臭氧及耐水蒸气性能，适用于户外、防水及抗老化场景，但不适合强油环境。',
+            featuresEn: ['Excellent weather resistance', 'Strong ozone and steam resistance', 'Good outdoor durability', 'Not recommended for strong oil exposure'],
+            featuresZh: ['耐候性优异', '耐臭氧和耐水蒸气能力强', '适合户外长期使用', '不适用于强油介质环境'],
+            tempEn: '-40°C to 150°C',
+            tempZh: '-40°C 至 150°C',
+            productsEn: ['Rubber products', 'Waterproof sealing parts', 'General industrial seals'],
+            productsZh: ['橡胶制品', '防水密封件', '通用工业密封件'],
+            industriesEn: ['Electrical appliances', 'Outdoor equipment', 'Water systems'],
+            industriesZh: ['电器', '户外设备', '水系统'],
+            productLink: 'products.html?filter=rubber-products',
+            productLabelEn: 'View Related Products',
+            productLabelZh: '查看相关产品'
+        },
+        {
+            key: 'pu',
+            nameEn: 'PU',
+            nameZh: '聚氨酯',
+            introEn: 'A highly wear-resistant sealing material favored in hydraulic, high-pressure, and dynamic motion environments.',
+            introZh: 'PU 以高耐磨性著称，特别适合液压、高压和动态密封环境，是高负载工况的重要材料。',
+            featuresEn: ['Excellent wear resistance', 'Strong support for high-pressure sealing', 'Suitable for dynamic motion', 'Good structural toughness'],
+            featuresZh: ['耐磨性能极强', '适合高压密封环境', '适用于动态运动工况', '结构韧性良好'],
+            tempEn: '-30°C to 100°C',
+            tempZh: '-30°C 至 100°C',
+            productsEn: ['Hydraulic seals', 'Y-Rings', 'Dynamic sealing components'],
+            productsZh: ['液压密封件', 'Y 型圈', '动态密封元件'],
+            industriesEn: ['Hydraulic equipment', 'Mechanical equipment', 'Heavy-duty manufacturing'],
+            industriesZh: ['液压设备', '机械设备', '重载制造'],
+            productLink: 'products.html?filter=y-rings',
+            productLabelEn: 'View Related Products',
+            productLabelZh: '查看相关产品'
+        },
+        {
+            key: 'cr',
+            nameEn: 'CR',
+            nameZh: '氯丁橡胶',
+            introEn: 'A balanced general-purpose elastomer with good weather resistance and flame-retardant characteristics.',
+            introZh: 'CR 兼具耐候性、阻燃性和一定的耐介质能力，适合一般工业密封和防护类应用。',
+            featuresEn: ['Good weather resistance', 'Flame-retardant character', 'Balanced general industrial performance', 'Suitable for protective and sealing parts'],
+            featuresZh: ['耐候性能良好', '具备一定阻燃特性', '通用工业性能均衡', '适用于防护与密封件'],
+            tempEn: '-30°C to 120°C',
+            tempZh: '-30°C 至 120°C',
+            productsEn: ['Rubber products', 'Protective components', 'General sealing parts'],
+            productsZh: ['橡胶制品', '防护类元件', '通用密封件'],
+            industriesEn: ['General industrial manufacturing', 'Electrical appliances', 'Outdoor equipment'],
+            industriesZh: ['通用工业制造', '电器', '户外设备'],
+            productLink: 'products.html?filter=rubber-products',
+            productLabelEn: 'View Related Products',
+            productLabelZh: '查看相关产品'
+        }
+    ];
+
+    const workingConditions = [
+        {
+            key: 'highTemp',
+            titleEn: 'High Temperature',
+            titleZh: '高温环境',
+            materialsEn: 'Recommended: FKM / Viton, Silicone',
+            materialsZh: '推荐材料：FKM / Viton、Silicone',
+            textEn: 'Suitable for high-temperature oil media, engine compartments, and long-duration thermal exposure.',
+            textZh: '适用于高温油介质、发动机周边及持续受热工况。'
+        },
+        {
+            key: 'oil',
+            titleEn: 'Strong Oil Exposure',
+            titleZh: '强油环境',
+            materialsEn: 'Recommended: NBR, HNBR',
+            materialsZh: '推荐材料：NBR、HNBR',
+            textEn: 'A practical choice for general industrial oil sealing and demanding lubricating media.',
+            textZh: '适合常规耐油密封和要求较高的润滑油介质环境。'
+        },
+        {
+            key: 'wear',
+            titleEn: 'High Wear / High Pressure',
+            titleZh: '高磨损 / 高压环境',
+            materialsEn: 'Recommended: PU',
+            materialsZh: '推荐材料：PU',
+            textEn: 'Best matched with hydraulic and dynamic sealing systems that require strong wear resistance.',
+            textZh: '适合液压及动态密封系统，对耐磨要求高的场景尤为合适。'
+        },
+        {
+            key: 'outdoor',
+            titleEn: 'Outdoor / Waterproof / Anti-Aging',
+            titleZh: '户外 / 防水 / 抗老化',
+            materialsEn: 'Recommended: EPDM',
+            materialsZh: '推荐材料：EPDM',
+            textEn: 'Well suited for outdoor exposure, water-related systems, and ozone-resistant applications.',
+            textZh: '适合户外、水系统及对耐候、耐臭氧要求较高的场景。'
+        },
+        {
+            key: 'general',
+            titleEn: 'General Industrial Sealing',
+            titleZh: '常规工业密封',
+            materialsEn: 'Recommended: NBR',
+            materialsZh: '推荐材料：NBR',
+            textEn: 'A cost-effective default option for broad sealing applications in manufacturing and maintenance.',
+            textZh: '适合多数通用密封需求，是制造与维修场景中性价比较高的基础选材。'
+        }
+    ];
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='materials', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/materials-center.pug
+        include includes/site-footer.pug

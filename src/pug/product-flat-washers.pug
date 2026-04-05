@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Flat Washers'
+    const pageTitleEn = 'CHX - Flat Washers'
+    const pageTitleZh = '创鸿信 - 平垫圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.flatWashers.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Flat Washers'
+    const heroTitleZh = '平垫圈'
+    const heroTextEn = 'Auxiliary sealing and support components used to improve assembly stability and load distribution.'
+    const heroTextZh = '用于改善装配稳定性和受力分布的辅助密封与支撑元件。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/5.jpg'
+    const productNameEn = 'Flat Washers'
+    const productNameZh = '平垫圈'
+    const productLeadEn = 'An essential accessory for structural support, spacing, and sealing assistance in mechanical systems.'
+    const productLeadZh = '在机械系统中用于支撑、间隔和辅助密封的重要基础件。'
+    const productDescriptionEn = 'CHX Flat Washers are available in multiple material combinations to meet load-bearing, spacing, and sealing support needs.'
+    const productDescriptionZh = '创鸿信平垫圈可提供多种材料组合，以满足受力、间隔和辅助密封等不同需求。'
+    const featureTitle1En = 'Load Distribution'
+    const featureTitle1Zh = '均匀受力'
+    const featureText1En = 'Helps distribute fastening pressure and reduce localized stress concentration.'
+    const featureText1Zh = '有助于分散紧固压力，降低局部应力集中。'
+    const featureTitle2En = 'Assembly Support'
+    const featureTitle2Zh = '装配辅助'
+    const featureText2En = 'Useful for spacing, surface protection, and mounting stability.'
+    const featureText2Zh = '适用于间隔、表面保护和安装稳定性提升。'
+    const featureTitle3En = 'Material Flexibility'
+    const featureTitle3Zh = '材料灵活'
+    const featureText3En = 'Supports metal-rubber combinations and customized configurations.'
+    const featureText3Zh = '支持金属与橡胶组合结构及定制方案。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

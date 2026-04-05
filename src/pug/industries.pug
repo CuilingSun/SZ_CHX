@@ -1,0 +1,30 @@
+-
+    const pageTitle = 'CHX - Industries'
+    const pageTitleEn = 'CHX - Industries'
+    const pageTitleZh = '创鸿信 - 应用行业'
+    const currentPage = 'industries'
+    const heroKey = 'industries.hero'
+    const heroEyebrowEn = 'Industry Solutions'
+    const heroEyebrowZh = '应用场景'
+    const heroTitleEn = 'Industries'
+    const heroTitleZh = '应用行业'
+    const heroTextEn = 'Use this page to show the industries and business scenarios where your solutions create value.'
+    const heroTextZh = '这个页面适合展示你的方案适配的行业领域与具体应用场景。'
+    const heroText = heroTextEn
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='industries', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/portfolio.pug
+        include includes/site-footer.pug
+
+        include includes/portfolio-modal-1
+        include includes/portfolio-modal-2
+        include includes/portfolio-modal-3
+        include includes/portfolio-modal-4
+        include includes/portfolio-modal-5
+        include includes/portfolio-modal-6

@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - V-Rings'
+    const pageTitleEn = 'CHX - V-Rings'
+    const pageTitleZh = '创鸿信 - V型圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.vRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'V-Rings'
+    const heroTitleZh = 'V型圈'
+    const heroTextEn = 'Flexible axial seals designed to protect rotating shafts from dust, splash, and contaminants.'
+    const heroTextZh = '用于旋转轴防尘、防水溅与污染物隔离的柔性轴向密封产品。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/2.jpg'
+    const productNameEn = 'V-Rings'
+    const productNameZh = 'V型圈'
+    const productLeadEn = 'An efficient sealing choice for rotating equipment requiring compact structure and easy installation.'
+    const productLeadZh = '适合旋转设备使用，结构紧凑，安装便捷。'
+    const productDescriptionEn = 'CHX V-Rings provide contact sealing at low friction while helping shield core components from environmental contamination.'
+    const productDescriptionZh = '创鸿信 V型圈在保持低摩擦接触密封的同时，可有效保护核心部件免受外部污染。'
+    const featureTitle1En = 'Shaft Protection'
+    const featureTitle1Zh = '轴系保护'
+    const featureText1En = 'Helps prevent water, dust, and debris from entering rotating assemblies.'
+    const featureText1Zh = '有效阻挡水分、灰尘及杂质进入旋转系统。'
+    const featureTitle2En = 'Easy Installation'
+    const featureTitle2Zh = '安装便捷'
+    const featureText2En = 'Elastic structure allows simple mounting without complex machining.'
+    const featureText2Zh = '弹性结构便于直接装配，无需复杂加工。'
+    const featureTitle3En = 'Low Friction'
+    const featureTitle3Zh = '低摩擦'
+    const featureText3En = 'Suitable for rotational applications where reduced wear is important.'
+    const featureText3Zh = '适用于对磨损控制要求较高的旋转应用。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

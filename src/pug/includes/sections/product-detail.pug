@@ -1,0 +1,25 @@
+section.page-section.product-detail-section
+    .container
+        a.product-back-link(href='products.html')
+            span.product-back-icon(aria-hidden='true') ←
+            span(data-i18n='productDetail.back', data-en='Back to Product Center', data-zh='返回产品中心') Back to Product Center
+        .row.g-5.align-items-start
+            .col-lg-5
+                .product-detail-media
+                    img.img-fluid(src=productImage, alt=productNameEn)
+            .col-lg-7
+                .product-detail-panel
+                    p.product-detail-kicker(data-i18n='productDetail.label', data-en='Industrial Product' data-zh='工业产品') Industrial Product
+                    h2.product-detail-title(data-i18n='productDetail.title', data-en=productNameEn, data-zh=productNameZh)= productNameEn
+                    p.product-detail-lead(data-i18n='productDetail.lead', data-en=productLeadEn, data-zh=productLeadZh)= productLeadEn
+                    p.product-detail-description(data-i18n='productDetail.description', data-en=productDescriptionEn, data-zh=productDescriptionZh)= productDescriptionEn
+                    .product-detail-feature-grid
+                        .product-detail-feature
+                            h3(data-i18n='productDetail.feature1.title', data-en=featureTitle1En, data-zh=featureTitle1Zh)= featureTitle1En
+                            p(data-i18n='productDetail.feature1.text', data-en=featureText1En, data-zh=featureText1Zh)= featureText1En
+                        .product-detail-feature
+                            h3(data-i18n='productDetail.feature2.title', data-en=featureTitle2En, data-zh=featureTitle2Zh)= featureTitle2En
+                            p(data-i18n='productDetail.feature2.text', data-en=featureText2En, data-zh=featureText2Zh)= featureText2En
+                        .product-detail-feature
+                            h3(data-i18n='productDetail.feature3.title', data-en=featureTitle3En, data-zh=featureTitle3Zh)= featureTitle3En
+                            p(data-i18n='productDetail.feature3.text', data-en=featureText3En, data-zh=featureText3Zh)= featureText3En

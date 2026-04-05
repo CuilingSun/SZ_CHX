@@ -1,0 +1,23 @@
+nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+    .container
+        a.navbar-brand(href='index.html')
+            img(src='assets/img/navbar-logo.svg', alt='Site logo')
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+            span(data-i18n='nav.menu', data-en='Menu', data-zh='菜单') Menu
+            i.fas.fa-bars.ms-1
+        #navbarResponsive.collapse.navbar-collapse
+            ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
+                li.nav-item
+                    a.nav-link(class=currentPage === 'home' ? 'active' : '', href='index.html', data-i18n='nav.home', data-en='Home', data-zh='首页') Home
+                li.nav-item
+                    a.nav-link(class=currentPage === 'about' ? 'active' : '', href='about.html', data-i18n='nav.about', data-en='About', data-zh='关于我们') About
+                li.nav-item
+                    a.nav-link(class=currentPage === 'products' ? 'active' : '', href='products.html', data-i18n='nav.products', data-en='Products', data-zh='产品中心') Products
+                li.nav-item
+                    a.nav-link(class=currentPage === 'materials' ? 'active' : '', href='materials.html', data-i18n='nav.materials', data-en='Materials', data-zh='材料与特性') Materials
+                li.nav-item
+                    a.nav-link(class=currentPage === 'industries' ? 'active' : '', href='industries.html', data-i18n='nav.industries', data-en='Industries', data-zh='应用行业') Industries
+                li.nav-item
+                    a.nav-link(class=currentPage === 'contact' ? 'active' : '', href='contact.html', data-i18n='nav.contact', data-en='Contact', data-zh='联系我们') Contact
+                li.nav-item.nav-language-item
+                    button#languageToggle.nav-language-toggle(type='button', data-label-en='中文', data-label-zh='EN', aria-label='Switch language') 中文

@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Y-Rings'
+    const pageTitleEn = 'CHX - Y-Rings'
+    const pageTitleZh = '创鸿信 - Y型圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.yRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Y-Rings'
+    const heroTitleZh = 'Y型圈'
+    const heroTextEn = 'Hydraulic sealing elements developed for piston and rod applications under pressure.'
+    const heroTextZh = '用于液压活塞和活塞杆场景的受压密封元件。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/4.jpg'
+    const productNameEn = 'Y-Rings'
+    const productNameZh = 'Y型圈'
+    const productLeadEn = 'A dependable solution for hydraulic equipment requiring sealing performance and wear resistance.'
+    const productLeadZh = '适用于对密封性和耐磨性都有要求的液压设备。'
+    const productDescriptionEn = 'CHX Y-Rings are designed to maintain stable sealing under working pressure while balancing friction and structural durability.'
+    const productDescriptionZh = '创鸿信 Y型圈可在工作压力下保持稳定密封，同时兼顾摩擦控制与结构耐久性。'
+    const featureTitle1En = 'Pressure Response'
+    const featureTitle1Zh = '压力响应'
+    const featureText1En = 'Works efficiently in hydraulic systems with varying pressure loads.'
+    const featureText1Zh = '适应不同压力负载下的液压系统密封需求。'
+    const featureTitle2En = 'Wear Resistance'
+    const featureTitle2Zh = '耐磨表现'
+    const featureText2En = 'Suitable for repeated reciprocating movement in cylinders and actuators.'
+    const featureText2Zh = '适用于油缸和执行器中的反复往复运动。'
+    const featureTitle3En = 'Process Compatibility'
+    const featureTitle3Zh = '工况适配'
+    const featureText3En = 'Can be paired with supporting rings and system-specific structures.'
+    const featureText3Zh = '可结合挡圈及系统结构实现更高适配性。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

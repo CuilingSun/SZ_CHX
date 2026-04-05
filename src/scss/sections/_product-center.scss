@@ -1,0 +1,162 @@
+//
+// Product center page
+//
+
+.product-center {
+    background:
+        linear-gradient(180deg, rgba($gray-100, 0.9), rgba($white, 1) 22rem),
+        linear-gradient(120deg, rgba($primary, 0.08), transparent 45%);
+
+    .product-sidebar {
+        position: sticky;
+        top: 7rem;
+        padding: 1.75rem;
+        border: 1px solid rgba($gray-900, 0.08);
+        border-radius: 1.5rem;
+        background-color: $white;
+        box-shadow: 0 1.25rem 2.5rem rgba($gray-900, 0.08);
+    }
+
+    .product-sidebar-kicker {
+        margin-bottom: 0.75rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $primary;
+    }
+
+    .product-sidebar-title {
+        margin-bottom: 0.75rem;
+        font-size: 2rem;
+    }
+
+    .product-sidebar-copy {
+        margin-bottom: 1.5rem;
+        color: $gray-700;
+    }
+
+    .product-filter-list {
+        display: grid;
+        gap: 0.75rem;
+    }
+
+    .product-filter-btn {
+        width: 100%;
+        padding: 0.9rem 1rem;
+        border: 1px solid rgba($gray-900, 0.1);
+        border-radius: 1rem;
+        background-color: $gray-100;
+        color: $gray-900;
+        text-align: left;
+        font-family: $headings-font-family;
+        font-size: 0.95rem;
+        letter-spacing: 0.04em;
+        transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover,
+        &:focus {
+            transform: translateX(4px);
+            border-color: rgba($primary, 0.5);
+            background-color: tint-color($primary, 88%);
+            box-shadow: 0 0.75rem 1.5rem rgba($primary, 0.12);
+        }
+
+        &.active {
+            border-color: $primary;
+            background-color: $primary;
+            color: $gray-900;
+            box-shadow: 0 1rem 2rem rgba($primary, 0.2);
+        }
+    }
+
+    .product-content-panel {
+        padding: 1.75rem;
+        border: 1px solid rgba($gray-900, 0.08);
+        border-radius: 1.5rem;
+        background-color: rgba($white, 0.92);
+        box-shadow: 0 1.5rem 3rem rgba($gray-900, 0.06);
+    }
+
+    .product-content-header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 1rem 2rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .product-content-heading {
+        margin-bottom: 0;
+        font-size: 1.85rem;
+    }
+
+    .product-content-copy {
+        max-width: 38rem;
+        margin-bottom: 0;
+        color: $gray-700;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.25rem;
+    }
+
+    .product-card {
+        overflow: hidden;
+        border: 1px solid rgba($gray-900, 0.08);
+        border-radius: 1.25rem;
+        background-color: $white;
+        color: inherit;
+        text-decoration: none;
+        box-shadow: 0 1rem 2rem rgba($gray-900, 0.05);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+        &:hover,
+        &:focus {
+            transform: translateY(-6px);
+            border-color: rgba($primary, 0.5);
+            box-shadow: 0 1.5rem 3rem rgba($gray-900, 0.1);
+        }
+    }
+
+    .product-card-media {
+        aspect-ratio: 4 / 3;
+        overflow: hidden;
+        background: linear-gradient(135deg, rgba($gray-900, 0.1), rgba($primary, 0.18));
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .product-card-body {
+        padding: 1.1rem 1.1rem 1.2rem;
+    }
+
+    .product-card-category {
+        margin-bottom: 0.4rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: $primary;
+    }
+
+    .product-card-title {
+        margin-bottom: 0;
+        font-size: 1.15rem;
+        line-height: 1.4;
+        color: $gray-900;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .product-center {
+        .product-sidebar {
+            position: static;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - X-Rings'
+    const pageTitleEn = 'CHX - X-Rings'
+    const pageTitleZh = '创鸿信 - X型圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.xRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'X-Rings'
+    const heroTitleZh = 'X型圈'
+    const heroTextEn = 'Four-lobed sealing rings built for improved stability in demanding dynamic sealing conditions.'
+    const heroTextZh = '适用于更高要求动态密封工况的四唇稳定型密封圈。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/3.jpg'
+    const productNameEn = 'X-Rings'
+    const productNameZh = 'X型圈'
+    const productLeadEn = 'A practical upgrade over standard round-section rings in many reciprocating or rotary applications.'
+    const productLeadZh = '在往复与旋转密封应用中，相比普通圆截面密封圈更具性能优势。'
+    const productDescriptionEn = 'CHX X-Rings offer better rolling resistance and contact stability, helping improve sealing efficiency and service consistency.'
+    const productDescriptionZh = '创鸿信 X型圈具备更好的防滚动能力与接触稳定性，可提升密封效率与使用一致性。'
+    const featureTitle1En = 'Four-Lobe Profile'
+    const featureTitle1Zh = '四唇结构'
+    const featureText1En = 'Provides increased sealing contact and more stable positioning in the groove.'
+    const featureText1Zh = '增加密封接触面，在沟槽中定位更稳定。'
+    const featureTitle2En = 'Reduced Twisting'
+    const featureTitle2Zh = '减少扭转'
+    const featureText2En = 'Helps avoid rolling and twisting during dynamic movement.'
+    const featureText2Zh = '在动态运动中更不易发生翻滚或扭转。'
+    const featureTitle3En = 'Longer Service Life'
+    const featureTitle3Zh = '寿命更长'
+    const featureText3En = 'Suitable for conditions requiring reliable performance over extended cycles.'
+    const featureText3Zh = '适用于对长期循环稳定性要求较高的工况。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

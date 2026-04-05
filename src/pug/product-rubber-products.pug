@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Rubber Products'
+    const pageTitleEn = 'CHX - Rubber Products'
+    const pageTitleZh = '创鸿信 - 橡胶制品'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.rubberProducts.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Rubber Products'
+    const heroTitleZh = '橡胶制品'
+    const heroTextEn = 'Customized rubber components for sealing, cushioning, insulation, and protection applications.'
+    const heroTextZh = '面向密封、缓冲、绝缘和保护场景的定制橡胶制品。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/6.jpg'
+    const productNameEn = 'Rubber Products'
+    const productNameZh = '橡胶制品'
+    const productLeadEn = 'Flexible custom manufacturing for diverse industrial environments and non-standard part requirements.'
+    const productLeadZh = '面向多样工业环境和非标零件需求的灵活定制制造方案。'
+    const productDescriptionEn = 'CHX Rubber Products can be tailored in shape, hardness, and compound selection to support protection, damping, and sealing objectives.'
+    const productDescriptionZh = '创鸿信橡胶制品可按形状、硬度和材质配方进行定制，满足防护、减震和密封目标。'
+    const featureTitle1En = 'Custom Development'
+    const featureTitle1Zh = '定制开发'
+    const featureText1En = 'Supports drawings, samples, and application-driven custom production.'
+    const featureText1Zh = '支持来图、来样及按应用需求进行定制生产。'
+    const featureTitle2En = 'Versatile Applications'
+    const featureTitle2Zh = '应用广泛'
+    const featureText2En = 'Suitable for equipment protection, vibration control, cable sealing, and more.'
+    const featureText2Zh = '适用于设备防护、减震控制、电缆密封等多种场景。'
+    const featureTitle3En = 'Compound Expertise'
+    const featureTitle3Zh = '配方能力'
+    const featureText3En = 'Material selection can be tuned for elasticity, resistance, and service environment.'
+    const featureText3Zh = '可根据弹性、耐受性和使用环境要求调整配方选型。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

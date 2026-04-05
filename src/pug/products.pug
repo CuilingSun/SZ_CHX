@@ -1,0 +1,23 @@
+-
+    const pageTitle = 'CHX - Products'
+    const pageTitleEn = 'CHX - Products'
+    const pageTitleZh = '创鸿信 - 产品中心'
+    const currentPage = 'products'
+    const heroKey = 'products.hero'
+    const heroEyebrowEn = 'Industrial Product Portfolio'
+    const heroEyebrowZh = '工业产品矩阵'
+    const heroTitleEn = 'Products'
+    const heroTitleZh = '产品中心'
+    const heroTextEn = 'Explore our sealing and rubber component catalog through category filters, product cards, and dedicated detail pages.'
+    const heroTextZh = '通过左侧分类筛选、右侧产品卡片以及独立详情页，快速浏览我们的密封与橡胶制品目录。'
+    const heroText = heroTextEn
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-center.pug
+        include includes/site-footer.pug

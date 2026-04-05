@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>CHX - Materials</title>
+        <script>
+            (function () {
+                try {
+                    var savedLanguage = localStorage.getItem('site-language');
+                    if (savedLanguage === 'zh') {
+                        document.documentElement.lang = 'zh-CN';
+                        document.documentElement.classList.add('language-pending');
+                    }
+                } catch (error) {}
+            })();
+        </script>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body data-page="materials" data-title-en="CHX - Materials" data-title-zh="创鸿信 - 材料与特性">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/navbar-logo.svg" alt="Site logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span data-i18n="nav.menu" data-en="Menu" data-zh="菜单">Menu</span>
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home" data-en="Home" data-zh="首页">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about" data-en="About" data-zh="关于我们">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html" data-i18n="nav.products" data-en="Products" data-zh="产品中心">Products</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="materials.html" data-i18n="nav.materials" data-en="Materials" data-zh="材料与特性">Materials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="industries.html" data-i18n="nav.industries" data-en="Industries" data-zh="应用行业">Industries</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact" data-en="Contact" data-zh="联系我们">Contact</a></li>
+                        <li class="nav-item nav-language-item"><button class="nav-language-toggle" id="languageToggle" type="button" data-label-en="中文" data-label-zh="EN" aria-label="Switch language">中文</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="subpage-hero">
+            <div class="container">
+                <div class="subpage-hero-subheading" data-i18n="materials.hero.eyebrow" data-en="Materials &amp; Properties" data-zh="Materials &amp; Properties">Materials &amp; Properties</div>
+                <div class="subpage-hero-heading text-uppercase" data-i18n="materials.hero.title" data-en="Materials &amp; Properties" data-zh="材料与特性">Materials &amp; Properties</div>
+                <p class="subpage-hero-copy mx-auto" data-i18n="materials.hero.text" data-en="Multiple rubber and sealing material solutions help you quickly identify the right compound based on oil resistance, temperature range, chemical exposure, and working conditions." data-zh="多种橡胶与密封材料解决方案，帮助您根据耐油性、耐温性、耐腐蚀性及应用工况快速选择合适材料。">Multiple rubber and sealing material solutions help you quickly identify the right compound based on oil resistance, temperature range, chemical exposure, and working conditions.</p>
+            </div>
+        </header>
+        <section class="materials-page">
+            <div class="container">
+                <section class="materials-jump-panel page-section">
+                    <div class="materials-jump-links">
+                        <a class="materials-jump-link" href="#materialsCompare" data-i18n="materials.jump.compare" data-en="Quick Comparison" data-zh="快速对比">Quick Comparison</a>
+                        <a class="materials-jump-link" href="#materialsDetail" data-i18n="materials.jump.detail" data-en="Material Details" data-zh="材料详情">Material Details</a>
+                        <a class="materials-jump-link" href="#materialsScenes" data-i18n="materials.jump.scenes" data-en="Condition Guide" data-zh="工况推荐">Condition Guide</a>
+                        <!-- <a class="materials-jump-link" href="#materialsCta" data-i18n="materials.jump.cta" data-en="Contact Support" data-zh="联系支持">Contact Support</a> -->
+                    </div>
+                </section>
+                <section class="materials-compare-panel page-section" id="materialsCompare">
+                    <div class="materials-section-heading">
+                        <p class="materials-kicker" data-i18n="materials.compare.kicker" data-en="Quick Comparison" data-zh="快速对比">Quick Comparison</p>
+                        <h2 data-i18n="materials.compare.title" data-en="Material Comparison Matrix" data-zh="材料快速对比">Material Comparison Matrix</h2>
+                        <p data-i18n="materials.compare.text" data-en="Compare key material properties at a glance to shorten evaluation time for engineering and purchasing teams." data-zh="通过一张对比表快速理解关键材料差异，帮助采购和工程团队更高效地完成初步选材。">Compare key material properties at a glance to shorten evaluation time for engineering and purchasing teams.</p>
+                    </div>
+                    <div class="materials-table-wrap">
+                        <table class="materials-table">
+                            <thead>
+                                <tr>
+                                    <th data-i18n="materials.compare.material" data-en="Material" data-zh="材料">Material</th>
+                                    <th data-i18n="materials.compare.columns.oil" data-en="Oil Resistance" data-zh="耐油性">Oil Resistance</th>
+                                    <th data-i18n="materials.compare.columns.temp" data-en="Temperature" data-zh="耐温性">Temperature</th>
+                                    <th data-i18n="materials.compare.columns.chemical" data-en="Chemical Resistance" data-zh="耐腐蚀性">Chemical Resistance</th>
+                                    <th data-i18n="materials.compare.columns.wear" data-en="Wear Resistance" data-zh="耐磨性">Wear Resistance</th>
+                                    <th data-i18n="materials.compare.columns.cost" data-en="Cost" data-zh="成本">Cost</th>
+                                    <th data-i18n="materials.compare.columns.typical" data-en="Typical Applications" data-zh="典型应用">Typical Applications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="materials-table-material">
+                                            <strong>NBR</strong>
+                                            <span data-i18n="materials.compare.nbr.nameZh" data-en="丁腈橡胶" data-zh="丁腈橡胶">丁腈橡胶</span>
+                                        </div>
+                                    </th>
+                                    <td><span class="materials-pill excellent" data-i18n="materials.compare.nbr.oil" data-en="Excellent" data-zh="优">Excellent</span></td>
+                                    <td>
+                                        <div class="materials-temp"><strong data-i18n="materials.compare.nbr.temp" data-en="-30°C to 100°C" data-zh="-30°C 至 100°C">-30°C to 100°C</strong></div>
+                                    </td>
+                                    <td><span class="materials-pill medium" data-i18n="materials.compare.nbr.chemical" data-en="Moderate" data-zh="中">Moderate</span></td>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.nbr.wear" data-en="Good" data-zh="良">Good</span></td>
+                                    <td><span class="materials-pill cost-low" data-i18n="materials.compare.nbr.cost" data-en="Low" data-zh="低">Low</span></td>
+                                    <td data-i18n="materials.compare.nbr.typical" data-en="O-rings, oil seals, hydraulic seals" data-zh="O 型圈、油封、液压密封件">O-rings, oil seals, hydraulic seals</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="materials-table-material">
+                                            <strong>FKM / Viton</strong>
+                                            <span data-i18n="materials.compare.fkm.nameZh" data-en="氟橡胶" data-zh="氟橡胶">氟橡胶</span>
+                                        </div>
+                                    </th>
+                                    <td><span class="materials-pill excellent" data-i18n="materials.compare.fkm.oil" data-en="Excellent" data-zh="优">Excellent</span></td>
+                                    <td>
+                                        <div class="materials-temp"><strong data-i18n="materials.compare.fkm.temp" data-en="-20°C to 200°C" data-zh="-20°C 至 200°C">-20°C to 200°C</strong></div>
+                                    </td>
+                                    <td><span class="materials-pill excellent" data-i18n="materials.compare.fkm.chemical" data-en="Excellent" data-zh="优">Excellent</span></td>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.fkm.wear" data-en="Good" data-zh="良">Good</span></td>
+                                    <td><span class="materials-pill cost-high" data-i18n="materials.compare.fkm.cost" data-en="High" data-zh="高">High</span></td>
+                                    <td data-i18n="materials.compare.fkm.typical" data-en="High-temperature oil seals, chemical equipment seals" data-zh="高温油封、化工设备密封">High-temperature oil seals, chemical equipment seals</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="materials-table-material">
+                                            <strong>Silicone</strong>
+                                            <span data-i18n="materials.compare.silicone.nameZh" data-en="硅橡胶" data-zh="硅橡胶">硅橡胶</span>
+                                        </div>
+                                    </th>
+                                    <td><span class="materials-pill medium" data-i18n="materials.compare.silicone.oil" data-en="Fair" data-zh="一般">Fair</span></td>
+                                    <td>
+                                        <div class="materials-temp"><strong data-i18n="materials.compare.silicone.temp" data-en="-60°C to 200°C" data-zh="-60°C 至 200°C">-60°C to 200°C</strong></div>
+                                    </td>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.silicone.chemical" data-en="Good" data-zh="良">Good</span></td>
+                                    <td><span class="materials-pill medium" data-i18n="materials.compare.silicone.wear" data-en="Fair" data-zh="一般">Fair</span></td>
+                                    <td><span class="materials-pill cost-medium" data-i18n="materials.compare.silicone.cost" data-en="Medium" data-zh="中">Medium</span></td>
+                                    <td data-i18n="materials.compare.silicone.typical" data-en="Food-grade seals, medical parts, special-environment sealing" data-zh="食品级密封、医疗部件、特殊环境密封">Food-grade seals, medical parts, special-environment sealing</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="materials-table-material">
+                                            <strong>HNBR</strong>
+                                            <span data-i18n="materials.compare.hnbr.nameZh" data-en="氢化丁腈橡胶" data-zh="氢化丁腈橡胶">氢化丁腈橡胶</span>
+                                        </div>
+                                    </th>
+                                    <td><span class="materials-pill excellent" data-i18n="materials.compare.hnbr.oil" data-en="Excellent" data-zh="优">Excellent</span></td>
+                                    <td>
+                                        <div class="materials-temp"><strong data-i18n="materials.compare.hnbr.temp" data-en="-30°C to 150°C" data-zh="-30°C 至 150°C">-30°C to 150°C</strong></div>
+                                    </td>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.hnbr.chemical" data-en="Good" data-zh="良">Good</span></td>
+                                    <td><span class="materials-pill excellent" data-i18n="materials.compare.hnbr.wear" data-en="Excellent" data-zh="优">Excellent</span></td>
+                                    <td><span class="materials-pill cost-high" data-i18n="materials.compare.hnbr.cost" data-en="Medium-High" data-zh="中高">Medium-High</span></td>
+                                    <td data-i18n="materials.compare.hnbr.typical" data-en="Automotive systems, high-demand hydraulic seals" data-zh="汽车系统、高要求液压密封">Automotive systems, high-demand hydraulic seals</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="materials-table-material">
+                                            <strong>EPDM</strong>
+                                            <span data-i18n="materials.compare.epdm.nameZh" data-en="三元乙丙橡胶" data-zh="三元乙丙橡胶">三元乙丙橡胶</span>
+                                        </div>
+                                    </th>
+                                    <td><span class="materials-pill weak" data-i18n="materials.compare.epdm.oil" data-en="Weak" data-zh="弱">Weak</span></td>
+                                    <td>
+                                        <div class="materials-temp"><strong data-i18n="materials.compare.epdm.temp" data-en="-40°C to 150°C" data-zh="-40°C 至 150°C">-40°C to 150°C</strong></div>
+                                    </td>
+                                    <td><span class="materials-pill excellent" data-i18n="materials.compare.epdm.chemical" data-en="Excellent" data-zh="优">Excellent</span></td>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.epdm.wear" data-en="Good" data-zh="良">Good</span></td>
+                                    <td><span class="materials-pill cost-medium" data-i18n="materials.compare.epdm.cost" data-en="Medium" data-zh="中">Medium</span></td>
+                                    <td data-i18n="materials.compare.epdm.typical" data-en="Outdoor sealing, water systems, steam environments" data-zh="户外密封、水系统、水蒸气环境">Outdoor sealing, water systems, steam environments</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="materials-table-material">
+                                            <strong>PU</strong>
+                                            <span data-i18n="materials.compare.pu.nameZh" data-en="聚氨酯" data-zh="聚氨酯">聚氨酯</span>
+                                        </div>
+                                    </th>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.pu.oil" data-en="Good" data-zh="良">Good</span></td>
+                                    <td>
+                                        <div class="materials-temp"><strong data-i18n="materials.compare.pu.temp" data-en="-30°C to 100°C" data-zh="-30°C 至 100°C">-30°C to 100°C</strong></div>
+                                    </td>
+                                    <td><span class="materials-pill medium" data-i18n="materials.compare.pu.chemical" data-en="Moderate" data-zh="中">Moderate</span></td>
+                                    <td><span class="materials-pill excellent" data-i18n="materials.compare.pu.wear" data-en="Excellent" data-zh="优">Excellent</span></td>
+                                    <td><span class="materials-pill cost-medium" data-i18n="materials.compare.pu.cost" data-en="Medium" data-zh="中">Medium</span></td>
+                                    <td data-i18n="materials.compare.pu.typical" data-en="Hydraulic seals, high-pressure dynamic sealing" data-zh="液压密封、高压动态密封">Hydraulic seals, high-pressure dynamic sealing</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="materials-table-material">
+                                            <strong>CR</strong>
+                                            <span data-i18n="materials.compare.cr.nameZh" data-en="氯丁橡胶" data-zh="氯丁橡胶">氯丁橡胶</span>
+                                        </div>
+                                    </th>
+                                    <td><span class="materials-pill medium" data-i18n="materials.compare.cr.oil" data-en="Moderate" data-zh="中">Moderate</span></td>
+                                    <td>
+                                        <div class="materials-temp"><strong data-i18n="materials.compare.cr.temp" data-en="-30°C to 120°C" data-zh="-30°C 至 120°C">-30°C to 120°C</strong></div>
+                                    </td>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.cr.chemical" data-en="Good" data-zh="良">Good</span></td>
+                                    <td><span class="materials-pill good" data-i18n="materials.compare.cr.wear" data-en="Good" data-zh="良">Good</span></td>
+                                    <td><span class="materials-pill cost-medium" data-i18n="materials.compare.cr.cost" data-en="Medium" data-zh="中">Medium</span></td>
+                                    <td data-i18n="materials.compare.cr.typical" data-en="General industrial sealing, weather-resistant rubber parts" data-zh="通用工业密封、耐候橡胶部件">General industrial sealing, weather-resistant rubber parts</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="materials-detail-panel page-section" id="materialsDetail">
+                    <div class="materials-section-heading">
+                        <p class="materials-kicker" data-i18n="materials.detail.kicker" data-en="Material Profiles" data-zh="材料说明">Material Profiles</p>
+                        <h2 data-i18n="materials.detail.title" data-en="Detailed Material Cards" data-zh="材料详情卡片">Detailed Material Cards</h2>
+                        <p data-i18n="materials.detail.text" data-en="Review properties, product fit, and industry recommendations for each major sealing compound." data-zh="进一步查看每种材料的特点、推荐产品和适用行业，帮助您做更精准的选材判断。">Review properties, product fit, and industry recommendations for each major sealing compound.</p>
+                    </div>
+                    <div class="materials-card-grid">
+                        <article class="material-card">
+                            <div class="material-card-head">
+                                <p class="material-card-label" data-i18n="materials.detail.label" data-en="Material" data-zh="材料">Material</p>
+                                <h3>NBR</h3>
+                                <p class="material-card-zh" data-i18n="materials.detail.nbr.zhName" data-en="丁腈橡胶" data-zh="丁腈橡胶">丁腈橡胶</p>
+                            </div>
+                            <p class="material-card-intro" data-i18n="materials.detail.nbr.intro" data-en="A mainstream sealing material with strong oil resistance, balanced cost, and broad industrial applicability." data-zh="丁腈橡胶是工业密封中最常见的基础材料之一，具备优异的耐油性、良好的耐磨性以及较高的性价比。">A mainstream sealing material with strong oil resistance, balanced cost, and broad industrial applicability.</p>
+                            <div class="material-card-meta">
+                                <div class="material-meta-block">
+                                    <h4 data-i18n="materials.detail.features" data-en="Key Features" data-zh="主要特点">Key Features</h4>
+                                    <ul>
+                                        <li data-i18n="materials.detail.nbr.features.0" data-en="Excellent oil resistance" data-zh="耐油性能优异">Excellent oil resistance</li>
+                                        <li data-i18n="materials.detail.nbr.features.1" data-en="Good wear resistance" data-zh="耐磨性良好">Good wear resistance</li>
+                                        <li data-i18n="materials.detail.nbr.features.2" data-en="Stable processing performance" data-zh="加工性能稳定">Stable processing performance</li>
+                                        <li data-i18n="materials.detail.nbr.features.3" data-en="Suitable for general industrial sealing" data-zh="适合常规工业密封需求">Suitable for general industrial sealing</li>
+                                    </ul>
+                                </div>
+                                <div class="material-meta-block material-meta-temp">
+                                    <h4 data-i18n="materials.detail.tempRange" data-en="Temperature Range" data-zh="温度范围">Temperature Range</h4>
+                                    <p data-i18n="materials.detail.nbr.temp" data-en="-30°C to 100°C" data-zh="-30°C 至 100°C">-30°C to 100°C</p>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.products" data-en="Recommended Products" data-zh="推荐产品">Recommended Products</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag" data-i18n="materials.detail.nbr.products.0" data-en="O-Rings" data-zh="O 型圈">O-Rings</span>
+                                    <span class="material-tag" data-i18n="materials.detail.nbr.products.1" data-en="Oil Seals" data-zh="油封">Oil Seals</span>
+                                    <span class="material-tag" data-i18n="materials.detail.nbr.products.2" data-en="Hydraulic Seals" data-zh="液压密封件">Hydraulic Seals</span>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.industries" data-en="Industries / Typical Scenarios" data-zh="适用行业 / 典型场景">Industries / Typical Scenarios</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag muted" data-i18n="materials.detail.nbr.industries.0" data-en="Mechanical equipment" data-zh="机械设备">Mechanical equipment</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.nbr.industries.1" data-en="Automotive" data-zh="汽车">Automotive</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.nbr.industries.2" data-en="General industrial manufacturing" data-zh="通用工业制造">General industrial manufacturing</span>
+                                </div>
+                            </div>
+                            <div class="material-card-actions"><a class="btn btn-primary material-link" href="products.html?filter=o-rings" data-i18n="materials.detail.nbr.button" data-en="View Related Products" data-zh="查看相关产品">View Related Products</a></div>
+                        </article>
+                        <article class="material-card">
+                            <div class="material-card-head">
+                                <p class="material-card-label" data-i18n="materials.detail.label" data-en="Material" data-zh="材料">Material</p>
+                                <h3>FKM / Viton</h3>
+                                <p class="material-card-zh" data-i18n="materials.detail.fkm.zhName" data-en="氟橡胶" data-zh="氟橡胶">氟橡胶</p>
+                            </div>
+                            <p class="material-card-intro" data-i18n="materials.detail.fkm.intro" data-en="A high-performance elastomer for high temperature, fuel media, and harsh chemical environments." data-zh="氟橡胶适用于高温、耐油及化学介质要求较高的密封环境，是严苛工况下的重要选材之一。">A high-performance elastomer for high temperature, fuel media, and harsh chemical environments.</p>
+                            <div class="material-card-meta">
+                                <div class="material-meta-block">
+                                    <h4 data-i18n="materials.detail.features" data-en="Key Features" data-zh="主要特点">Key Features</h4>
+                                    <ul>
+                                        <li data-i18n="materials.detail.fkm.features.0" data-en="Excellent heat resistance" data-zh="耐高温性能突出">Excellent heat resistance</li>
+                                        <li data-i18n="materials.detail.fkm.features.1" data-en="Strong chemical resistance" data-zh="耐化学腐蚀能力强">Strong chemical resistance</li>
+                                        <li data-i18n="materials.detail.fkm.features.2" data-en="Outstanding fuel and oil compatibility" data-zh="适用于燃油及高温油介质">Outstanding fuel and oil compatibility</li>
+                                        <li data-i18n="materials.detail.fkm.features.3" data-en="Suitable for severe operating conditions" data-zh="适合严苛工况密封">Suitable for severe operating conditions</li>
+                                    </ul>
+                                </div>
+                                <div class="material-meta-block material-meta-temp">
+                                    <h4 data-i18n="materials.detail.tempRange" data-en="Temperature Range" data-zh="温度范围">Temperature Range</h4>
+                                    <p data-i18n="materials.detail.fkm.temp" data-en="-20°C to 200°C" data-zh="-20°C 至 200°C">-20°C to 200°C</p>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.products" data-en="Recommended Products" data-zh="推荐产品">Recommended Products</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag" data-i18n="materials.detail.fkm.products.0" data-en="High-temperature O-Rings" data-zh="高温 O 型圈">High-temperature O-Rings</span>
+                                    <span class="material-tag" data-i18n="materials.detail.fkm.products.1" data-en="Automotive Oil Seals" data-zh="汽车油封">Automotive Oil Seals</span>
+                                    <span class="material-tag" data-i18n="materials.detail.fkm.products.2" data-en="Special Sealing Parts" data-zh="特殊密封件">Special Sealing Parts</span>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.industries" data-en="Industries / Typical Scenarios" data-zh="适用行业 / 典型场景">Industries / Typical Scenarios</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag muted" data-i18n="materials.detail.fkm.industries.0" data-en="Petrochemical" data-zh="石油化工">Petrochemical</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.fkm.industries.1" data-en="Automotive" data-zh="汽车">Automotive</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.fkm.industries.2" data-en="High-temperature equipment" data-zh="高温设备">High-temperature equipment</span>
+                                </div>
+                            </div>
+                            <div class="material-card-actions"><a class="btn btn-primary material-link" href="products.html?filter=o-rings" data-i18n="materials.detail.fkm.button" data-en="View Related Products" data-zh="查看相关产品">View Related Products</a></div>
+                        </article>
+                        <article class="material-card">
+                            <div class="material-card-head">
+                                <p class="material-card-label" data-i18n="materials.detail.label" data-en="Material" data-zh="材料">Material</p>
+                                <h3>Silicone</h3>
+                                <p class="material-card-zh" data-i18n="materials.detail.silicone.zhName" data-en="硅橡胶" data-zh="硅橡胶">硅橡胶</p>
+                            </div>
+                            <p class="material-card-intro" data-i18n="materials.detail.silicone.intro" data-en="Known for wide temperature tolerance, softness, and insulation performance in special environments." data-zh="硅橡胶具有优异的耐高低温性能、柔软性和绝缘性，适合食品、医疗及特殊环境应用。">Known for wide temperature tolerance, softness, and insulation performance in special environments.</p>
+                            <div class="material-card-meta">
+                                <div class="material-meta-block">
+                                    <h4 data-i18n="materials.detail.features" data-en="Key Features" data-zh="主要特点">Key Features</h4>
+                                    <ul>
+                                        <li data-i18n="materials.detail.silicone.features.0" data-en="Excellent high and low temperature range" data-zh="耐高低温范围广">Excellent high and low temperature range</li>
+                                        <li data-i18n="materials.detail.silicone.features.1" data-en="Good environmental and electrical properties" data-zh="环保及绝缘性能好">Good environmental and electrical properties</li>
+                                        <li data-i18n="materials.detail.silicone.features.2" data-en="Soft and elastic" data-zh="柔软弹性佳">Soft and elastic</li>
+                                        <li data-i18n="materials.detail.silicone.features.3" data-en="Suitable for special environment sealing" data-zh="适用于特殊环境密封">Suitable for special environment sealing</li>
+                                    </ul>
+                                </div>
+                                <div class="material-meta-block material-meta-temp">
+                                    <h4 data-i18n="materials.detail.tempRange" data-en="Temperature Range" data-zh="温度范围">Temperature Range</h4>
+                                    <p data-i18n="materials.detail.silicone.temp" data-en="-60°C to 200°C" data-zh="-60°C 至 200°C">-60°C to 200°C</p>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.products" data-en="Recommended Products" data-zh="推荐产品">Recommended Products</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag" data-i18n="materials.detail.silicone.products.0" data-en="Rubber products" data-zh="橡胶制品">Rubber products</span>
+                                    <span class="material-tag" data-i18n="materials.detail.silicone.products.1" data-en="Special O-Rings" data-zh="特殊 O 型圈">Special O-Rings</span>
+                                    <span class="material-tag" data-i18n="materials.detail.silicone.products.2" data-en="Non-standard seals" data-zh="非标密封件">Non-standard seals</span>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.industries" data-en="Industries / Typical Scenarios" data-zh="适用行业 / 典型场景">Industries / Typical Scenarios</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag muted" data-i18n="materials.detail.silicone.industries.0" data-en="Electronics" data-zh="电子">Electronics</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.silicone.industries.1" data-en="Medical support environments" data-zh="医疗辅助环境">Medical support environments</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.silicone.industries.2" data-en="Food-related equipment" data-zh="食品相关设备">Food-related equipment</span>
+                                </div>
+                            </div>
+                            <div class="material-card-actions"><a class="btn btn-primary material-link" href="products.html?filter=rubber-products" data-i18n="materials.detail.silicone.button" data-en="View Related Products" data-zh="查看相关产品">View Related Products</a></div>
+                        </article>
+                        <article class="material-card">
+                            <div class="material-card-head">
+                                <p class="material-card-label" data-i18n="materials.detail.label" data-en="Material" data-zh="材料">Material</p>
+                                <h3>HNBR</h3>
+                                <p class="material-card-zh" data-i18n="materials.detail.hnbr.zhName" data-en="氢化丁腈橡胶" data-zh="氢化丁腈橡胶">氢化丁腈橡胶</p>
+                            </div>
+                            <p class="material-card-intro" data-i18n="materials.detail.hnbr.intro" data-en="An upgraded NBR-class material with stronger heat, aging, and oil resistance for higher-end applications." data-zh="HNBR 在耐热、耐油和耐老化方面优于普通 NBR，适合可靠性要求更高的工业场景。">An upgraded NBR-class material with stronger heat, aging, and oil resistance for higher-end applications.</p>
+                            <div class="material-card-meta">
+                                <div class="material-meta-block">
+                                    <h4 data-i18n="materials.detail.features" data-en="Key Features" data-zh="主要特点">Key Features</h4>
+                                    <ul>
+                                        <li data-i18n="materials.detail.hnbr.features.0" data-en="Improved heat resistance over NBR" data-zh="耐热性优于普通 NBR">Improved heat resistance over NBR</li>
+                                        <li data-i18n="materials.detail.hnbr.features.1" data-en="Excellent oil and aging resistance" data-zh="耐油及耐老化能力更强">Excellent oil and aging resistance</li>
+                                        <li data-i18n="materials.detail.hnbr.features.2" data-en="Good mechanical strength" data-zh="机械性能优良">Good mechanical strength</li>
+                                        <li data-i18n="materials.detail.hnbr.features.3" data-en="Suitable for high-demand industrial applications" data-zh="适合高要求工业应用">Suitable for high-demand industrial applications</li>
+                                    </ul>
+                                </div>
+                                <div class="material-meta-block material-meta-temp">
+                                    <h4 data-i18n="materials.detail.tempRange" data-en="Temperature Range" data-zh="温度范围">Temperature Range</h4>
+                                    <p data-i18n="materials.detail.hnbr.temp" data-en="-30°C to 150°C" data-zh="-30°C 至 150°C">-30°C to 150°C</p>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.products" data-en="Recommended Products" data-zh="推荐产品">Recommended Products</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag" data-i18n="materials.detail.hnbr.products.0" data-en="Automotive oil seals" data-zh="汽车油封">Automotive oil seals</span>
+                                    <span class="material-tag" data-i18n="materials.detail.hnbr.products.1" data-en="Hydraulic seals" data-zh="液压密封件">Hydraulic seals</span>
+                                    <span class="material-tag" data-i18n="materials.detail.hnbr.products.2" data-en="Dynamic sealing parts" data-zh="动态密封件">Dynamic sealing parts</span>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.industries" data-en="Industries / Typical Scenarios" data-zh="适用行业 / 典型场景">Industries / Typical Scenarios</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag muted" data-i18n="materials.detail.hnbr.industries.0" data-en="Automotive" data-zh="汽车">Automotive</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.hnbr.industries.1" data-en="Mechanical equipment" data-zh="机械设备">Mechanical equipment</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.hnbr.industries.2" data-en="Hydraulic systems" data-zh="液压系统">Hydraulic systems</span>
+                                </div>
+                            </div>
+                            <div class="material-card-actions"><a class="btn btn-primary material-link" href="products.html?filter=y-rings" data-i18n="materials.detail.hnbr.button" data-en="View Related Products" data-zh="查看相关产品">View Related Products</a></div>
+                        </article>
+                        <article class="material-card">
+                            <div class="material-card-head">
+                                <p class="material-card-label" data-i18n="materials.detail.label" data-en="Material" data-zh="材料">Material</p>
+                                <h3>EPDM</h3>
+                                <p class="material-card-zh" data-i18n="materials.detail.epdm.zhName" data-en="三元乙丙橡胶" data-zh="三元乙丙橡胶">三元乙丙橡胶</p>
+                            </div>
+                            <p class="material-card-intro" data-i18n="materials.detail.epdm.intro" data-en="A weather-resistant material suitable for water, steam, ozone, and outdoor applications, but not strong-oil environments." data-zh="EPDM 具有出色的耐候、耐臭氧及耐水蒸气性能，适用于户外、防水及抗老化场景，但不适合强油环境。">A weather-resistant material suitable for water, steam, ozone, and outdoor applications, but not strong-oil environments.</p>
+                            <div class="material-card-meta">
+                                <div class="material-meta-block">
+                                    <h4 data-i18n="materials.detail.features" data-en="Key Features" data-zh="主要特点">Key Features</h4>
+                                    <ul>
+                                        <li data-i18n="materials.detail.epdm.features.0" data-en="Excellent weather resistance" data-zh="耐候性优异">Excellent weather resistance</li>
+                                        <li data-i18n="materials.detail.epdm.features.1" data-en="Strong ozone and steam resistance" data-zh="耐臭氧和耐水蒸气能力强">Strong ozone and steam resistance</li>
+                                        <li data-i18n="materials.detail.epdm.features.2" data-en="Good outdoor durability" data-zh="适合户外长期使用">Good outdoor durability</li>
+                                        <li data-i18n="materials.detail.epdm.features.3" data-en="Not recommended for strong oil exposure" data-zh="不适用于强油介质环境">Not recommended for strong oil exposure</li>
+                                    </ul>
+                                </div>
+                                <div class="material-meta-block material-meta-temp">
+                                    <h4 data-i18n="materials.detail.tempRange" data-en="Temperature Range" data-zh="温度范围">Temperature Range</h4>
+                                    <p data-i18n="materials.detail.epdm.temp" data-en="-40°C to 150°C" data-zh="-40°C 至 150°C">-40°C to 150°C</p>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.products" data-en="Recommended Products" data-zh="推荐产品">Recommended Products</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag" data-i18n="materials.detail.epdm.products.0" data-en="Rubber products" data-zh="橡胶制品">Rubber products</span>
+                                    <span class="material-tag" data-i18n="materials.detail.epdm.products.1" data-en="Waterproof sealing parts" data-zh="防水密封件">Waterproof sealing parts</span>
+                                    <span class="material-tag" data-i18n="materials.detail.epdm.products.2" data-en="General industrial seals" data-zh="通用工业密封件">General industrial seals</span>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.industries" data-en="Industries / Typical Scenarios" data-zh="适用行业 / 典型场景">Industries / Typical Scenarios</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag muted" data-i18n="materials.detail.epdm.industries.0" data-en="Electrical appliances" data-zh="电器">Electrical appliances</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.epdm.industries.1" data-en="Outdoor equipment" data-zh="户外设备">Outdoor equipment</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.epdm.industries.2" data-en="Water systems" data-zh="水系统">Water systems</span>
+                                </div>
+                            </div>
+                            <div class="material-card-actions"><a class="btn btn-primary material-link" href="products.html?filter=rubber-products" data-i18n="materials.detail.epdm.button" data-en="View Related Products" data-zh="查看相关产品">View Related Products</a></div>
+                        </article>
+                        <article class="material-card">
+                            <div class="material-card-head">
+                                <p class="material-card-label" data-i18n="materials.detail.label" data-en="Material" data-zh="材料">Material</p>
+                                <h3>PU</h3>
+                                <p class="material-card-zh" data-i18n="materials.detail.pu.zhName" data-en="聚氨酯" data-zh="聚氨酯">聚氨酯</p>
+                            </div>
+                            <p class="material-card-intro" data-i18n="materials.detail.pu.intro" data-en="A highly wear-resistant sealing material favored in hydraulic, high-pressure, and dynamic motion environments." data-zh="PU 以高耐磨性著称，特别适合液压、高压和动态密封环境，是高负载工况的重要材料。">A highly wear-resistant sealing material favored in hydraulic, high-pressure, and dynamic motion environments.</p>
+                            <div class="material-card-meta">
+                                <div class="material-meta-block">
+                                    <h4 data-i18n="materials.detail.features" data-en="Key Features" data-zh="主要特点">Key Features</h4>
+                                    <ul>
+                                        <li data-i18n="materials.detail.pu.features.0" data-en="Excellent wear resistance" data-zh="耐磨性能极强">Excellent wear resistance</li>
+                                        <li data-i18n="materials.detail.pu.features.1" data-en="Strong support for high-pressure sealing" data-zh="适合高压密封环境">Strong support for high-pressure sealing</li>
+                                        <li data-i18n="materials.detail.pu.features.2" data-en="Suitable for dynamic motion" data-zh="适用于动态运动工况">Suitable for dynamic motion</li>
+                                        <li data-i18n="materials.detail.pu.features.3" data-en="Good structural toughness" data-zh="结构韧性良好">Good structural toughness</li>
+                                    </ul>
+                                </div>
+                                <div class="material-meta-block material-meta-temp">
+                                    <h4 data-i18n="materials.detail.tempRange" data-en="Temperature Range" data-zh="温度范围">Temperature Range</h4>
+                                    <p data-i18n="materials.detail.pu.temp" data-en="-30°C to 100°C" data-zh="-30°C 至 100°C">-30°C to 100°C</p>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.products" data-en="Recommended Products" data-zh="推荐产品">Recommended Products</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag" data-i18n="materials.detail.pu.products.0" data-en="Hydraulic seals" data-zh="液压密封件">Hydraulic seals</span>
+                                    <span class="material-tag" data-i18n="materials.detail.pu.products.1" data-en="Y-Rings" data-zh="Y 型圈">Y-Rings</span>
+                                    <span class="material-tag" data-i18n="materials.detail.pu.products.2" data-en="Dynamic sealing components" data-zh="动态密封元件">Dynamic sealing components</span>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.industries" data-en="Industries / Typical Scenarios" data-zh="适用行业 / 典型场景">Industries / Typical Scenarios</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag muted" data-i18n="materials.detail.pu.industries.0" data-en="Hydraulic equipment" data-zh="液压设备">Hydraulic equipment</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.pu.industries.1" data-en="Mechanical equipment" data-zh="机械设备">Mechanical equipment</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.pu.industries.2" data-en="Heavy-duty manufacturing" data-zh="重载制造">Heavy-duty manufacturing</span>
+                                </div>
+                            </div>
+                            <div class="material-card-actions"><a class="btn btn-primary material-link" href="products.html?filter=y-rings" data-i18n="materials.detail.pu.button" data-en="View Related Products" data-zh="查看相关产品">View Related Products</a></div>
+                        </article>
+                        <article class="material-card">
+                            <div class="material-card-head">
+                                <p class="material-card-label" data-i18n="materials.detail.label" data-en="Material" data-zh="材料">Material</p>
+                                <h3>CR</h3>
+                                <p class="material-card-zh" data-i18n="materials.detail.cr.zhName" data-en="氯丁橡胶" data-zh="氯丁橡胶">氯丁橡胶</p>
+                            </div>
+                            <p class="material-card-intro" data-i18n="materials.detail.cr.intro" data-en="A balanced general-purpose elastomer with good weather resistance and flame-retardant characteristics." data-zh="CR 兼具耐候性、阻燃性和一定的耐介质能力，适合一般工业密封和防护类应用。">A balanced general-purpose elastomer with good weather resistance and flame-retardant characteristics.</p>
+                            <div class="material-card-meta">
+                                <div class="material-meta-block">
+                                    <h4 data-i18n="materials.detail.features" data-en="Key Features" data-zh="主要特点">Key Features</h4>
+                                    <ul>
+                                        <li data-i18n="materials.detail.cr.features.0" data-en="Good weather resistance" data-zh="耐候性能良好">Good weather resistance</li>
+                                        <li data-i18n="materials.detail.cr.features.1" data-en="Flame-retardant character" data-zh="具备一定阻燃特性">Flame-retardant character</li>
+                                        <li data-i18n="materials.detail.cr.features.2" data-en="Balanced general industrial performance" data-zh="通用工业性能均衡">Balanced general industrial performance</li>
+                                        <li data-i18n="materials.detail.cr.features.3" data-en="Suitable for protective and sealing parts" data-zh="适用于防护与密封件">Suitable for protective and sealing parts</li>
+                                    </ul>
+                                </div>
+                                <div class="material-meta-block material-meta-temp">
+                                    <h4 data-i18n="materials.detail.tempRange" data-en="Temperature Range" data-zh="温度范围">Temperature Range</h4>
+                                    <p data-i18n="materials.detail.cr.temp" data-en="-30°C to 120°C" data-zh="-30°C 至 120°C">-30°C to 120°C</p>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.products" data-en="Recommended Products" data-zh="推荐产品">Recommended Products</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag" data-i18n="materials.detail.cr.products.0" data-en="Rubber products" data-zh="橡胶制品">Rubber products</span>
+                                    <span class="material-tag" data-i18n="materials.detail.cr.products.1" data-en="Protective components" data-zh="防护类元件">Protective components</span>
+                                    <span class="material-tag" data-i18n="materials.detail.cr.products.2" data-en="General sealing parts" data-zh="通用密封件">General sealing parts</span>
+                                </div>
+                            </div>
+                            <div class="material-meta-block">
+                                <h4 data-i18n="materials.detail.industries" data-en="Industries / Typical Scenarios" data-zh="适用行业 / 典型场景">Industries / Typical Scenarios</h4>
+                                <div class="material-tag-row">
+                                    <span class="material-tag muted" data-i18n="materials.detail.cr.industries.0" data-en="General industrial manufacturing" data-zh="通用工业制造">General industrial manufacturing</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.cr.industries.1" data-en="Electrical appliances" data-zh="电器">Electrical appliances</span>
+                                    <span class="material-tag muted" data-i18n="materials.detail.cr.industries.2" data-en="Outdoor equipment" data-zh="户外设备">Outdoor equipment</span>
+                                </div>
+                            </div>
+                            <div class="material-card-actions"><a class="btn btn-primary material-link" href="products.html?filter=rubber-products" data-i18n="materials.detail.cr.button" data-en="View Related Products" data-zh="查看相关产品">View Related Products</a></div>
+                        </article>
+                    </div>
+                </section>
+                <section class="materials-scenes-panel page-section" id="materialsScenes">
+                    <div class="materials-section-heading">
+                        <p class="materials-kicker" data-i18n="materials.scene.kicker" data-en="Working Condition Guide" data-zh="工况推荐">Working Condition Guide</p>
+                        <h2 data-i18n="materials.scene.title" data-en="Select Materials by Operating Condition" data-zh="根据工况选材料">Select Materials by Operating Condition</h2>
+                        <p data-i18n="materials.scene.text" data-en="A quick decision aid for buyers and engineers who need to shortlist materials based on actual service conditions." data-zh="面向采购和工程人员的快速判断模块，帮助您根据实际工况缩小选材范围。">A quick decision aid for buyers and engineers who need to shortlist materials based on actual service conditions.</p>
+                    </div>
+                    <div class="materials-scene-grid">
+                        <article class="material-scene-card">
+                            <h3 data-i18n="materials.scene.highTemp.title" data-en="High Temperature" data-zh="高温环境">High Temperature</h3>
+                            <p class="material-scene-materials" data-i18n="materials.scene.highTemp.materials" data-en="Recommended: FKM / Viton, Silicone" data-zh="推荐材料：FKM / Viton、Silicone">Recommended: FKM / Viton, Silicone</p>
+                            <p class="material-scene-text" data-i18n="materials.scene.highTemp.text" data-en="Suitable for high-temperature oil media, engine compartments, and long-duration thermal exposure." data-zh="适用于高温油介质、发动机周边及持续受热工况。">Suitable for high-temperature oil media, engine compartments, and long-duration thermal exposure.</p>
+                        </article>
+                        <article class="material-scene-card">
+                            <h3 data-i18n="materials.scene.oil.title" data-en="Strong Oil Exposure" data-zh="强油环境">Strong Oil Exposure</h3>
+                            <p class="material-scene-materials" data-i18n="materials.scene.oil.materials" data-en="Recommended: NBR, HNBR" data-zh="推荐材料：NBR、HNBR">Recommended: NBR, HNBR</p>
+                            <p class="material-scene-text" data-i18n="materials.scene.oil.text" data-en="A practical choice for general industrial oil sealing and demanding lubricating media." data-zh="适合常规耐油密封和要求较高的润滑油介质环境。">A practical choice for general industrial oil sealing and demanding lubricating media.</p>
+                        </article>
+                        <article class="material-scene-card">
+                            <h3 data-i18n="materials.scene.wear.title" data-en="High Wear / High Pressure" data-zh="高磨损 / 高压环境">High Wear / High Pressure</h3>
+                            <p class="material-scene-materials" data-i18n="materials.scene.wear.materials" data-en="Recommended: PU" data-zh="推荐材料：PU">Recommended: PU</p>
+                            <p class="material-scene-text" data-i18n="materials.scene.wear.text" data-en="Best matched with hydraulic and dynamic sealing systems that require strong wear resistance." data-zh="适合液压及动态密封系统，对耐磨要求高的场景尤为合适。">Best matched with hydraulic and dynamic sealing systems that require strong wear resistance.</p>
+                        </article>
+                        <article class="material-scene-card">
+                            <h3 data-i18n="materials.scene.outdoor.title" data-en="Outdoor / Waterproof / Anti-Aging" data-zh="户外 / 防水 / 抗老化">Outdoor / Waterproof / Anti-Aging</h3>
+                            <p class="material-scene-materials" data-i18n="materials.scene.outdoor.materials" data-en="Recommended: EPDM" data-zh="推荐材料：EPDM">Recommended: EPDM</p>
+                            <p class="material-scene-text" data-i18n="materials.scene.outdoor.text" data-en="Well suited for outdoor exposure, water-related systems, and ozone-resistant applications." data-zh="适合户外、水系统及对耐候、耐臭氧要求较高的场景。">Well suited for outdoor exposure, water-related systems, and ozone-resistant applications.</p>
+                        </article>
+                        <article class="material-scene-card">
+                            <h3 data-i18n="materials.scene.general.title" data-en="General Industrial Sealing" data-zh="常规工业密封">General Industrial Sealing</h3>
+                            <p class="material-scene-materials" data-i18n="materials.scene.general.materials" data-en="Recommended: NBR" data-zh="推荐材料：NBR">Recommended: NBR</p>
+                            <p class="material-scene-text" data-i18n="materials.scene.general.text" data-en="A cost-effective default option for broad sealing applications in manufacturing and maintenance." data-zh="适合多数通用密封需求，是制造与维修场景中性价比较高的基础选材。">A cost-effective default option for broad sealing applications in manufacturing and maintenance.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="materials-cta page-section" id="materialsCta">
+                    <div class="materials-cta-panel">
+                        <p class="materials-kicker" data-i18n="materials.cta.kicker" data-en="Need Help Selecting?" data-zh="选材支持">Need Help Selecting?</p>
+                        <h2 data-i18n="materials.cta.title" data-en="Can’t Find the Right Material?" data-zh="找不到合适材料？">Can’t Find the Right Material?</h2>
+                        <p data-i18n="materials.cta.text" data-en="We provide material selection advice, size matching, and custom support for demanding sealing applications." data-zh="我们提供材料选型建议、规格匹配与定制支持，帮助您更快确定适合的密封解决方案。">We provide material selection advice, size matching, and custom support for demanding sealing applications.</p>
+                        <div class="materials-cta-actions">
+                            <a class="btn btn-primary btn-xl" href="contact.html" data-i18n="materials.cta.contact" data-en="Contact Us" data-zh="联系我们">Contact Us</a>
+                            <a class="btn btn-outline-dark btn-xl" href="products.html" data-i18n="materials.cta.products" data-en="Back to Product Center" data-zh="返回产品中心">Back to Product Center</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start" data-i18n="footer.copyright" data-en="Copyright © Your Website 2023" data-zh="版权所有 © Your Website 2023">Copyright &copy; Your Website 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!" data-i18n="footer.privacy" data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!" data-i18n="footer.terms" data-en="Terms of Use" data-zh="使用条款">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- SB Forms JS-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
