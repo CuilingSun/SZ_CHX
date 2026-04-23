@@ -1,50 +1,103 @@
-section#about.page-section
+section#about.page-section.about-page
     .container
-        //- .text-center
-        //-     h2.section-heading.text-uppercase(data-i18n='about.heading', data-en='About', data-zh='关于我们') About
-        //-     h3.section-subheading.text-muted(data-i18n='about.subheading', data-en='The milestones that shaped our studio and the way we work today.', data-zh='这些关键节点塑造了我们的团队，也定义了今天的工作方式。') The milestones that shaped our studio and the way we work today.
-        ul.timeline
-            li
-                .timeline-image
-                    img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-                .timeline-panel
-                    .timeline-heading
-                        h4 2009-2011
-                        h4.subheading(data-i18n='about.item1.title', data-en='Our Humble Beginnings', data-zh='从小规模起步') Our Humble Beginnings
-                    .timeline-body
-                        p.text-muted(data-i18n='about.item1.text', data-en='We started with a small team, a simple mission, and a belief that thoughtful design can create real business value.', data-zh='我们从一个小团队开始，坚持用清晰的设计和可靠的交付，为客户创造真正的商业价值。') We started with a small team, a simple mission, and a belief that thoughtful design can create real business value.
-            li.timeline-inverted
-                .timeline-image
-                    img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-                .timeline-panel
-                    .timeline-heading
-                        h4 March 2011
-                        h4.subheading(data-i18n='about.item2.title', data-en='An Agency is Born', data-zh='品牌正式成立') An Agency is Born
-                    .timeline-body
-                        p.text-muted(data-i18n='about.item2.text', data-en='As our projects grew, we built a clearer process for strategy, design, development, and long-term partnership.', data-zh='随着项目不断增加，我们逐步建立了从策略、设计到开发与长期合作的完整流程。') As our projects grew, we built a clearer process for strategy, design, development, and long-term partnership.
-            li
-                .timeline-image
-                    img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-                .timeline-panel
-                    .timeline-heading
-                        h4 December 2015
-                        h4.subheading(data-i18n='about.item3.title', data-en='Transition to Full Service', data-zh='升级为全案服务') Transition to Full Service
-                    .timeline-body
-                        p.text-muted(data-i18n='about.item3.text', data-en='We expanded from visual execution into a full-service model covering content, systems, and digital touchpoints.', data-zh='我们从单纯的视觉执行，扩展到内容、系统与数字触点的整合式服务。') We expanded from visual execution into a full-service model covering content, systems, and digital touchpoints.
-            li.timeline-inverted
-                .timeline-image
-                    img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                .timeline-panel
-                    .timeline-heading
-                        h4 July 2020
-                        h4.subheading(data-i18n='about.item4.title', data-en='Phase Two Expansion', data-zh='第二阶段扩张') Phase Two Expansion
-                    .timeline-body
-                        p.text-muted(data-i18n='about.item4.text', data-en='By investing in stronger delivery and communication, we were able to support bigger launches and more complex work.', data-zh='通过加强交付能力与协作机制，我们开始支持更大型、更复杂的上线项目。') By investing in stronger delivery and communication, we were able to support bigger launches and more complex work.
-            li.timeline-inverted
-                .timeline-image
-                    h4(data-i18n='about.cta', data-en='Be Part Of Our Story!', data-zh='欢迎加入我们的故事！')
-                        | Be Part
+        section.about-who-we-are
+            .about-section-intro
+                p.about-section-label(data-i18n='about.profile.kicker', data-en='Who We Are' data-zh='公司简介') Who We Are
+                h2.about-section-title
+                    span.about-title-zh 面向工业应用的
                         br
-                        | Of Our
-                        br
-                        | Story!
+                        | 专业密封件供应商
+                    span.about-title-en(data-i18n='about.profile.titleEn', data-en='A Professional Industrial Sealing Supplier with Practical Application Expertise' data-zh='A Professional Industrial Sealing Supplier with Practical Application Expertise') A Professional Industrial Sealing Supplier with Practical Application Expertise
+            .about-section-copy
+                p(data-i18n='about.profile.copy1', data-en='We are a professional supplier of industrial sealing products, offering a wide range of standard and engineered seals for global applications.' data-zh='我们是一家专业从事工业密封件供应的企业，提供涵盖标准件与工程密封件的完整产品体系，服务全球多行业客户。') We are a professional supplier of industrial sealing products, offering a wide range of standard and engineered seals for global applications.
+                p(data-i18n='about.profile.copy2', data-en='Backed by years of industry experience and a fully integrated supply chain, we provide not only products, but also practical sealing solutions tailored to real working conditions.' data-zh='依托多年的行业经验与完善的供应链体系，我们不仅提供产品，更根据实际工况提供切实可行的密封解决方案。') Backed by years of industry experience and a fully integrated supply chain, we provide not only products, but also practical sealing solutions tailored to real working conditions.
+
+        section.about-numbers
+            .about-section-heading
+                p.about-section-label(data-i18n='about.metrics.kicker', data-en='Our Strength in Numbers' data-zh='实力数据') Our Strength in Numbers
+                h2.about-section-title
+                    span.about-title-zh(data-i18n='about.metrics.titleZh', data-en='By the Numbers' data-zh='用数据说明实力') By the Numbers
+                    span.about-title-en(data-i18n='about.metrics.titleEn', data-en='Trusted by Experience, Proven by Numbers' data-zh='Trusted by Experience, Proven by Numbers') Trusted by Experience, Proven by Numbers
+            .about-numbers-grid
+                article.about-number-card
+                    strong(data-i18n='about.metrics.item1.value', data-en='20+' data-zh='20+') 20+
+                    span(data-i18n='about.metrics.item1.label', data-en='Years of Industry Experience' data-zh='年行业经验') Years of Industry Experience
+                article.about-number-card
+                    strong(data-i18n='about.metrics.item2.value', data-en='3000+' data-zh='3000+') 3000+
+                    span(data-i18n='about.metrics.item2.label', data-en='Product Types' data-zh='产品种类') Product Types
+                article.about-number-card
+                    strong(data-i18n='about.metrics.item3.value', data-en='10+' data-zh='10+') 10+
+                    span(data-i18n='about.metrics.item3.label', data-en='Industries Served' data-zh='服务行业') Industries Served
+                article.about-number-card
+                    strong(data-i18n='about.metrics.item4.value', data-en='5 Key Stages' data-zh='5大环节') 5 Key Stages
+                    span(data-i18n='about.metrics.item4.label', data-en='Raw Materials to Technical Support' data-zh='原材料到技术支持') Raw Materials to Technical Support
+                article.about-number-card
+                    strong(data-i18n='about.metrics.item5.value', data-en='Global' data-zh='全球') Global
+                    span(data-i18n='about.metrics.item5.label', data-en='Supply Capability' data-zh='供货能力') Supply Capability
+
+        section.about-strengths
+            .about-section-heading
+                p.about-section-label(data-i18n='about.strengths.kicker', data-en='Our Strength' data-zh='核心优势') Our Strength
+                h2.about-section-title
+                    span.about-title-zh(data-i18n='about.strengths.titleZh', data-en='Our Strength' data-zh='把真正的竞争力说清楚') Our Strength
+                    span.about-title-en(data-i18n='about.strengths.titleEn', data-en='What Makes CHX a Reliable Sealing Supply Partner' data-zh='What Makes CHX a Reliable Sealing Supply Partner') What Makes CHX a Reliable Sealing Supply Partner
+            .about-strengths-grid
+                article.about-strength-card
+                    .about-strength-icon
+                        i.fa-solid.fa-link(aria-hidden='true')
+                    h3(data-i18n='about.strengths.item1.title', data-en='Integrated Supply Chain' data-zh='供应链一体化') Integrated Supply Chain
+                    p(data-i18n='about.strengths.item1.text', data-en='From raw materials to manufacturing, logistics, storage, and technical support, we ensure seamless coordination and consistent quality control.' data-zh='覆盖原材料采购、生产制造、仓储物流及技术支持，实现全流程高效协同与质量可控。') From raw materials to manufacturing, logistics, storage, and technical support, we ensure seamless coordination and consistent quality control.
+                article.about-strength-card
+                    .about-strength-icon
+                        i.fa-solid.fa-shield-halved(aria-hidden='true')
+                    h3(data-i18n='about.strengths.item2.title', data-en='Quality Assurance System' data-zh='品质保障体系') Quality Assurance System
+                    p(data-i18n='about.strengths.item2.text', data-en='Each stage is supported by a strict quality management system, ensuring stable performance and long-term reliability.' data-zh='各环节均建立严格的质量管理体系，确保产品性能稳定可靠，满足工业级应用需求。') Each stage is supported by a strict quality management system, ensuring stable performance and long-term reliability.
+                article.about-strength-card
+                    .about-strength-icon
+                        i.fa-solid.fa-layer-group(aria-hidden='true')
+                    h3(data-i18n='about.strengths.item3.title', data-en='Extensive Product Range' data-zh='丰富产品体系') Extensive Product Range
+                    p(data-i18n='about.strengths.item3.text', data-en='We offer a comprehensive portfolio covering hydraulic seals, pneumatic seals, oil seals, and engineered sealing solutions.' data-zh='涵盖液压密封、气动密封、油封及工程密封件，满足多种工况与行业需求。') We offer a comprehensive portfolio covering hydraulic seals, pneumatic seals, oil seals, and engineered sealing solutions.
+                article.about-strength-card
+                    .about-strength-icon
+                        i.fa-solid.fa-compass-drafting(aria-hidden='true')
+                    h3(data-i18n='about.strengths.item4.title', data-en='Solution-Oriented Approach' data-zh='解决方案导向') Solution-Oriented Approach
+                    p(data-i18n='about.strengths.item4.text', data-en='We go beyond products to deliver practical sealing solutions based on real operating conditions.' data-zh='不仅提供产品，更基于实际工况为客户提供优化的密封解决方案。') We go beyond products to deliver practical sealing solutions based on real operating conditions.
+
+        section.about-portfolio
+            .about-portfolio-copy
+                p.about-section-label(data-i18n='about.portfolio.kicker', data-en='Product Portfolio' data-zh='产品范围') Product Portfolio
+                h2.about-section-title.about-portfolio-title
+                    span.about-title-zh(data-i18n='about.portfolio.titleZh', data-en='Product Portfolio' data-zh='产品覆盖面广，但这里仅展示概览') Product Portfolio
+                    span.about-title-en(data-i18n='about.portfolio.titleEn', data-en='A Broad Portfolio Across Core Sealing Categories' data-zh='A Broad Portfolio Across Core Sealing Categories') A Broad Portfolio Across Core Sealing Categories
+                p(data-i18n='about.portfolio.note', data-en='We support both standard supply and customized solutions based on specific application needs.' data-zh='支持标准产品供应及定制化解决方案。') We support both standard supply and customized solutions based on specific application needs.
+            .about-portfolio-grid
+                span.about-portfolio-tag(data-i18n='about.portfolio.item1', data-en='Hydraulic seals' data-zh='液压密封') Hydraulic seals
+                span.about-portfolio-tag(data-i18n='about.portfolio.item2', data-en='Pneumatic seals' data-zh='气动密封') Pneumatic seals
+                span.about-portfolio-tag(data-i18n='about.portfolio.item3', data-en='High-pressure seals' data-zh='高压密封') High-pressure seals
+                span.about-portfolio-tag(data-i18n='about.portfolio.item4', data-en='O-rings / X-rings' data-zh='O型圈 / 星型圈') O-rings / X-rings
+                span.about-portfolio-tag(data-i18n='about.portfolio.item5', data-en='Metal-cased oil seals' data-zh='骨架油封') Metal-cased oil seals
+                span.about-portfolio-tag(data-i18n='about.portfolio.item6', data-en='Glyd rings / Step seals' data-zh='格莱圈 / 斯特封') Glyd rings / Step seals
+                span.about-portfolio-tag(data-i18n='about.portfolio.item7', data-en='Dust wipers / Water seals' data-zh='防尘 / 水封') Dust wipers / Water seals
+                span.about-portfolio-tag(data-i18n='about.portfolio.item8', data-en='Construction machinery seals' data-zh='工程机械密封件') Construction machinery seals
+
+        section.about-value
+            .about-value-brand
+                p.about-section-label(data-i18n='about.philosophy.kicker', data-en='Why Choose Us' data-zh='经营理念 / 为什么选择我们') Why Choose Us
+                h2.about-value-title(data-i18n='about.philosophy.title', data-en='Green · Quality · Service · Integrity' data-zh='绿色 · 品质 · 服务 · 诚信') Green · Quality · Service · Integrity
+                p(data-i18n='about.philosophy.copy', data-en='We are committed to delivering reliable products, supporting sustainable development, and building long-term partnerships with our customers.' data-zh='我们致力于在保障产品性能的同时推动可持续发展，并为客户创造长期稳定的合作价值。') We are committed to delivering reliable products, supporting sustainable development, and building long-term partnerships with our customers.
+            .about-value-list-wrap
+                ul.about-value-list
+                    li(data-i18n='about.choose.item1', data-en='Stable quality' data-zh='产品质量稳定可靠') Stable quality
+                    li(data-i18n='about.choose.item2', data-en='Wide product availability' data-zh='产品种类齐全') Wide product availability
+                    li(data-i18n='about.choose.item3', data-en='Fast response' data-zh='响应快速') Fast response
+                    li(data-i18n='about.choose.item4', data-en='Technical support' data-zh='技术支持完善') Technical support
+                    li(data-i18n='about.choose.item5', data-en='Flexible solutions' data-zh='可提供灵活解决方案') Flexible solutions
+                p.about-value-note(data-i18n='about.choose.copy', data-en='We aim to be your trusted partner in sealing solutions.' data-zh='我们致力于成为您值得信赖的密封系统合作伙伴。') We aim to be your trusted partner in sealing solutions.
+
+        section.about-cta
+            .about-cta-inner
+                h2.about-cta-title(data-i18n='about.cta.title', data-en='Looking for the Right Sealing Solution?' data-zh='正在寻找合适的密封解决方案？') Looking for the Right Sealing Solution?
+                p(data-i18n='about.cta.text', data-en='Contact us for product selection, technical support, or customized solutions.' data-zh='欢迎联系我们，获取产品选型、技术支持或定制化解决方案。') Contact us for product selection, technical support, or customized solutions.
+                .about-cta-actions
+                    a.btn.btn-primary.btn-xl.text-uppercase(href='contact.html', data-i18n='about.cta.contact', data-en='Contact Us' data-zh='联系我们') Contact Us
+                    a.btn.btn-outline-light.btn-xl.text-uppercase(href='products.html', data-i18n='about.cta.products', data-en='View Products' data-zh='查看产品') View Products
