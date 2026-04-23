@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Elastomer Elements'
+    const pageTitleEn = 'CHX - Elastomer Elements'
+    const pageTitleZh = '创鸿信 - 弹性体'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.elastomerElements.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Elastomer Elements'
+    const heroTitleZh = '弹性体'
+    const heroTextEn = 'Replaceable elastomer components for couplings and vibration-damping assemblies that balance flexibility and load transmission.'
+    const heroTextZh = '适用于联轴器和缓冲减振结构的可更换弹性元件，兼顾柔性连接与载荷传递。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/2.jpg'
+    const productNameEn = 'Elastomer Elements'
+    const productNameZh = '弹性体'
+    const productLeadEn = 'Used to tune torsional behavior, absorb shock, and maintain practical serviceability in coupling systems.'
+    const productLeadZh = '用于调节联轴器扭转特性、吸收冲击并提升维护便利性。'
+    const productDescriptionEn = 'CHX Elastomer Elements are available in different hardness options to help coupling systems balance torque transmission, vibration damping, and replacement efficiency.'
+    const productDescriptionZh = '创鸿信弹性体可提供不同硬度等级，用于平衡联轴器中的扭矩传递、振动缓冲与更换维护效率。'
+    const featureTitle1En = 'Hardness Options'
+    const featureTitle1Zh = '硬度选择'
+    const featureText1En = 'Different elastomer grades can be selected around damping level and torsional stiffness needs.'
+    const featureText1Zh = '可根据减振效果和扭转刚度要求选择不同硬度等级。'
+    const featureTitle2En = 'Shock Absorption'
+    const featureTitle2Zh = '吸振缓冲'
+    const featureText2En = 'Helps reduce impact loading and smooth out vibration in transmission systems.'
+    const featureText2Zh = '有助于降低传动系统中的冲击载荷并改善振动表现。'
+    const featureTitle3En = 'Service Convenience'
+    const featureTitle3Zh = '维护方便'
+    const featureText3En = 'Replaceable elements support faster maintenance and practical lifecycle management.'
+    const featureText3Zh = '可更换结构便于维护保养和后续生命周期管理。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

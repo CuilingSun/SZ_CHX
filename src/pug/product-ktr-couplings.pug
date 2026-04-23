@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - KTR Couplings'
+    const pageTitleEn = 'CHX - KTR Couplings'
+    const pageTitleZh = '创鸿信 - KTR联轴器'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.ktrCouplings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'KTR Couplings'
+    const heroTitleZh = 'KTR联轴器'
+    const heroTextEn = 'Torsionally flexible coupling solutions for torque transmission, vibration damping, and shaft misalignment compensation.'
+    const heroTextZh = '适用于扭矩传递、振动缓冲和轴系偏差补偿的柔性联轴器方案。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/1.jpg'
+    const productNameEn = 'KTR Couplings'
+    const productNameZh = 'KTR联轴器'
+    const productLeadEn = 'A practical transmission component for motors, pumps, gearboxes, and general machinery that require flexible shaft connection.'
+    const productLeadZh = '适用于电机、泵、减速机和通用机械中的柔性轴系连接与动力传递。'
+    const productDescriptionEn = 'CHX KTR Couplings focus on compact torsionally flexible designs that transmit torque while damping vibration and compensating for axial, radial, and angular displacement.'
+    const productDescriptionZh = '创鸿信 KTR联轴器采用紧凑型挠性结构，在传递扭矩的同时可缓冲振动，并补偿轴向、径向和角向偏差。'
+    const featureTitle1En = 'Torque Transmission'
+    const featureTitle1Zh = '扭矩传递'
+    const featureText1En = 'Supports dependable power transfer across a wide range of general industrial drives.'
+    const featureText1Zh = '适用于多类工业传动设备的稳定动力连接。'
+    const featureTitle2En = 'Vibration Damping'
+    const featureTitle2Zh = '减振缓冲'
+    const featureText2En = 'The elastomer coupling concept helps reduce torsional vibration and running noise.'
+    const featureText2Zh = '弹性联轴器结构有助于降低扭振和运行噪声。'
+    const featureTitle3En = 'Misalignment Compensation'
+    const featureTitle3Zh = '偏差补偿'
+    const featureText3En = 'Can accommodate axial, radial, and angular shaft displacement within practical operating ranges.'
+    const featureText3Zh = '可在合理工况范围内补偿轴向、径向和角向安装偏差。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

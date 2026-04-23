@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Composite Seal Rings'
+    const pageTitleEn = 'CHX - Composite Seal Rings'
+    const pageTitleZh = '创鸿信 - 组合密封圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.compositeSealRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Composite Seal Rings'
+    const heroTitleZh = '组合密封圈'
+    const heroTextEn = 'Integrated sealing structures that combine multiple lips or materials to improve assembly stability and media separation.'
+    const heroTextZh = '通过多唇口或多材料组合实现更高密封稳定性和介质隔离能力的复合密封方案。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/5.jpg'
+    const productNameEn = 'Composite Seal Rings'
+    const productNameZh = '组合密封圈'
+    const productLeadEn = 'Designed for applications where a single seal needs to handle multiple sealing functions within one installation space.'
+    const productLeadZh = '适用于希望在同一安装空间内同时实现多重密封功能的结构。'
+    const productDescriptionEn = 'CHX Composite Seal Rings can integrate different elastomer or support elements to simplify assembly, reduce loose parts, and support more stable static sealing interfaces.'
+    const productDescriptionZh = '创鸿信组合密封圈可集成不同弹性密封材料或支撑结构，减少零散零件，简化装配并提升静密封界面的稳定性。'
+    const featureTitle1En = 'Integrated Structure'
+    const featureTitle1Zh = '集成结构'
+    const featureText1En = 'Helps reduce part count and supports easier installation in compact assemblies.'
+    const featureText1Zh = '减少零件数量，便于在紧凑型结构中快速装配。'
+    const featureTitle2En = 'Media Separation'
+    const featureTitle2Zh = '介质隔离'
+    const featureText2En = 'Useful where different chambers, ports, or sealing faces must remain isolated.'
+    const featureText2Zh = '适用于多腔体、多通道或多密封面之间需要介质隔离的场景。'
+    const featureTitle3En = 'Custom Engineering'
+    const featureTitle3Zh = '定制设计'
+    const featureText3En = 'Can be tailored around flange geometry, compression targets, and operating media.'
+    const featureText3Zh = '可围绕法兰结构、压缩要求和工作介质进行定制开发。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

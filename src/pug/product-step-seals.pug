@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Step Seals'
+    const pageTitleEn = 'CHX - Step Seals'
+    const pageTitleZh = '创鸿信 - 斯特封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.stepSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Step Seals'
+    const heroTitleZh = '斯特封'
+    const heroTextEn = 'Single-acting, O-Ring energized sealing elements for demanding reciprocating hydraulic applications.'
+    const heroTextZh = '适用于高要求液压往复系统的单作用蓄能式密封元件。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/4.jpg'
+    const productNameEn = 'Step Seals'
+    const productNameZh = '斯特封'
+    const productLeadEn = 'A strong fit for rod or piston sealing positions where low friction and wear resistance must be balanced with sealing efficiency.'
+    const productLeadZh = '适用于需要平衡低摩擦、耐磨性和密封效率的活塞或活塞杆密封位置。'
+    const productDescriptionEn = 'CHX Step Seals use PTFE-based sealing elements with elastomer energizers to support high sealing efficiency, low stick-slip behavior, and good wear resistance in reciprocating systems.'
+    const productDescriptionZh = '创鸿信斯特封采用 PTFE 基密封体与弹性蓄能结构组合，适用于往复系统中的高效密封、低爬行和良好耐磨需求。'
+    const featureTitle1En = 'Single-Acting Sealing'
+    const featureTitle1Zh = '单作用密封'
+    const featureText1En = 'Commonly used where a defined pressure direction and efficient sealing response are required.'
+    const featureText1Zh = '适用于受压方向明确并要求高效密封响应的工况。'
+    const featureTitle2En = 'Low Stick-Slip'
+    const featureTitle2Zh = '低爬行'
+    const featureText2En = 'Supports smoother startup and movement in hydraulic cylinder applications.'
+    const featureText2Zh = '有助于改善液压缸启动力和运动平顺性。'
+    const featureTitle3En = 'Closed Groove Installation'
+    const featureTitle3Zh = '沟槽适配'
+    const featureText3En = 'Suitable for standard hydraulic groove concepts and tandem sealing arrangements.'
+    const featureText3Zh = '适合常见液压沟槽结构及串联密封方案。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

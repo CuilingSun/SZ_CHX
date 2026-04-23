@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Spring-Energized Seals'
+    const pageTitleEn = 'CHX - Spring-Energized Seals'
+    const pageTitleZh = '创鸿信 - 泛塞封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.springSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Spring-Energized Seals'
+    const heroTitleZh = '泛塞封'
+    const heroTextEn = 'PTFE-based sealing solutions energized by internal springs for demanding dynamic and static sealing conditions.'
+    const heroTextZh = '采用弹簧蓄能结构的高性能密封方案，适用于高要求的动态与静态密封工况。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/2.jpg'
+    const productNameEn = 'Spring-Energized Seals'
+    const productNameZh = '泛塞封'
+    const productLeadEn = 'Suitable for low-friction movement, aggressive media, and applications where wide operating windows are required.'
+    const productLeadZh = '适用于低摩擦运动、复杂介质及工作窗口较宽的高要求密封场景。'
+    const productDescriptionEn = 'CHX Spring-Energized Seals use PTFE-based jackets with metallic spring energizers to maintain sealing force, chemical compatibility, and reliable performance under demanding service conditions.'
+    const productDescriptionZh = '创鸿信泛塞封采用 PTFE 基材外套与金属弹簧蓄能结构，在严苛工况下兼顾密封比压、介质兼容性和长期稳定性。'
+    const featureTitle1En = 'Low Friction'
+    const featureTitle1Zh = '低摩擦'
+    const featureText1En = 'Supports precision motion systems that require smooth startup and stable running behavior.'
+    const featureText1Zh = '适合对启动平顺性和运行稳定性有要求的精密运动系统。'
+    const featureTitle2En = 'Chemical Resistance'
+    const featureTitle2Zh = '耐介质'
+    const featureText2En = 'PTFE-based jackets help the seal handle a broad range of chemicals and process media.'
+    const featureText2Zh = 'PTFE 基材外套有助于应对更广泛的化学介质和工艺流体。'
+    const featureTitle3En = 'Demanding Service'
+    const featureTitle3Zh = '严苛工况'
+    const featureText3En = 'Commonly selected for high-end equipment in energy, semiconductor, and process industries.'
+    const featureText3Zh = '常用于能源、半导体和过程工业中的高端设备密封。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

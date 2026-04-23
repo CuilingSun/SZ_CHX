@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Glyd Rings'
+    const pageTitleEn = 'CHX - Glyd Rings'
+    const pageTitleZh = '创鸿信 - 格莱圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.glydRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Glyd Rings'
+    const heroTitleZh = '格莱圈'
+    const heroTextEn = 'Low-friction, O-Ring energized sealing elements for piston and rod applications in dynamic hydraulic systems.'
+    const heroTextZh = '适用于液压活塞和活塞杆的低摩擦密封方案，常见于高性能动态系统。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/3.jpg'
+    const productNameEn = 'Glyd Rings'
+    const productNameZh = '格莱圈'
+    const productLeadEn = 'A preferred option for hydraulic actuators that need low friction, smooth movement, and reliable sealing efficiency.'
+    const productLeadZh = '适用于对低摩擦、平稳运动和密封效率有要求的液压执行机构。'
+    const productDescriptionEn = 'CHX Glyd Rings use a PTFE-based seal ring energized by an elastomer O-Ring to deliver low friction, reduced stick-slip, and good wear resistance in dynamic service.'
+    const productDescriptionZh = '创鸿信格莱圈采用 PTFE 基密封环与弹性 O 型圈蓄能结构，在动态工况下兼顾低摩擦、低爬行和良好耐磨性。'
+    const featureTitle1En = 'Low Friction Motion'
+    const featureTitle1Zh = '低摩擦运动'
+    const featureText1En = 'Helps reduce stick-slip and breakout force in cylinder applications.'
+    const featureText1Zh = '有助于降低油缸运行中的爬行现象和启动阻力。'
+    const featureTitle2En = 'Dynamic Sealing'
+    const featureTitle2Zh = '动态密封'
+    const featureText2En = 'Suitable for reciprocating piston and rod positions in precision hydraulic assemblies.'
+    const featureText2Zh = '适用于精密液压系统中的活塞和活塞杆往复密封位置。'
+    const featureTitle3En = 'Wear Performance'
+    const featureTitle3Zh = '耐磨表现'
+    const featureText3En = 'The sealing structure supports long service life in actuator cylinders and similar equipment.'
+    const featureText3Zh = '在执行器油缸及类似设备中具备较好的耐磨寿命表现。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

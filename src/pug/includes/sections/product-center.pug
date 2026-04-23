@@ -1,58 +1,65 @@
 section#productCenter.page-section.product-center
     .container
-        .row.g-4.g-xl-5
-            .col-lg-3
-                aside.product-sidebar
-                    p.product-sidebar-kicker(data-i18n='productCenter.kicker', data-en='Category Filter', data-zh='分类筛选') Category Filter
-                    h2.product-sidebar-title(data-i18n='productCenter.title', data-en='Product Center', data-zh='产品中心') Product Center
-                    p.product-sidebar-copy(data-i18n='productCenter.text', data-en='Browse categories and quickly locate the product family you need.' data-zh='通过左侧分类快速筛选，找到你需要的产品系列。') Browse categories and quickly locate the product family you need.
-                    .product-filter-list(role='tablist', aria-label='Product categories')
-                        button.product-filter-btn.active(type='button', data-product-filter='all', data-i18n='productCenter.filter.all', data-en='All Products', data-zh='全部产品') All Products
-                        button.product-filter-btn(type='button', data-product-filter='o-rings', data-i18n='productCenter.filter.oRings', data-en='O-Rings', data-zh='O型圈') O-Rings
-                        button.product-filter-btn(type='button', data-product-filter='v-rings', data-i18n='productCenter.filter.vRings', data-en='V-Rings', data-zh='V型圈') V-Rings
-                        button.product-filter-btn(type='button', data-product-filter='x-rings', data-i18n='productCenter.filter.xRings', data-en='X-Rings', data-zh='X型圈') X-Rings
-                        button.product-filter-btn(type='button', data-product-filter='y-rings', data-i18n='productCenter.filter.yRings', data-en='Y-Rings', data-zh='Y型圈') Y-Rings
-                        button.product-filter-btn(type='button', data-product-filter='flat-washers', data-i18n='productCenter.filter.flatWashers', data-en='Flat Washers', data-zh='平垫圈') Flat Washers
-                        button.product-filter-btn(type='button', data-product-filter='rubber-products', data-i18n='productCenter.filter.rubberProducts', data-en='Rubber Products', data-zh='橡胶制品') Rubber Products
-            .col-lg-9
-                .product-content-panel
-                    .product-content-header
-                        h3.product-content-heading(data-i18n='productCenter.gridTitle', data-en='Industrial Product Catalog', data-zh='工业产品目录') Industrial Product Catalog
-                        p.product-content-copy(data-i18n='productCenter.gridText', data-en='Each product card links to an individual detail page for specifications, use cases, and product highlights.' data-zh='每个产品卡片都可进入独立详情页，查看规格、应用场景和产品亮点。') Each product card links to an individual detail page for specifications, use cases, and product highlights.
-                    .product-grid
-                        a.product-card(href='product-o-rings.html', data-product-category='o-rings')
-                            .product-card-media
-                                img(src='assets/img/portfolio/1.jpg', alt='O-Rings')
-                            .product-card-body
-                                p.product-card-category(data-i18n='productCenter.card1.category', data-en='Sealing Ring Series', data-zh='密封圈系列') Sealing Ring Series
-                                h4.product-card-title(data-i18n='productCenter.card1.title', data-en='O-Rings', data-zh='O型圈') O-Rings
-                        a.product-card(href='product-v-rings.html', data-product-category='v-rings')
-                            .product-card-media
-                                img(src='assets/img/portfolio/2.jpg', alt='V-Rings')
-                            .product-card-body
-                                p.product-card-category(data-i18n='productCenter.card2.category', data-en='Rotary Sealing Series', data-zh='旋转密封系列') Rotary Sealing Series
-                                h4.product-card-title(data-i18n='productCenter.card2.title', data-en='V-Rings', data-zh='V型圈') V-Rings
-                        a.product-card(href='product-x-rings.html', data-product-category='x-rings')
-                            .product-card-media
-                                img(src='assets/img/portfolio/3.jpg', alt='X-Rings')
-                            .product-card-body
-                                p.product-card-category(data-i18n='productCenter.card3.category', data-en='Dynamic Seal Series', data-zh='动态密封系列') Dynamic Seal Series
-                                h4.product-card-title(data-i18n='productCenter.card3.title', data-en='X-Rings', data-zh='X型圈') X-Rings
-                        a.product-card(href='product-y-rings.html', data-product-category='y-rings')
-                            .product-card-media
-                                img(src='assets/img/portfolio/4.jpg', alt='Y-Rings')
-                            .product-card-body
-                                p.product-card-category(data-i18n='productCenter.card4.category', data-en='Hydraulic Seal Series', data-zh='液压密封系列') Hydraulic Seal Series
-                                h4.product-card-title(data-i18n='productCenter.card4.title', data-en='Y-Rings', data-zh='Y型圈') Y-Rings
-                        a.product-card(href='product-flat-washers.html', data-product-category='flat-washers')
-                            .product-card-media
-                                img(src='assets/img/portfolio/5.jpg', alt='Flat Washers')
-                            .product-card-body
-                                p.product-card-category(data-i18n='productCenter.card5.category', data-en='Auxiliary Seal Series', data-zh='辅助密封系列') Auxiliary Seal Series
-                                h4.product-card-title(data-i18n='productCenter.card5.title', data-en='Flat Washers', data-zh='平垫圈') Flat Washers
-                        a.product-card(href='product-rubber-products.html', data-product-category='rubber-products')
-                            .product-card-media
-                                img(src='assets/img/portfolio/6.jpg', alt='Rubber Products')
-                            .product-card-body
-                                p.product-card-category(data-i18n='productCenter.card6.category', data-en='Custom Rubber Solutions', data-zh='定制橡胶方案') Custom Rubber Solutions
-                                h4.product-card-title(data-i18n='productCenter.card6.title', data-en='Rubber Products', data-zh='橡胶制品') Rubber Products
+        .product-overview-panel
+            .product-overview-copy
+                p.product-overview-kicker
+                    span.product-overview-kicker-zh 创鸿信产品体系
+                    span.product-overview-kicker-en CHX Product System
+                h2.product-overview-title
+                    span.product-overview-title-zh 面向设备制造、液压系统、旋转密封与定制需求的工业密封产品体系
+                    span.product-overview-title-en
+                        | Industrial Sealing Products for Equipment,
+                        br
+                        | Hydraulic, Rotary, and Custom Applications
+                p.product-overview-text
+                    span.product-overview-text-zh 创鸿信提供密封圈、液压密封件、油封、工程密封件及相关工业配件，服务于设备制造、维修保养和备件替换等多类工业需求。
+                    span.product-overview-text-en
+                        | CHX supplies a broad range of sealing rings, hydraulic seals, oil seals,
+                        br
+                        | engineered sealing components, and related industrial parts for equipment manufacturing, maintenance, and replacement needs.
+
+        .product-directory-layout
+            aside.product-directory-sidebar
+                p.product-directory-kicker(data-i18n='products.directory.kicker', data-en='Category Index', data-zh='分类索引') Category Index
+                nav.product-directory-nav(aria-label='Product categories')
+                    each category, categoryIndex in productCategories
+                        a.product-directory-link(class=categoryIndex === 0 ? 'is-active' : '', href=`#${category.key}`, data-product-directory-link=category.key)
+                            .product-directory-link-row
+                                span.product-directory-link-index= `0${categoryIndex + 1}`
+                                .product-directory-link-title
+                                    span.product-directory-link-title-zh= category.titleZh
+                                    span.product-directory-link-title-en= category.titleEn
+                            .product-directory-link-detail
+                                p.product-directory-link-copy(data-i18n=`products.category.${category.key}.description`, data-en=category.descriptionEn, data-zh=category.descriptionZh)= category.descriptionEn
+                                p.product-directory-link-count
+                                    span.product-directory-link-count-label(data-i18n='products.overview.summaryLabel', data-en='Product Count', data-zh='产品数量') Product Count
+                                    strong= category.items.length
+
+            .product-directory-content
+                .product-category-stack
+                    each category, categoryIndex in productCategories
+                        article(id=category.key class=`product-category-panel ${category.themeClass}` data-product-section=category.key)
+                            .product-category-panel-header
+                                .product-category-panel-heading
+                                    p.product-category-panel-index= `0${categoryIndex + 1}`
+                                    h2.product-category-panel-title
+                                        span.product-category-panel-title-zh= category.titleZh
+                                        span.product-category-panel-title-en= category.titleEn
+                                    p.product-category-panel-copy(data-i18n=`products.category.${category.key}.description`, data-en=category.descriptionEn, data-zh=category.descriptionZh)= category.descriptionEn
+                                .product-category-panel-summary
+                                    p.product-category-summary-label(data-i18n='products.overview.summaryLabel', data-en='Product Count', data-zh='产品数量') Product Count
+                                    p.product-category-summary-value= category.items.length
+                            .product-card-grid
+                                each item in category.items
+                                    a.product-card(href=item.link)
+                                        .product-card-media
+                                            img(src=item.image, alt=item.nameEn)
+                                        .product-card-body
+                                            p.product-card-series= category.titleEn
+                                            h3.product-card-title
+                                                span.product-card-title-zh= item.nameZh
+                                                span.product-card-title-en= item.nameEn
+                                            p.product-card-copy(data-i18n=`products.item.${item.key}.description`, data-en=item.descriptionEn, data-zh=item.descriptionZh)= item.descriptionEn
+                                        .product-card-footer
+                                            span.product-card-action(data-i18n=`products.item.${item.key}.action`, data-en=item.actionEn, data-zh=item.actionZh)= item.actionEn
+                                            span.product-card-arrow &rarr;

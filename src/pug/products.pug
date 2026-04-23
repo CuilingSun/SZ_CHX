@@ -4,13 +4,374 @@
     const pageTitleZh = '创鸿信 - 产品中心'
     const currentPage = 'products'
     const heroKey = 'products.hero'
-    const heroEyebrowEn = 'Industrial Product Portfolio'
-    const heroEyebrowZh = '工业产品矩阵'
+    const heroEyebrowEn = 'Industrial Sealing Portfolio'
+    const heroEyebrowZh = '工业密封产品体系'
     const heroTitleEn = 'Products'
     const heroTitleZh = '产品中心'
-    const heroTextEn = 'Explore our sealing and rubber component catalog through category filters, product cards, and dedicated detail pages.'
-    const heroTextZh = '通过左侧分类筛选、右侧产品卡片以及独立详情页，快速浏览我们的密封与橡胶制品目录。'
+    const heroTextEn = 'Explore CHX product families through a structured catalog built around sealing function, hydraulic application, rotary sealing, engineered solutions, and industrial support parts.'
+    const heroTextZh = '通过更清晰的分类结构，快速了解创鸿信在密封圈、液压密封、油封、工程密封及工业配件领域的主要产品。'
     const heroText = heroTextEn
+
+    const productCategories = [
+        {
+            key: 'sealing-rings',
+            titleZh: '密封圈类',
+            titleEn: 'Sealing Rings',
+            descriptionEn: 'Core ring-type sealing solutions for static sealing, fitting joints, low-friction motion, and maintenance replacement needs.',
+            descriptionZh: '覆盖静密封、接头密封、低摩擦运动密封及维修替换需求的基础环形密封方案。',
+            themeClass: 'theme-rings',
+            items: [
+                {
+                    key: 'o-ring',
+                    nameZh: 'O型圈',
+                    nameEn: 'O-Ring',
+                    descriptionEn: 'A widely used basic sealing element suitable for static sealing and selected dynamic sealing conditions.',
+                    descriptionZh: '应用广泛的基础密封元件，适用于静密封和部分动态密封场景。',
+                    image: 'assets/img/portfolio/1.jpg',
+                    link: 'product-o-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'x-ring',
+                    nameZh: 'X型圈',
+                    nameEn: 'X-Ring',
+                    descriptionEn: 'A four-lobe sealing profile that improves stability and reduces rolling in dynamic applications.',
+                    descriptionZh: '四唇结构有助于提升动态密封稳定性，并降低滚动和扭转风险。',
+                    image: 'assets/img/portfolio/3.jpg',
+                    link: 'product-x-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'ed-ring',
+                    nameZh: 'ED圈',
+                    nameEn: 'ED Ring',
+                    descriptionEn: 'Designed for threaded fittings and hydraulic joints to achieve reliable pressure sealing performance.',
+                    descriptionZh: '常用于螺纹接头和液压连接位置，适合压力密封场景。',
+                    image: 'assets/img/portfolio/4.jpg',
+                    link: 'product-ed-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'composite-seal-ring',
+                    nameZh: '组合密封圈',
+                    nameEn: 'Composite Seal Ring',
+                    descriptionEn: 'Combines multiple sealing materials or lips to improve assembly stability and media isolation.',
+                    descriptionZh: '通过组合结构提升装配稳定性与介质隔离效果，适合多条件密封场景。',
+                    image: 'assets/img/portfolio/5.jpg',
+                    link: 'product-composite-seal-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'spring-seal',
+                    nameZh: '泛塞封',
+                    nameEn: 'Spring Seal',
+                    descriptionEn: 'A spring-energized seal for low friction, chemical resistance, and demanding dynamic conditions.',
+                    descriptionZh: '适用于低摩擦、耐化学介质及高要求动态工况的弹簧蓄能密封方案。',
+                    image: 'assets/img/portfolio/2.jpg',
+                    link: 'product-spring-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'ptfe-seal-ring',
+                    nameZh: 'PTFE密封圈',
+                    nameEn: 'PTFE Seal Ring',
+                    descriptionEn: 'Offers low friction and strong media compatibility for aggressive fluids and clean applications.',
+                    descriptionZh: '具备低摩擦和良好介质适应性，适用于腐蚀性介质及洁净工况。',
+                    image: 'assets/img/portfolio/6.jpg',
+                    link: 'product-ptfe-seal-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'o-ring-kits',
+                    nameZh: 'O型圈套装 / 修理盒',
+                    nameEn: 'O-Ring Kits / Repair Box',
+                    descriptionEn: 'A maintenance-friendly assortment for fast size selection and on-site replacement work.',
+                    descriptionZh: '面向维修保养场景，便于快速选型和现场更换常用规格 O 型圈。',
+                    image: 'assets/img/portfolio/1.jpg',
+                    link: 'product-o-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                }
+            ]
+        },
+        {
+            key: 'hydraulic-seals',
+            titleZh: '液压密封件',
+            titleEn: 'Hydraulic Seals',
+            descriptionEn: 'Developed for hydraulic cylinders and reciprocating systems with attention to pressure resistance, wear life, and sealing reliability.',
+            descriptionZh: '面向液压缸与往复运动系统，兼顾耐压能力、耐磨寿命与密封稳定性。',
+            themeClass: 'theme-hydraulic',
+            items: [
+                {
+                    key: 'u-cup',
+                    nameZh: 'U型密封',
+                    nameEn: 'U-Cup',
+                    descriptionEn: 'Commonly used in hydraulic cylinder systems with strong pressure sealing and stable service life.',
+                    descriptionZh: '常用于液压缸系统，具备良好的密封性与耐压性能。',
+                    image: 'assets/img/portfolio/4.jpg',
+                    link: 'product-y-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'un-uh-dh',
+                    nameZh: 'UN / UH / DH 系列',
+                    nameEn: 'UN / UH / DH Series',
+                    descriptionEn: 'Standard hydraulic seal profiles suitable for common reciprocating sealing groove requirements.',
+                    descriptionZh: '适用于常规液压往复密封沟槽要求的标准型液压密封系列。',
+                    image: 'assets/img/portfolio/4.jpg',
+                    link: 'product-y-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'piston-seal',
+                    nameZh: '活塞密封',
+                    nameEn: 'Piston Seal',
+                    descriptionEn: 'Designed to isolate pressure chambers efficiently inside cylinders and hydraulic assemblies.',
+                    descriptionZh: '用于液压缸活塞位置，有效分隔压力腔并保持系统效率。',
+                    image: 'assets/img/portfolio/3.jpg',
+                    link: 'product-y-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'rod-seal',
+                    nameZh: '杆密封',
+                    nameEn: 'Rod Seal',
+                    descriptionEn: 'Installed on piston rods to control media leakage under reciprocating movement.',
+                    descriptionZh: '安装于活塞杆位置，用于控制往复运动下的介质泄漏。',
+                    image: 'assets/img/portfolio/2.jpg',
+                    link: 'product-y-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'wiper-dust-seal',
+                    nameZh: '防尘密封',
+                    nameEn: 'Wiper / Dust Seal',
+                    descriptionEn: 'Protects hydraulic systems by blocking dust, mud, and contaminants from entering the cylinder.',
+                    descriptionZh: '阻隔灰尘、泥水和外部污染物进入系统，保护液压缸稳定运行。',
+                    image: 'assets/img/portfolio/5.jpg',
+                    link: 'product-y-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'pdu-pdi-psd',
+                    nameZh: 'PDU / PDI / PSD 系列',
+                    nameEn: 'PDU / PDI / PSD Series',
+                    descriptionEn: 'Compact hydraulic sealing profiles for different groove standards and assembly structures.',
+                    descriptionZh: '适用于不同沟槽标准和装配结构的紧凑型液压密封方案。',
+                    image: 'assets/img/portfolio/6.jpg',
+                    link: 'product-y-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                }
+            ]
+        },
+        {
+            key: 'oil-seals',
+            titleZh: '油封类',
+            titleEn: 'Oil Seals',
+            descriptionEn: 'Focused on rotary shafts, drivetrain systems, and automotive applications with dependable leak control and contamination protection.',
+            descriptionZh: '适用于旋转轴、传动系统与汽车零部件密封，兼顾防漏、防尘与长期稳定运行。',
+            themeClass: 'theme-oil',
+            items: [
+                {
+                    key: 'tc-oil-seal',
+                    nameZh: 'TC骨架油封',
+                    nameEn: 'TC Oil Seal',
+                    descriptionEn: 'A standard rotary shaft sealing solution widely used in automotive and industrial rotating equipment.',
+                    descriptionZh: '适用于旋转轴密封，广泛应用于汽车与工业设备。',
+                    image: 'assets/img/portfolio/1.jpg',
+                    link: 'product-tc-oil-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'va-vs-water-seal',
+                    nameZh: 'VA / VS 水封',
+                    nameEn: 'VA / VS Water Seal',
+                    descriptionEn: 'Suitable for water protection and splash sealing where axial lip contact is required.',
+                    descriptionZh: '适用于防水、防溅和轴向接触密封场景，常见于设备防护结构。',
+                    image: 'assets/img/portfolio/2.jpg',
+                    link: 'product-va-vs-water-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'automotive-oil-seal',
+                    nameZh: '汽车油封',
+                    nameEn: 'Automotive Oil Seal',
+                    descriptionEn: 'Built for engines, transmissions, and wheel-end systems under automotive operating conditions.',
+                    descriptionZh: '适用于发动机、变速系统和车桥等汽车工况中的旋转密封需求。',
+                    image: 'assets/img/portfolio/3.jpg',
+                    link: 'product-automotive-oil-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'steering-oil-seal',
+                    nameZh: '方向机油封',
+                    nameEn: 'Steering Gear Oil Seal',
+                    descriptionEn: 'Specialized for steering systems requiring stable leakage control and durable rotary sealing.',
+                    descriptionZh: '面向方向机系统设计，满足长期稳定防漏与旋转密封要求。',
+                    image: 'assets/img/portfolio/4.jpg',
+                    link: 'product-steering-gear-oil-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'ina-oil-seal',
+                    nameZh: 'INA油封',
+                    nameEn: 'INA Oil Seal',
+                    descriptionEn: 'Used in transmission and precision rotary assemblies requiring consistent shaft sealing quality.',
+                    descriptionZh: '适用于传动及精密旋转结构，满足稳定的轴类密封要求。',
+                    image: 'assets/img/portfolio/5.jpg',
+                    link: 'product-ina-oil-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'combined-oil-seal',
+                    nameZh: '组合油封',
+                    nameEn: 'Combined Oil Seal',
+                    descriptionEn: 'An integrated sealing structure for compact layouts and multiple sealing functions in one assembly.',
+                    descriptionZh: '采用集成结构实现多重密封功能，适合空间紧凑的装配系统。',
+                    image: 'assets/img/portfolio/6.jpg',
+                    link: 'product-combined-oil-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                }
+            ]
+        },
+        {
+            key: 'engineered-seals',
+            titleZh: '工程密封件',
+            titleEn: 'Engineered Seals',
+            descriptionEn: 'High-performance sealing solutions for low friction, precision motion, and demanding pressure or chemical environments.',
+            descriptionZh: '针对高性能液压、低摩擦运动和复杂工况设计，适合高要求设备与定制密封方案。',
+            themeClass: 'theme-engineered',
+            items: [
+                {
+                    key: 'glyd-ring',
+                    nameZh: '格莱圈',
+                    nameEn: 'Glyd Ring',
+                    descriptionEn: 'A low-friction sealing solution used in precision hydraulic piston and rod applications.',
+                    descriptionZh: '适用于高性能液压系统，常用于低摩擦、高可靠性工况。',
+                    image: 'assets/img/portfolio/3.jpg',
+                    link: 'product-glyd-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'step-seal',
+                    nameZh: '斯特封',
+                    nameEn: 'Step Seal',
+                    descriptionEn: 'Provides efficient reciprocating sealing where wear resistance and service stability are important.',
+                    descriptionZh: '适用于往复系统中的高效密封需求，兼顾耐磨与使用稳定性。',
+                    image: 'assets/img/portfolio/4.jpg',
+                    link: 'product-step-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'guide-ring',
+                    nameZh: '导向带 / 耐磨带',
+                    nameEn: 'Guide Ring / Wear Ring',
+                    descriptionEn: 'Supports guiding and anti-extrusion performance while protecting metallic mating surfaces.',
+                    descriptionZh: '提供导向与抗挤出支撑，同时减少金属接触面的磨损风险。',
+                    image: 'assets/img/portfolio/5.jpg',
+                    link: 'product-guide-rings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'ptfe-composite-seal',
+                    nameZh: 'PTFE复合密封',
+                    nameEn: 'PTFE Composite Seal',
+                    descriptionEn: 'Combines PTFE sliding performance with elastic energizing for harsh media and demanding speeds.',
+                    descriptionZh: '结合 PTFE 低摩擦特性与弹性补偿能力，适用于严苛介质和复杂速度条件。',
+                    image: 'assets/img/portfolio/6.jpg',
+                    link: 'product-ptfe-composite-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'high-performance-composite-seal',
+                    nameZh: '高性能组合密封',
+                    nameEn: 'High-Performance Composite Seal',
+                    descriptionEn: 'Engineered for demanding pressure, speed, and chemical conditions in advanced industrial equipment.',
+                    descriptionZh: '面向高压、高速及复杂介质工况，适合高端工业设备密封方案。',
+                    image: 'assets/img/portfolio/2.jpg',
+                    link: 'product-high-performance-composite-seals.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                }
+            ]
+        },
+        {
+            key: 'industrial-parts',
+            titleZh: '工业配件 / 其他',
+            titleEn: 'Industrial Parts',
+            descriptionEn: 'Complementary industrial parts for transmission, vibration absorption, maintenance replacement, and custom rubber support needs.',
+            descriptionZh: '覆盖传动、缓冲与配套橡胶件，满足设备维修、配套采购与定制化需求。',
+            themeClass: 'theme-industrial',
+            items: [
+                {
+                    key: 'ktr-coupling',
+                    nameZh: 'KTR联轴器',
+                    nameEn: 'KTR Coupling',
+                    descriptionEn: 'A flexible transmission component for torque transfer, alignment compensation, and stable machine operation.',
+                    descriptionZh: '用于扭矩传递和偏差补偿，适合工业设备中的稳定动力连接。',
+                    image: 'assets/img/portfolio/1.jpg',
+                    link: 'product-ktr-couplings.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'elastomer',
+                    nameZh: '弹性体',
+                    nameEn: 'Elastomer Element',
+                    descriptionEn: 'A replaceable flexible element used in couplings and vibration-damping assemblies.',
+                    descriptionZh: '常用于联轴器及减震结构，便于更换并提升缓冲吸振效果。',
+                    image: 'assets/img/portfolio/2.jpg',
+                    link: 'product-elastomer-elements.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'industrial-rubber-parts',
+                    nameZh: '工业橡胶制品',
+                    nameEn: 'Industrial Rubber Parts',
+                    descriptionEn: 'Includes molded rubber components for sealing, buffering, protection, and custom industrial support.',
+                    descriptionZh: '涵盖密封、缓冲、防护及其他工业用途的定制橡胶制品。',
+                    image: 'assets/img/portfolio/6.jpg',
+                    link: 'product-rubber-products.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                },
+                {
+                    key: 'seal-kits',
+                    nameZh: '密封件套装',
+                    nameEn: 'Seal Kits',
+                    descriptionEn: 'Maintenance-oriented kits prepared for fast replacement and equipment service work.',
+                    descriptionZh: '面向维修保养与设备服务场景，便于快速更换常用密封件组合。',
+                    image: 'assets/img/portfolio/5.jpg',
+                    link: 'product-rubber-products.html',
+                    actionEn: 'View Details',
+                    actionZh: '查看详情'
+                }
+            ]
+        }
+    ]
 
 doctype html
 html(lang='en')

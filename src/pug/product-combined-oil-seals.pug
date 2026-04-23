@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Combined Oil Seals'
+    const pageTitleEn = 'CHX - Combined Oil Seals'
+    const pageTitleZh = '创鸿信 - 组合油封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.combinedOilSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Combined Oil Seals'
+    const heroTitleZh = '组合油封'
+    const heroTextEn = 'Integrated rotary sealing structures for applications that need multiple lips, better contamination control, and compact packaging.'
+    const heroTextZh = '采用集成式多唇结构的旋转密封方案，适用于需要更强防污染能力和紧凑布置的设备。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/6.jpg'
+    const productNameEn = 'Combined Oil Seals'
+    const productNameZh = '组合油封'
+    const productLeadEn = 'Suitable for wheel ends, heavy equipment, and industrial shafts where primary sealing and exclusion functions must work together.'
+    const productLeadZh = '适用于轮端、重载设备和工业轴系等同时需要主密封与污染隔离功能的场景。'
+    const productDescriptionEn = 'CHX Combined Oil Seals use integrated lip and support structures to improve sealing life, contamination exclusion, and installation efficiency in demanding rotary equipment.'
+    const productDescriptionZh = '创鸿信组合油封采用集成式唇口与支撑结构，可在严苛旋转设备中提升密封寿命、防污染能力和装配效率。'
+    const featureTitle1En = 'Integrated Functions'
+    const featureTitle1Zh = '功能集成'
+    const featureText1En = 'One assembly can support both lubricant retention and exclusion of external contaminants.'
+    const featureText1Zh = '单一总成即可兼顾润滑保持与外部污染隔离。'
+    const featureTitle2En = 'Heavy-Duty Protection'
+    const featureTitle2Zh = '重载防护'
+    const featureText2En = 'Useful in applications exposed to mud, water, dust, and harsh operating environments.'
+    const featureText2Zh = '适用于泥水、粉尘及复杂环境下的重载应用。'
+    const featureTitle3En = 'Service Efficiency'
+    const featureTitle3Zh = '维护效率'
+    const featureText3En = 'Integrated structures can simplify replacement and improve assembly consistency.'
+    const featureText3Zh = '集成结构有助于简化更换流程并提升装配一致性。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

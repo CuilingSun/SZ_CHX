@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - ED Rings'
+    const pageTitleEn = 'CHX - ED Rings'
+    const pageTitleZh = '创鸿信 - ED圈'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.edRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'ED Rings'
+    const heroTitleZh = 'ED圈'
+    const heroTextEn = 'Bonded sealing rings developed for threaded fittings and hydraulic joints that require dependable pressure sealing.'
+    const heroTextZh = '适用于螺纹接头和液压连接位置的组合式密封圈，满足稳定的压力密封需求。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/4.jpg'
+    const productNameEn = 'ED Rings'
+    const productNameZh = 'ED圈'
+    const productLeadEn = 'A practical sealing choice for bolts, ports, and hydraulic connectors where compact static sealing is required.'
+    const productLeadZh = '适用于螺栓、油口和液压接头等位置，在有限安装空间内实现可靠静密封。'
+    const productDescriptionEn = 'CHX ED Rings combine an elastomer sealing element with a rigid carrier to support stable compression, easier assembly, and reliable sealing under pressure.'
+    const productDescriptionZh = '创鸿信 ED圈采用弹性密封体与刚性支撑件组合结构，兼顾压紧稳定性、装配便利性和受压密封可靠性。'
+    const featureTitle1En = 'Joint Sealing'
+    const featureTitle1Zh = '接头密封'
+    const featureText1En = 'Suitable for threaded hydraulic fittings, connectors, and pressure ports requiring reliable face sealing.'
+    const featureText1Zh = '适用于液压接头、螺纹连接和压力油口等需要端面密封的场景。'
+    const featureTitle2En = 'Stable Compression'
+    const featureTitle2Zh = '压缩稳定'
+    const featureText2En = 'The bonded structure helps control squeeze and supports more consistent installation quality.'
+    const featureText2Zh = '组合结构有助于控制压缩量，提升装配一致性和密封稳定性。'
+    const featureTitle3En = 'Industrial Compatibility'
+    const featureTitle3Zh = '工业适配'
+    const featureText3En = 'Available with material options selected around oil resistance, temperature, and media compatibility.'
+    const featureText3Zh = '可根据耐油性、温度和介质兼容性选择不同材料方案。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

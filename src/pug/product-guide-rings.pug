@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Guide Rings / Wear Rings'
+    const pageTitleEn = 'CHX - Guide Rings / Wear Rings'
+    const pageTitleZh = '创鸿信 - 导向带 / 耐磨带'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.guideRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Guide Rings / Wear Rings'
+    const heroTitleZh = '导向带 / 耐磨带'
+    const heroTextEn = 'Guiding elements for hydraulic cylinders that absorb side loads and prevent metal-to-metal contact.'
+    const heroTextZh = '用于液压缸导向与承载的功能件，可吸收侧向载荷并防止金属直接接触。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/5.jpg'
+    const productNameEn = 'Guide Rings / Wear Rings'
+    const productNameZh = '导向带 / 耐磨带'
+    const productLeadEn = 'Essential support components for pistons and rods in cylinders where alignment, wear control, and surface protection matter.'
+    const productLeadZh = '适用于活塞和活塞杆导向支撑位置，对对中性、耐磨性和表面保护都有帮助。'
+    const productDescriptionEn = 'CHX Guide Rings and Wear Rings guide moving parts in hydraulic cylinders, absorb transverse forces, and protect sealing lips and metal surfaces from direct contact and accelerated wear.'
+    const productDescriptionZh = '创鸿信导向带和耐磨带用于液压缸运动部件的导向支撑，可吸收横向力，避免金属直接接触，并保护密封唇口和配合表面。'
+    const featureTitle1En = 'Guiding Function'
+    const featureTitle1Zh = '导向作用'
+    const featureText1En = 'Keeps piston and rod movement more stable under side loading conditions.'
+    const featureText1Zh = '在存在侧向载荷时帮助保持活塞和活塞杆运动稳定。'
+    const featureTitle2En = 'Wear Protection'
+    const featureTitle2Zh = '耐磨保护'
+    const featureText2En = 'Prevents direct metal-to-metal contact and reduces wear on cylinder hardware.'
+    const featureText2Zh = '防止金属件直接接触，降低缸体和杆件的磨损风险。'
+    const featureTitle3En = 'Material Options'
+    const featureTitle3Zh = '材料方案'
+    const featureText3En = 'Can be selected around load level, friction behavior, and service environment.'
+    const featureText3Zh = '可根据载荷水平、摩擦表现和使用环境选择不同材料。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

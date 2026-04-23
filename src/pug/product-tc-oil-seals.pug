@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - TC Oil Seals'
+    const pageTitleEn = 'CHX - TC Oil Seals'
+    const pageTitleZh = '创鸿信 - TC骨架油封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.tcOilSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'TC Oil Seals'
+    const heroTitleZh = 'TC骨架油封'
+    const heroTextEn = 'A mainstream radial shaft sealing design for rotating equipment that requires oil retention and contamination exclusion.'
+    const heroTextZh = '适用于旋转轴系统的常用骨架油封结构，兼顾润滑保持与外界污染防护。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/1.jpg'
+    const productNameEn = 'TC Oil Seals'
+    const productNameZh = 'TC骨架油封'
+    const productLeadEn = 'Widely used in motors, reducers, pumps, and automotive assemblies where dependable rotary sealing is essential.'
+    const productLeadZh = '广泛应用于电机、减速机、泵类和汽车总成等需要稳定旋转密封的结构。'
+    const productDescriptionEn = 'CHX TC Oil Seals support reliable shaft sealing through a reinforced sealing profile designed to retain lubricant, reduce leakage, and help block dirt in rotary applications.'
+    const productDescriptionZh = '创鸿信 TC骨架油封通过带骨架支撑的唇口结构实现稳定轴封，满足润滑保持、泄漏控制及污染隔离需求。'
+    const featureTitle1En = 'Rotary Shaft Sealing'
+    const featureTitle1Zh = '旋转轴密封'
+    const featureText1En = 'Suitable for shafts in industrial drives, motors, gearboxes, and general machinery.'
+    const featureText1Zh = '适用于工业传动、电机、减速机及通用机械中的轴类密封。'
+    const featureTitle2En = 'Leakage Control'
+    const featureTitle2Zh = '防漏控制'
+    const featureText2En = 'Helps retain lubricants while preventing outside contamination from entering the housing.'
+    const featureText2Zh = '在保持润滑介质的同时，降低外部灰尘和杂质进入的风险。'
+    const featureTitle3En = 'Material Choice'
+    const featureTitle3Zh = '材质选择'
+    const featureText3En = 'Compound selection can be aligned with temperature range, shaft speed, and operating media.'
+    const featureText3Zh = '可根据温度、轴速和工作介质选择合适胶料与结构方案。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

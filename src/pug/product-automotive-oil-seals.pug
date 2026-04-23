@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Automotive Oil Seals'
+    const pageTitleEn = 'CHX - Automotive Oil Seals'
+    const pageTitleZh = '创鸿信 - 汽车油封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.automotiveOilSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'Automotive Oil Seals'
+    const heroTitleZh = '汽车油封'
+    const heroTextEn = 'Sealing solutions engineered around automotive temperatures, fluid compatibility, and contamination exclusion requirements.'
+    const heroTextZh = '围绕汽车工况中的温度、介质兼容性和防污染要求而设计的旋转密封方案。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/3.jpg'
+    const productNameEn = 'Automotive Oil Seals'
+    const productNameZh = '汽车油封'
+    const productLeadEn = 'Suitable for engines, transmissions, wheel ends, and auxiliary systems that need dependable leakage control.'
+    const productLeadZh = '适用于发动机、变速系统、轮端及辅助总成等对防漏和寿命有要求的部位。'
+    const productDescriptionEn = 'CHX Automotive Oil Seals focus on stable lip sealing, fluid compatibility, and exclusion of road contaminants to support durable operation in vehicle assemblies.'
+    const productDescriptionZh = '创鸿信汽车油封重视唇口密封稳定性、油液兼容性和道路污染隔离能力，适合长期车辆使用环境。'
+    const featureTitle1En = 'Vehicle Operating Conditions'
+    const featureTitle1Zh = '汽车工况'
+    const featureText1En = 'Designed around wide temperature swings, lubrication media, and continuous rotary service.'
+    const featureText1Zh = '适应较宽温度波动、润滑介质和持续旋转工况。'
+    const featureTitle2En = 'Contamination Exclusion'
+    const featureTitle2Zh = '防污染'
+    const featureText2En = 'Helps resist dirt, splash, and road debris entering wheel-end or drivetrain sealing positions.'
+    const featureText2Zh = '有助于阻隔轮端和传动部位常见的灰尘、飞溅和道路杂质。'
+    const featureTitle3En = 'Extended Service'
+    const featureTitle3Zh = '耐久使用'
+    const featureText3En = 'Suitable for replacement and OEM-support scenarios that value stable sealing life.'
+    const featureText3Zh = '适合重视密封寿命和长期稳定性的配套及替换需求。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug
