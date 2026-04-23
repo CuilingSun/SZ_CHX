@@ -335,8 +335,8 @@
         border-radius: 1.75rem;
         text-align: center;
         background:
-            linear-gradient(135deg, rgba(shade-color($primary, 55%), 0.97) 0%, rgba($gray-900, 0.99) 60%),
-            radial-gradient(ellipse at top left, rgba($primary, 0.18), transparent 55%);
+            linear-gradient(135deg, $navy 0%, shade-color($navy, 25%) 100%),
+            radial-gradient(ellipse at top left, rgba($primary, 0.25), transparent 50%);
 
         h2 {
             max-width: none;
