@@ -1,0 +1,327 @@
+//
+// Homepage sections
+//
+
+// ── Shared utilities ───────────────────────────────
+
+.home-section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.48rem;
+    padding: 0.32rem 0.9rem;
+    margin-bottom: 1.1rem;
+    border-radius: 2rem;
+    background-color: rgba($primary, 0.1);
+    color: shade-color($primary, 20%);
+    font-family: $headings-font-family;
+    font-size: 0.74rem;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 0.32rem;
+        height: 0.32rem;
+        border-radius: 50%;
+        background-color: $primary;
+        flex-shrink: 0;
+    }
+}
+
+.home-section-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.home-section-title {
+    margin-bottom: 0.75rem;
+    color: $navy;
+    font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+    line-height: 1.2;
+}
+
+.home-section-sub {
+    max-width: 44rem;
+    margin: 0 auto;
+    color: $gray-600;
+    font-size: 1.02rem;
+    line-height: 1.85;
+}
+
+// ── Stats bar ──────────────────────────────────────
+
+.home-stats {
+    padding: 0;
+    background-color: $navy;
+
+    .home-stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .home-stat {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        border-right: 1px solid rgba($white, 0.1);
+
+        &:last-child {
+            border-right: none;
+        }
+
+        strong {
+            display: block;
+            color: $primary;
+            font-family: $headings-font-family;
+            font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+            line-height: 1;
+            margin-bottom: 0.45rem;
+        }
+
+        span {
+            color: rgba($white, 0.65);
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+    }
+}
+
+// ── Product categories ─────────────────────────────
+
+.home-products {
+    padding: 5rem 0;
+    background-color: $white;
+
+    .home-products-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .home-product-card {
+        display: block;
+        padding: 2rem 1.5rem;
+        border: 1px solid rgba($navy, 0.1);
+        border-top: 3px solid transparent;
+        border-radius: 0.75rem;
+        background: $white;
+        text-decoration: none;
+        transition: transform 0.22s ease, box-shadow 0.22s ease, border-top-color 0.22s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1.2rem 2.4rem rgba($navy, 0.1);
+            border-top-color: $primary;
+            text-decoration: none;
+        }
+
+        .home-product-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.5rem;
+            height: 3.5rem;
+            margin-bottom: 1.25rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba($primary, 0.15), rgba($primary, 0.06));
+            color: shade-color($primary, 10%);
+            font-size: 1.2rem;
+        }
+
+        h3 {
+            margin-bottom: 0.5rem;
+            color: $navy;
+            font-size: 1.05rem;
+            font-weight: $font-weight-bold;
+            line-height: 1.4;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: $gray-600;
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+    }
+}
+
+// ── Industries (portfolio heading) ────────────────
+
+#portfolio .home-section-header {
+    margin-bottom: 2.5rem;
+}
+
+// ── Core strengths ─────────────────────────────────
+
+.home-strengths {
+    padding: 5rem 0;
+    background-color: rgba($gray-100, 0.55);
+
+    .home-strengths-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+
+    .home-strength-item {
+        text-align: center;
+
+        .home-strength-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            margin: 0 auto 1.25rem;
+            border-radius: 50%;
+            background-color: $navy;
+            color: $primary;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            margin-bottom: 0.75rem;
+            color: $navy;
+            font-size: 1.1rem;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: $gray-600;
+            font-size: 0.95rem;
+            line-height: 1.85;
+        }
+    }
+}
+
+// ── Certifications strip ───────────────────────────
+
+.home-certs {
+    padding: 3.5rem 0;
+    background-color: $white;
+    border-top: 1px solid rgba($navy, 0.07);
+    border-bottom: 1px solid rgba($navy, 0.07);
+
+    .home-certs-header {
+        text-align: center;
+        margin-bottom: 2.25rem;
+    }
+
+    .home-certs-grid {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+    }
+
+    .home-cert-badge {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.1rem 1.5rem;
+        border: 1px solid rgba($navy, 0.1);
+        border-radius: 0.75rem;
+        background: $white;
+        box-shadow: 0 2px 8px rgba($navy, 0.04);
+        min-width: 12rem;
+
+        .home-cert-icon {
+            font-size: 2rem;
+            color: $primary;
+            flex-shrink: 0;
+        }
+
+        strong {
+            display: block;
+            color: $navy;
+            font-size: 0.92rem;
+            font-weight: $font-weight-bold;
+            line-height: 1.3;
+        }
+
+        span {
+            display: block;
+            color: $gray-500;
+            font-size: 0.76rem;
+            margin-top: 0.15rem;
+        }
+    }
+}
+
+// ── Homepage CTA ───────────────────────────────────
+
+.home-cta {
+    padding: 5.5rem 0;
+    text-align: center;
+    background:
+        linear-gradient(135deg, $navy 0%, shade-color($navy, 25%) 100%),
+        radial-gradient(ellipse at top left, rgba($primary, 0.25), transparent 50%);
+
+    h2 {
+        max-width: 44rem;
+        margin: 0 auto 1rem;
+        color: $white;
+        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        line-height: 1.2;
+    }
+
+    p {
+        max-width: 38rem;
+        margin: 0 auto 2.25rem;
+        color: rgba($white, 0.72);
+        font-size: 1.05rem;
+        line-height: 1.85;
+    }
+
+    .home-cta-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+// ── Responsive ────────────────────────────────────
+
+@include media-breakpoint-down(lg) {
+    .home-products .home-products-grid,
+    .home-strengths .home-strengths-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .home-stats .home-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-stats .home-stat {
+        border-right: none;
+        border-bottom: 1px solid rgba($white, 0.1);
+
+        &:nth-child(2n) {
+            border-bottom: 1px solid rgba($white, 0.1);
+        }
+
+        &:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+    }
+
+    .home-cta .home-cta-actions .btn {
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .home-products .home-products-grid,
+    .home-strengths .home-strengths-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-certs .home-cert-badge {
+        min-width: 100%;
+    }
+}

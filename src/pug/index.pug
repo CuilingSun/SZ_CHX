@@ -13,16 +13,34 @@ html(lang='en')
 
         header.masthead
             .container
-                .masthead-subheading(data-i18n='home.hero.eyebrow', data-en='Welcome To Our Studio!', data-zh='欢迎来到我们的工作室！') Welcome To Our Studio!
-                .masthead-heading.text-uppercase(data-i18n='home.hero.title', data-en="It's Nice To Meet You", data-zh='很高兴认识你') It's Nice To Meet You
-                a.btn.btn-primary.btn-xl.text-uppercase(href='products.html', data-i18n='home.hero.button', data-en='Explore Products', data-zh='查看产品') Explore Products
+                p.masthead-eyebrow(data-i18n='home.hero.eyebrow', data-en='Professional Industrial Sealing Supplier', data-zh='专业工业密封件供应商') Professional Industrial Sealing Supplier
+                h1.masthead-heading.text-uppercase(data-i18n='home.hero.title', data-en='Sealing Solutions Built for Real Conditions', data-zh='为真实工况打造的密封解决方案') Sealing Solutions Built for Real Conditions
+                p.masthead-tagline(data-i18n='home.hero.tagline', data-en='20+ years · 3,000+ products · Global supply capability', data-zh='20余年经验 · 3,000余种产品 · 全球供货能力') 20+ years · 3,000+ products · Global supply capability
+                .masthead-actions
+                    a.btn.btn-primary.btn-xl.text-uppercase(href='products.html', data-i18n='home.hero.cta1', data-en='Explore Products', data-zh='查看产品') Explore Products
+                    a.btn.btn-outline-light.btn-xl.text-uppercase(href='contact.html', data-i18n='home.hero.cta2', data-en='Contact Us', data-zh='联系我们') Contact Us
 
-        include includes/sections/about.pug
+        section.home-stats
+            .container
+                .home-stats-grid
+                    .home-stat
+                        strong(data-i18n='stats.item1.value', data-en='20+', data-zh='20+') 20+
+                        span(data-i18n='stats.item1.label', data-en='Years of Industry Experience', data-zh='年行业经验') Years of Industry Experience
+                    .home-stat
+                        strong(data-i18n='stats.item2.value', data-en='3,000+', data-zh='3,000+') 3,000+
+                        span(data-i18n='stats.item2.label', data-en='Product Types', data-zh='产品种类') Product Types
+                    .home-stat
+                        strong(data-i18n='stats.item3.value', data-en='10+', data-zh='10+') 10+
+                        span(data-i18n='stats.item3.label', data-en='Industries Served', data-zh='服务行业') Industries Served
+                    .home-stat
+                        strong(data-i18n='stats.item4.value', data-en='Global', data-zh='全球') Global
+                        span(data-i18n='stats.item4.label', data-en='Supply Capability', data-zh='供货能力') Supply Capability
+
         include includes/sections/services.pug
         include includes/sections/team.pug
         include includes/sections/portfolio.pug
         include includes/sections/clients.pug
-        include includes/sections/contact.pug
+        include includes/sections/home-cta.pug
 
         include includes/site-footer.pug
 

@@ -1,15 +1,29 @@
-div.py-5
+section.home-certs
     .container
-        .row.align-items-center
-            .col-md-3.col-sm-6.my-3
-                a(href='#!')
-                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
-            .col-md-3.col-sm-6.my-3
-                a(href='#!')
-                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
-            .col-md-3.col-sm-6.my-3
-                a(href='#!')
-                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
-            .col-md-3.col-sm-6.my-3
-                a(href='#!')
-                    img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
+        .home-certs-header
+            p.home-section-label(data-i18n='certs.kicker', data-en='Certifications & Standards', data-zh='认证与标准') Certifications & Standards
+        .home-certs-grid
+            .home-cert-badge
+                .home-cert-icon
+                    i.fa-solid.fa-certificate(aria-hidden='true')
+                div
+                    strong ISO 9001
+                    span Quality Management System
+            .home-cert-badge
+                .home-cert-icon
+                    i.fa-solid.fa-shield-halved(aria-hidden='true')
+                div
+                    strong(data-i18n='certs.item2.title', data-en='Quality System', data-zh='品质体系') Quality System
+                    span(data-i18n='certs.item2.sub', data-en='Controlled Production Process', data-zh='受控生产流程') Controlled Production Process
+            .home-cert-badge
+                .home-cert-icon
+                    i.fa-solid.fa-globe(aria-hidden='true')
+                div
+                    strong(data-i18n='certs.item3.title', data-en='Global Supply', data-zh='全球供货') Global Supply
+                    span(data-i18n='certs.item3.sub', data-en='Export Ready', data-zh='具备出口资质') Export Ready
+            .home-cert-badge
+                .home-cert-icon
+                    i.fa-solid.fa-flask(aria-hidden='true')
+                div
+                    strong(data-i18n='certs.item4.title', data-en='Material Testing', data-zh='材料检测') Material Testing
+                    span(data-i18n='certs.item4.sub', data-en='In-house Verification', data-zh='内部检测能力') In-house Verification

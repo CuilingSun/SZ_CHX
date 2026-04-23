@@ -1,31 +1,37 @@
-section#services.page-section
+section#products.home-products
     .container
-        .text-center
-            h2.section-heading.text-uppercase(data-i18n='services.heading', data-en='Products', data-zh='产品中心') Products
-            h3.section-subheading.text-muted(data-i18n='services.subheading', data-en='Explore the core product lines and solution packages we provide for different business needs.', data-zh='在这里可以集中展示你的核心产品线、方案组合和重点卖点。') Explore the core product lines and solution packages we provide for different business needs.
-        .row.text-center
-            .col-lg-4.col-md-6.mb-4
-                span.fa-stack.fa-4x
-                    i.fas.fa-circle.fa-stack-2x.text-primary
-                    i.fas.fa-oil-can.fa-stack-1x.fa-inverse
-                h4.my-3(data-i18n='services.item1.title', data-en='Oil Seals', data-zh='油封系列') Oil Seals
-            .col-lg-4.col-md-6.mb-4
-                span.fa-stack.fa-4x
-                    i.fas.fa-circle.fa-stack-2x.text-primary
-                    i.fas.fa-circle-notch.fa-stack-1x.fa-inverse
-                h4.my-3(data-i18n='services.item2.title', data-en='O-Rings & Sealing Products', data-zh='O型圈与密封件') O-Rings & Sealing Products
-            .col-lg-4.col-md-6.mb-4
-                span.fa-stack.fa-4x
-                    i.fas.fa-circle.fa-stack-2x.text-primary
-                    i.fas.fa-droplet.fa-stack-1x.fa-inverse
-                h4.my-3(data-i18n='services.item3.title', data-en='Hydraulic Seals', data-zh='液压密封件') Hydraulic Seals
-            .col-lg-6.col-md-6.mb-4.mb-lg-0
-                span.fa-stack.fa-4x
-                    i.fas.fa-circle.fa-stack-2x.text-primary
-                    i.fas.fa-wave-square.fa-stack-1x.fa-inverse
-                h4.my-3(data-i18n='services.item4.title', data-en='Anti-Vibration Components', data-zh='减震元件') Anti-Vibration Components
-            .col-lg-6.col-md-6
-                span.fa-stack.fa-4x
-                    i.fas.fa-circle.fa-stack-2x.text-primary
-                    i.fas.fa-gears.fa-stack-1x.fa-inverse
-                h4.my-3(data-i18n='services.item5.title', data-en='Couplings & Disc Springs', data-zh='联轴器与碟簧') Couplings & Disc Springs
+        .home-section-header
+            p.home-section-label(data-i18n='products.kicker', data-en='Product Lines', data-zh='产品中心') Product Lines
+            h2.home-section-title(data-i18n='products.title', data-en='Core Sealing Categories', data-zh='核心密封产品体系') Core Sealing Categories
+            p.home-section-sub(data-i18n='products.sub', data-en='Standard and engineered sealing solutions for hydraulic, pneumatic, and industrial applications.', data-zh='覆盖液压、气动及工业应用的标准与工程密封产品。') Standard and engineered sealing solutions for hydraulic, pneumatic, and industrial applications.
+        .home-products-grid
+            a.home-product-card(href='products.html')
+                .home-product-icon
+                    i.fa-solid.fa-droplet(aria-hidden='true')
+                h3(data-i18n='products.item1.title', data-en='Hydraulic Seals', data-zh='液压密封件') Hydraulic Seals
+                p(data-i18n='products.item1.desc', data-en='Piston, rod, and wiper seals for hydraulic cylinders and systems.', data-zh='适用于液压缸及系统的活塞、活杆与防尘密封件。') Piston, rod, and wiper seals for hydraulic cylinders and systems.
+            a.home-product-card(href='products.html')
+                .home-product-icon
+                    i.fa-solid.fa-wind(aria-hidden='true')
+                h3(data-i18n='products.item2.title', data-en='Pneumatic Seals', data-zh='气动密封件') Pneumatic Seals
+                p(data-i18n='products.item2.desc', data-en='Compact, low-friction seals designed for pneumatic cylinders and valves.', data-zh='适用于气动缸体与阀门的低摩擦紧凑型密封件。') Compact, low-friction seals designed for pneumatic cylinders and valves.
+            a.home-product-card(href='products.html')
+                .home-product-icon
+                    i.fa-solid.fa-oil-can(aria-hidden='true')
+                h3(data-i18n='products.item3.title', data-en='Oil Seals', data-zh='骨架油封') Oil Seals
+                p(data-i18n='products.item3.desc', data-en='Metal-cased lip seals for shaft sealing in rotating equipment.', data-zh='金属骨架唇形密封件，适用于旋转设备轴端密封。') Metal-cased lip seals for shaft sealing in rotating equipment.
+            a.home-product-card(href='products.html')
+                .home-product-icon
+                    i.fa-solid.fa-circle-notch(aria-hidden='true')
+                h3(data-i18n='products.item4.title', data-en='O-Rings & X-Rings', data-zh='O型圈与星型圈') O-Rings & X-Rings
+                p(data-i18n='products.item4.desc', data-en='Standard and custom O-rings, X-rings in a full range of materials.', data-zh='多材料标准与定制O型圈、星型圈，规格齐全。') Standard and custom O-rings, X-rings in a full range of materials.
+            a.home-product-card(href='products.html')
+                .home-product-icon
+                    i.fa-solid.fa-gauge-high(aria-hidden='true')
+                h3(data-i18n='products.item5.title', data-en='High-Pressure Seals', data-zh='高压密封件') High-Pressure Seals
+                p(data-i18n='products.item5.desc', data-en='Glyd rings, step seals, and buffer seals for high-pressure conditions.', data-zh='格莱圈、斯特封及缓冲密封件，适用于高压工况。') Glyd rings, step seals, and buffer seals for high-pressure conditions.
+            a.home-product-card(href='products.html')
+                .home-product-icon
+                    i.fa-solid.fa-compass-drafting(aria-hidden='true')
+                h3(data-i18n='products.item6.title', data-en='Engineered Solutions', data-zh='定制工程密封') Engineered Solutions
+                p(data-i18n='products.item6.desc', data-en='Custom-designed sealing solutions tailored to specific operating conditions.', data-zh='针对特殊工况的定制化密封设计与解决方案。') Custom-designed sealing solutions tailored to specific operating conditions.

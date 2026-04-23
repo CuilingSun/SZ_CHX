@@ -10976,30 +10976,323 @@ p {
     margin-left: 0.5rem;
   }
 }
+.home-section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48rem;
+  padding: 0.32rem 0.9rem;
+  margin-bottom: 1.1rem;
+  border-radius: 2rem;
+  background-color: rgba(224, 92, 26, 0.1);
+  color: #b34a15;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.home-section-label::before {
+  content: "";
+  display: inline-block;
+  width: 0.32rem;
+  height: 0.32rem;
+  border-radius: 50%;
+  background-color: #e05c1a;
+  flex-shrink: 0;
+}
+
+.home-section-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.home-section-title {
+  margin-bottom: 0.75rem;
+  color: #0d2240;
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.home-section-sub {
+  max-width: 44rem;
+  margin: 0 auto;
+  color: #6c757d;
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+.home-stats {
+  padding: 0;
+  background-color: #0d2240;
+}
+.home-stats .home-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.home-stats .home-stat {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.home-stats .home-stat:last-child {
+  border-right: none;
+}
+.home-stats .home-stat strong {
+  display: block;
+  color: #e05c1a;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+  line-height: 1;
+  margin-bottom: 0.45rem;
+}
+.home-stats .home-stat span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.home-products {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+.home-products .home-products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.home-products .home-product-card {
+  display: block;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(13, 34, 64, 0.1);
+  border-top: 3px solid transparent;
+  border-radius: 0.75rem;
+  background: #fff;
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-top-color 0.22s ease;
+}
+.home-products .home-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1.2rem 2.4rem rgba(13, 34, 64, 0.1);
+  border-top-color: #e05c1a;
+  text-decoration: none;
+}
+.home-products .home-product-card .home-product-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(224, 92, 26, 0.15), rgba(224, 92, 26, 0.06));
+  color: #ca5317;
+  font-size: 1.2rem;
+}
+.home-products .home-product-card h3, .home-products .home-product-card .h3 {
+  margin-bottom: 0.5rem;
+  color: #0d2240;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.home-products .home-product-card p {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+#portfolio .home-section-header {
+  margin-bottom: 2.5rem;
+}
+
+.home-strengths {
+  padding: 5rem 0;
+  background-color: rgba(248, 249, 250, 0.55);
+}
+.home-strengths .home-strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.home-strengths .home-strength-item {
+  text-align: center;
+}
+.home-strengths .home-strength-item .home-strength-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  background-color: #0d2240;
+  color: #e05c1a;
+  font-size: 1.4rem;
+}
+.home-strengths .home-strength-item h3, .home-strengths .home-strength-item .h3 {
+  margin-bottom: 0.75rem;
+  color: #0d2240;
+  font-size: 1.1rem;
+}
+.home-strengths .home-strength-item p {
+  margin-bottom: 0;
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
+
+.home-certs {
+  padding: 3.5rem 0;
+  background-color: #fff;
+  border-top: 1px solid rgba(13, 34, 64, 0.07);
+  border-bottom: 1px solid rgba(13, 34, 64, 0.07);
+}
+.home-certs .home-certs-header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+.home-certs .home-certs-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.home-certs .home-cert-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.5rem;
+  border: 1px solid rgba(13, 34, 64, 0.1);
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(13, 34, 64, 0.04);
+  min-width: 12rem;
+}
+.home-certs .home-cert-badge .home-cert-icon {
+  font-size: 2rem;
+  color: #e05c1a;
+  flex-shrink: 0;
+}
+.home-certs .home-cert-badge strong {
+  display: block;
+  color: #0d2240;
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.home-certs .home-cert-badge span {
+  display: block;
+  color: #adb5bd;
+  font-size: 0.76rem;
+  margin-top: 0.15rem;
+}
+
+.home-cta {
+  padding: 5.5rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #0d2240 0%, #0a1a30 100%), radial-gradient(ellipse at top left, rgba(224, 92, 26, 0.25), transparent 50%);
+}
+.home-cta h2, .home-cta .h2 {
+  max-width: 44rem;
+  margin: 0 auto 1rem;
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.2;
+}
+.home-cta p {
+  max-width: 38rem;
+  margin: 0 auto 2.25rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+.home-cta .home-cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 991.98px) {
+  .home-products .home-products-grid,
+  .home-strengths .home-strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  .home-stats .home-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home-stats .home-stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .home-stats .home-stat:nth-child(2n) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .home-stats .home-stat:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+  .home-cta .home-cta-actions .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .home-products .home-products-grid,
+  .home-strengths .home-strengths-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-certs .home-cert-badge {
+    min-width: 100%;
+  }
+}
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: linear-gradient(rgba(13, 34, 64, 0.75), rgba(13, 34, 64, 0.75)), url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
 }
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+header.masthead .masthead-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(224, 92, 26, 0.45);
+  color: #e05c1a;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-tagline {
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+header.masthead .masthead-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -11007,17 +11300,13 @@ header.masthead .masthead-heading {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
   }
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
   header.masthead .masthead-heading {
     font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 4.5rem;
-    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 575.98px) {
+  header.masthead .masthead-actions .btn {
+    width: 100%;
   }
 }
 .subpage-hero {

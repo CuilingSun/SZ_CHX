@@ -7,26 +7,51 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
-    background-image: url("../assets/img/header-bg.jpg");
+    background-image:
+        linear-gradient(rgba($navy, 0.75), rgba($navy, 0.75)),
+        url("../assets/img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
 
-    .masthead-subheading {
-        font-size: 1.5rem;
-        font-style: italic;
-        line-height: 1.5rem;
-        margin-bottom: 25px;
-        font-family: $subheadings-font-family;
+    .masthead-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.4rem 1.1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 2rem;
+        border: 1px solid rgba($primary, 0.45);
+        color: $primary;
+        font-family: $headings-font-family;
+        font-size: 0.78rem;
+        font-weight: $font-weight-bold;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
     }
 
     .masthead-heading {
         font-size: 3.25rem;
         font-weight: 700;
-        line-height: 3.25rem;
-        margin-bottom: 2rem;
+        line-height: 1.15;
+        margin-bottom: 1.25rem;
         font-family: $headings-font-family;
+    }
+
+    .masthead-tagline {
+        max-width: 36rem;
+        margin: 0 auto 2.5rem;
+        color: rgba($white, 0.72);
+        font-size: 1.05rem;
+        line-height: 1.8;
+    }
+
+    .masthead-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
 }
 
@@ -35,18 +60,14 @@ header.masthead {
         padding-top: 12.5rem + 4.5rem;
         padding-bottom: 12.5rem;
 
-        .masthead-subheading {
-            font-size: 2.25rem;
-            font-style: italic;
-            line-height: 2.25rem;
-            margin-bottom: 2rem;
-        }
-
         .masthead-heading {
             font-size: 4.5rem;
-            font-weight: 700;
-            line-height: 4.5rem;
-            margin-bottom: 4rem;
         }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    header.masthead .masthead-actions .btn {
+        width: 100%;
     }
 }
