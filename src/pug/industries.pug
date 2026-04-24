@@ -6,10 +6,10 @@
     const heroKey = 'industries.hero'
     const heroEyebrowEn = 'Industry Solutions'
     const heroEyebrowZh = '应用场景'
-    const heroTitleEn = 'Industries'
-    const heroTitleZh = '应用行业'
-    const heroTextEn = 'Use this page to show the industries and business scenarios where your solutions create value.'
-    const heroTextZh = '这个页面适合展示你的方案适配的行业领域与具体应用场景。'
+    const heroTitleEn = 'Industries We Serve'
+    const heroTitleZh = '我们服务的行业'
+    const heroTextEn = 'Our sealing products are trusted across machinery, automotive, petrochemical, electronics, and marine sectors worldwide.'
+    const heroTextZh = '我们的密封产品广泛应用于机械、汽车、石化、电子及船舶等行业，服务全球客户。'
     const heroText = heroTextEn
 
 doctype html
@@ -19,12 +19,5 @@ html(lang='en')
     body(data-page='industries', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
         include includes/site-nav.pug
         include includes/subpage-hero.pug
-        include includes/sections/portfolio.pug
+        include includes/sections/industries-page.pug
         include includes/site-footer.pug
-
-        include includes/portfolio-modal-1
-        include includes/portfolio-modal-2
-        include includes/portfolio-modal-3
-        include includes/portfolio-modal-4
-        include includes/portfolio-modal-5
-        include includes/portfolio-modal-6

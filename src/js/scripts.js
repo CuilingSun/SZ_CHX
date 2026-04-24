@@ -101,6 +101,19 @@ window.addEventListener('DOMContentLoaded', event => {
         );
         const productSectionsArray = Array.from(productSections);
 
+        let isClickScroll = false;
+        let clickScrollTimer = null;
+        let clickScrollEndHandler = null;
+
+        const releaseClickScroll = function () {
+            isClickScroll = false;
+            clearTimeout(clickScrollTimer);
+            if (clickScrollEndHandler) {
+                document.removeEventListener('scroll', clickScrollEndHandler);
+                clickScrollEndHandler = null;
+            }
+        };
+
         setProductDirectoryActive = function (key) {
             productDirectoryLinks.forEach((link) => {
                 link.classList.toggle('is-active', link.dataset.productDirectoryLink === key);
@@ -108,7 +121,8 @@ window.addEventListener('DOMContentLoaded', event => {
         };
 
         const updateProductDirectoryByScroll = function () {
-            const activationOffset = 140;
+            if (isClickScroll) return;
+            const activationOffset = 200;
             let activeSection = productSectionsArray[0];
 
             productSectionsArray.forEach((section) => {
@@ -126,6 +140,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
         const sectionObserver = new IntersectionObserver(
             (entries) => {
+                if (isClickScroll) return;
                 const visibleEntries = entries
                     .filter((entry) => entry.isIntersecting)
                     .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
@@ -149,6 +164,18 @@ window.addEventListener('DOMContentLoaded', event => {
         productDirectoryLinks.forEach((link) => {
             link.addEventListener('click', () => {
                 setProductDirectoryActive(link.dataset.productDirectoryLink);
+
+                releaseClickScroll();
+                isClickScroll = true;
+
+                clickScrollEndHandler = function () {
+                    clearTimeout(clickScrollTimer);
+                    clickScrollTimer = setTimeout(releaseClickScroll, 200);
+                };
+                document.addEventListener('scroll', clickScrollEndHandler, { passive: true });
+
+                // Safety: release immediately if the section was already in view
+                clickScrollTimer = setTimeout(releaseClickScroll, 300);
             });
         });
 

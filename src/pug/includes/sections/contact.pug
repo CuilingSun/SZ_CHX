@@ -1,45 +1,82 @@
 section#contact.page-section
     .container
-        //- .text-center
-        //-     h2.section-heading.text-uppercase(data-i18n='contact.heading', data-en='Contact Us', data-zh='联系我们') Contact Us
-        //-     h3.section-subheading.text-muted(data-i18n='contact.subheading', data-en='Get in touch with our team for sealing products, material selection, quotations, and technical support.' data-zh='欢迎联系创鸿信团队，获取密封产品咨询、材料选型、报价与技术支持。') Get in touch with our team for sealing products, material selection, quotations, and technical support.
-        .contact-panel
-            .row.g-4.align-items-stretch
-                .col-lg-7
-                    .contact-info-grid
-                        .contact-info-card
-                            p.contact-info-label(data-i18n='contact.info.address', data-en='Address', data-zh='地址') Address
-                            p.contact-info-value 深圳市宝安西乡大道221号（丽景城1栋125号）
-                        .contact-info-card
-                            p.contact-info-label(data-i18n='contact.info.telephone', data-en='Telephone', data-zh='电话') Telephone
-                            .contact-info-value
-                                p 0755-29566383
-                                p 0755-29566380
-                        .contact-info-card
-                            p.contact-info-label(data-i18n='contact.info.fax', data-en='Fax', data-zh='传真') Fax
-                            p.contact-info-value 0755-29566381
-                        .contact-info-card
-                            p.contact-info-label(data-i18n='contact.info.mobile', data-en='Mobile', data-zh='手机') Mobile
-                            p.contact-info-value
-                                a.contact-info-link(href='tel:+8618925269628') +86 18925269628
-                        .contact-info-card
-                            p.contact-info-label(data-i18n='contact.info.email', data-en='Email', data-zh='邮箱') Email
-                            p.contact-info-value
-                                a.contact-info-link(href='mailto:szchx188@163.com') szchx188@163.com
-                        .contact-info-card
-                            p.contact-info-label(data-i18n='contact.info.qq', data-en='QQ', data-zh='QQ') QQ
-                            .contact-info-value
-                                p 790360920
-                                p 785645609
-                                p 793799080
-                        .contact-info-card.contact-info-card-wide
-                            p.contact-info-label(data-i18n='contact.info.wechat', data-en='WeChat', data-zh='微信') WeChat
-                            p.contact-info-value 18925269628
-                .col-lg-5
-                    .contact-support-card
-                        p.contact-support-kicker(data-i18n='contact.support.kicker', data-en='Business Contact', data-zh='商务联系') Business Contact
-                        h3(data-i18n='contact.support.title', data-en='Fast Response for Industrial Sealing Needs', data-zh='快速响应工业密封需求') Fast Response for Industrial Sealing Needs
-                        p(data-i18n='contact.support.text', data-en='For oil seals, O-rings, hydraulic seals, and rubber custom parts, you can reach us directly by phone, email, QQ, or WeChat for efficient technical and commercial communication.' data-zh='针对油封、O 型圈、液压密封件及橡胶制品需求，欢迎通过电话、邮箱、QQ 或微信直接联系我们，以便更高效地开展技术与商务沟通。') For oil seals, O-rings, hydraulic seals, and rubber custom parts, you can reach us directly by phone, email, QQ, or WeChat for efficient technical and commercial communication.
-                        .contact-support-actions
-                            a.btn.btn-primary.btn-xl(href='mailto:szchx188@163.com', data-i18n='contact.support.emailButton', data-en='Send Email', data-zh='发送邮件') Send Email
-                            a.btn.btn-outline-light.btn-xl(href='tel:+8618925269628', data-i18n='contact.support.callButton', data-en='Call Now', data-zh='立即拨打') Call Now
+        .contact-layout
+            .contact-info-col
+                p.contact-kicker(data-i18n='contact.kicker', data-en='Reach Us', data-zh='联系我们') Reach Us
+                h2(data-i18n='contact.heading', data-en='Get in Touch', data-zh='与我们沟通') Get in Touch
+                p.contact-intro(data-i18n='contact.intro', data-en='For product selection, quotations, and technical support, our team responds promptly.', data-zh='如需产品选型、报价或技术支持，我们的团队将迅速响应。') For product selection, quotations, and technical support, our team responds promptly.
+
+                .contact-details
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-map-marker-alt(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.address', data-en='Address', data-zh='地址') Address
+                            span.contact-detail-value 深圳市宝安西乡大道221号（丽景城1栋125号）
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-phone(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.telephone', data-en='Telephone', data-zh='电话') Telephone
+                            span.contact-detail-value 0755-29566383 &nbsp;/&nbsp; 0755-29566380
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-fax(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.fax', data-en='Fax', data-zh='传真') Fax
+                            span.contact-detail-value 0755-29566381
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-mobile-alt(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.mobile', data-en='Mobile', data-zh='手机') Mobile
+                            a.contact-detail-link(href='tel:+8618925269628') +86 189 2526 9628
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-envelope(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.email', data-en='Email', data-zh='邮箱') Email
+                            a.contact-detail-link(href='mailto:szchx188@163.com') szchx188@163.com
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-comments(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.qq', data-en='QQ', data-zh='QQ') QQ
+                            span.contact-detail-value 790360920 &nbsp;·&nbsp; 785645609 &nbsp;·&nbsp; 793799080
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fab.fa-weixin(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.wechat', data-en='WeChat', data-zh='微信') WeChat
+                            span.contact-detail-value 18925269628
+
+            .contact-form-col
+                .contact-form-card
+                    p.contact-form-kicker(data-i18n='contact.form.kicker', data-en='Send an Inquiry', data-zh='发送询盘') Send an Inquiry
+                    h3(data-i18n='contact.form.title', data-en='Request a Quote or Consultation', data-zh='申请报价或技术咨询') Request a Quote or Consultation
+                    form.contact-form(action='mailto:szchx188@163.com', method='post', enctype='text/plain')
+                        .row.g-3
+                            .col-sm-6
+                                label.form-label(for='contactName', data-i18n='contact.form.name', data-en='Name', data-zh='姓名') Name
+                                input#contactName.form-control(type='text', name='name', required)
+                            .col-sm-6
+                                label.form-label(for='contactCompany', data-i18n='contact.form.company', data-en='Company', data-zh='公司名称') Company
+                                input#contactCompany.form-control(type='text', name='company')
+                            .col-sm-6
+                                label.form-label(for='contactPhone', data-i18n='contact.form.phone', data-en='Phone', data-zh='电话') Phone
+                                input#contactPhone.form-control(type='tel', name='phone')
+                            .col-sm-6
+                                label.form-label(for='contactEmail', data-i18n='contact.form.email', data-en='Email', data-zh='邮箱') Email
+                                input#contactEmail.form-control(type='email', name='email', required)
+                            .col-12
+                                label.form-label(for='contactType', data-i18n='contact.form.type', data-en='Inquiry Type', data-zh='询盘类型') Inquiry Type
+                                select#contactType.form-select(name='type')
+                                    option(value='product', data-i18n='contact.form.type.product', data-en='Product Inquiry', data-zh='产品询盘') Product Inquiry
+                                    option(value='quote', data-i18n='contact.form.type.quote', data-en='Request a Quote', data-zh='申请报价') Request a Quote
+                                    option(value='technical', data-i18n='contact.form.type.technical', data-en='Technical Support', data-zh='技术支持') Technical Support
+                                    option(value='other', data-i18n='contact.form.type.other', data-en='Other', data-zh='其他') Other
+                            .col-12
+                                label.form-label(for='contactMessage', data-i18n='contact.form.message', data-en='Message / Requirements', data-zh='留言 / 需求说明') Message / Requirements
+                                textarea#contactMessage.form-control(name='message', rows='4', placeholder='Please describe your product requirements, quantities, or any technical questions...', data-i18n-placeholder='contact.form.message.placeholder', data-placeholder-en='Please describe your product requirements, quantities, or any technical questions...', data-placeholder-zh='请描述您的产品需求、数量或技术问题……')
+                        .contact-form-submit
+                            button.btn.btn-primary.btn-xl(type='submit', data-i18n='contact.form.submit', data-en='Send Message', data-zh='发送消息') Send Message

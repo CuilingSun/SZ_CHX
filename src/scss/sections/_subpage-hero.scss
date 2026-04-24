@@ -3,14 +3,20 @@
 //
 
 .subpage-hero {
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    min-height: 22rem;
+    padding: 7rem 0 3.5rem;
     text-align: center;
     color: $white;
-    background-image: linear-gradient(rgba($dark, 0.65), rgba($dark, 0.65)), url("../assets/img/header-bg.jpg");
+    background-image: linear-gradient(rgba($navy, 0.82), rgba($navy, 0.72)), url("../assets/img/header-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    .container {
+        width: 100%;
+    }
 
     .subpage-hero-subheading {
         font-size: 1.25rem;
@@ -35,8 +41,8 @@
 
 @include media-breakpoint-up(md) {
     .subpage-hero {
-        padding-top: 12rem;
-        padding-bottom: 6rem;
+        min-height: 30rem;
+        padding: 9rem 0 4.5rem;
 
         .subpage-hero-subheading {
             font-size: 1.75rem;
