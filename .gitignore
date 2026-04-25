@@ -1,2 +1,6 @@
 node_modules
 .DS_Store
+src/product_pdfs/
+src/thumbnails/
+src/single_pages/
+src/创鸿信画册.pdf
