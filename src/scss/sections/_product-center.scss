@@ -357,7 +357,7 @@
 
     .product-card-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 1.2rem;
     }
 
@@ -523,6 +523,10 @@
 
         .product-overview-title {
             font-size: 2rem;
+        }
+
+        .product-card-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
         }
     }
 }
