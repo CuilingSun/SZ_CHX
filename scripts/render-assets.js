@@ -4,8 +4,13 @@ const upath = require('upath');
 const sh = require('shelljs');
 
 module.exports = function renderAssets() {
-    const sourcePath = upath.resolve(upath.dirname(__filename), '../src/assets');
+    const assetsSourcePath = upath.resolve(upath.dirname(__filename), '../src/assets');
+    const productsSourcePath = upath.resolve(upath.dirname(__filename), '../src/products');
     const destPath = upath.resolve(upath.dirname(__filename), '../dist/.');
-    
-    sh.cp('-R', sourcePath, destPath)
+
+    sh.cp('-R', assetsSourcePath, destPath);
+
+    if (fs.existsSync(productsSourcePath)) {
+        sh.cp('-R', productsSourcePath, destPath);
+    }
 };

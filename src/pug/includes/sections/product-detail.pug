@@ -1,12 +1,42 @@
 section.page-section.product-detail-section
+    -
+        const galleryImages = typeof productImages !== 'undefined' && productImages && productImages.length
+            ? productImages
+            : [{ src: productImage, altEn: productNameEn, altZh: productNameZh }]
+        const galleryAutoMs = typeof productGalleryAutoMs !== 'undefined' ? productGalleryAutoMs : 2200
     .container
         a.product-back-link(href='products.html', data-product-back-link='true')
             span.product-back-icon(aria-hidden='true') ←
             span(data-i18n='productDetail.back', data-en='Back to Product Center', data-zh='返回产品中心') Back to Product Center
         .row.g-5.align-items-start
             .col-lg-5
-                .product-detail-media
-                    img.img-fluid(src=productImage, alt=productNameEn)
+                .product-detail-media(data-product-gallery='true', data-gallery-interval=galleryAutoMs)
+                    .product-detail-gallery-track(data-product-gallery-track='true')
+                        each image, imageIndex in galleryImages
+                            .product-detail-gallery-slide(class=imageIndex === 0 ? 'is-active' : '', data-product-gallery-slide='true')
+                                img.img-fluid(
+                                    src=image.src,
+                                    alt=image.altEn,
+                                    data-i18n=`productDetail.gallery.${imageIndex + 1}.alt`,
+                                    data-en=image.altEn,
+                                    data-zh=image.altZh
+                                )
+                    if galleryImages.length > 1
+                        button.product-detail-gallery-control.product-detail-gallery-control-prev(type='button', aria-label='Previous image', data-product-gallery-prev='true')
+                            svg.product-detail-gallery-icon(viewBox='0 0 24 24', aria-hidden='true', focusable='false')
+                                path(d='M15 5L8 12L15 19')
+                        button.product-detail-gallery-control.product-detail-gallery-control-next(type='button', aria-label='Next image', data-product-gallery-next='true')
+                            svg.product-detail-gallery-icon(viewBox='0 0 24 24', aria-hidden='true', focusable='false')
+                                path(d='M9 5L16 12L9 19')
+                        .product-detail-gallery-indicators
+                            each image, imageIndex in galleryImages
+                                button.product-detail-gallery-indicator(
+                                    type='button',
+                                    class=imageIndex === 0 ? 'is-active' : '',
+                                    aria-label=`Go to image ${imageIndex + 1}`,
+                                    data-product-gallery-indicator='true',
+                                    data-gallery-index=imageIndex
+                                )
             .col-lg-7
                 .product-detail-panel
                     p.product-detail-kicker(data-i18n='productDetail.label', data-en='Industrial Product' data-zh='工业产品') Industrial Product
