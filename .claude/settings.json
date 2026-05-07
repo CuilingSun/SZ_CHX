@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(sed -i '' \"s|assets/img/portfolio/1.jpg|assets/img/industry/机械设备.jpeg|g\" /Users/suncuiling/Desktop/startbootstrap-agency-master/src/pug/includes/portfolio-modal-1.pug)",
+      "Bash(sed -i '' \"s|assets/img/portfolio/2.jpg|assets/img/industry/汽车.png|g\" /Users/suncuiling/Desktop/startbootstrap-agency-master/src/pug/includes/portfolio-modal-2.pug)",
+      "Bash(sed -i '' \"s|assets/img/portfolio/3.jpg|assets/img/industry/石油化工.jpg|g\" /Users/suncuiling/Desktop/startbootstrap-agency-master/src/pug/includes/portfolio-modal-3.pug)",
+      "Bash(sed -i '' \"s|assets/img/portfolio/4.jpg|assets/img/industry/电子.png|g\" /Users/suncuiling/Desktop/startbootstrap-agency-master/src/pug/includes/portfolio-modal-4.pug)",
+      "Bash(sed -i '' \"s|assets/img/portfolio/5.jpg|assets/img/industry/工业电机.webp|g\" /Users/suncuiling/Desktop/startbootstrap-agency-master/src/pug/includes/portfolio-modal-5.pug)"
+    ]
+  }
+}
