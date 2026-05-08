@@ -6,11 +6,16 @@ const sh = require('shelljs');
 module.exports = function renderAssets() {
     const assetsSourcePath = upath.resolve(upath.dirname(__filename), '../src/assets');
     const productsSourcePath = upath.resolve(upath.dirname(__filename), '../src/products');
+    const productPdfsSourcePath = upath.resolve(upath.dirname(__filename), '../src/product_pdfs');
     const destPath = upath.resolve(upath.dirname(__filename), '../dist/.');
 
     sh.cp('-R', assetsSourcePath, destPath);
 
     if (fs.existsSync(productsSourcePath)) {
         sh.cp('-R', productsSourcePath, destPath);
+    }
+
+    if (fs.existsSync(productPdfsSourcePath)) {
+        sh.cp('-R', productPdfsSourcePath, destPath);
     }
 };

@@ -12833,6 +12833,55 @@ html[lang=zh-CN] .product-center .product-card-title-zh {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
 }
+.product-detail-section .product-detail-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.product-detail-section .product-detail-resource-label {
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.product-detail-section .product-detail-spec-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #e05c1a;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: underline;
+  text-decoration-color: rgba(224, 92, 26, 0.28);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.22em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.product-detail-section .product-detail-spec-link:hover, .product-detail-section .product-detail-spec-link:focus {
+  color: #b84b15;
+  text-decoration-color: currentColor;
+}
+.product-detail-section .product-detail-spec-link-icon {
+  flex: 0 0 auto;
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.product-detail-section .product-detail-spec-link-icon path {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
 .product-detail-section .product-detail-feature {
   padding: 1rem;
   border: 1px solid rgba(33, 37, 41, 0.08);
@@ -12846,6 +12895,93 @@ html[lang=zh-CN] .product-center .product-card-title-zh {
 .product-detail-section .product-detail-feature p {
   margin-bottom: 0;
   color: #495057;
+}
+
+body.product-pdf-modal-open {
+  overflow: hidden;
+}
+
+.product-pdf-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1055;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.product-pdf-modal[hidden] {
+  display: none;
+}
+
+.product-pdf-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(33, 37, 41, 0.58);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.product-pdf-modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(1080px, 100%);
+  height: min(84vh, 860px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1.3rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(33, 37, 41, 0.24);
+}
+
+.product-pdf-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid rgba(33, 37, 41, 0.08);
+  background-color: rgba(248, 249, 250, 0.78);
+}
+
+.product-pdf-modal-title {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #212529;
+}
+
+.product-pdf-modal-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0;
+  border-radius: 999px;
+  background-color: rgba(33, 37, 41, 0.06);
+  color: #212529;
+  font-size: 1.45rem;
+  line-height: 1;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.product-pdf-modal-close:hover, .product-pdf-modal-close:focus {
+  background-color: rgba(224, 92, 26, 0.14);
+  transform: scale(1.03);
+}
+
+.product-pdf-modal-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  background-color: #f8f9fa;
+}
+
+.product-pdf-modal-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: #fff;
 }
 
 @media (max-width: 767.98px) {
@@ -12864,6 +13000,16 @@ html[lang=zh-CN] .product-center .product-card-title-zh {
   }
   .product-detail-section .product-detail-panel {
     padding: 1.5rem;
+  }
+  .product-pdf-modal {
+    padding: 0.85rem;
+  }
+  .product-pdf-modal-dialog {
+    height: min(88vh, 100%);
+    border-radius: 1rem;
+  }
+  .product-pdf-modal-header {
+    padding: 0.85rem 0.9rem;
   }
 }
 #portfolio .portfolio-item {

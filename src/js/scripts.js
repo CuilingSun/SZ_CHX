@@ -334,6 +334,43 @@ window.addEventListener('DOMContentLoaded', event => {
         startAutoAdvance();
     });
 
+    const productPdfModal = document.querySelector('[data-product-pdf-modal]');
+    const productPdfTrigger = document.querySelector('[data-product-pdf-trigger]');
+
+    if (productPdfModal && productPdfTrigger) {
+        const productPdfFrame = productPdfModal.querySelector('.product-pdf-modal-frame');
+        const productPdfCloseTargets = productPdfModal.querySelectorAll('[data-product-pdf-close]');
+        const previewPdfSrc = productPdfTrigger.dataset.productPdfSrc;
+
+        const closeProductPdfModal = function () {
+            productPdfModal.hidden = true;
+            productPdfModal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('product-pdf-modal-open');
+        };
+
+        const openProductPdfModal = function () {
+            if (productPdfFrame && previewPdfSrc) {
+                productPdfFrame.setAttribute('src', previewPdfSrc);
+            }
+
+            productPdfModal.hidden = false;
+            productPdfModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('product-pdf-modal-open');
+        };
+
+        productPdfTrigger.addEventListener('click', openProductPdfModal);
+
+        productPdfCloseTargets.forEach((closeTarget) => {
+            closeTarget.addEventListener('click', closeProductPdfModal);
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !productPdfModal.hidden) {
+                closeProductPdfModal();
+            }
+        });
+    }
+
     const productFilterButtons = document.querySelectorAll('[data-product-filter]');
     const productCards = document.querySelectorAll('[data-product-category]');
 

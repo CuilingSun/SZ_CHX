@@ -7,6 +7,7 @@ section.page-section.product-detail-section
         const galleryThemeClass = typeof productGalleryTheme !== 'undefined' && productGalleryTheme
             ? `product-detail-media-${productGalleryTheme}`
             : ''
+        const hasProductPdf = typeof productPdf !== 'undefined' && productPdf
     .container
         a.product-back-link(href='products.html', data-product-back-link='true')
             span.product-back-icon(aria-hidden='true') ←
@@ -56,3 +57,28 @@ section.page-section.product-detail-section
                         .product-detail-feature
                             h3(data-i18n='productDetail.feature3.title', data-en=featureTitle3En, data-zh=featureTitle3Zh)= featureTitle3En
                             p(data-i18n='productDetail.feature3.text', data-en=featureText3En, data-zh=featureText3Zh)= featureText3En
+                    if hasProductPdf
+                        .product-detail-actions
+                            button.product-detail-spec-link(
+                                type='button',
+                                data-product-pdf-trigger='true',
+                                data-product-pdf-src=`${productPdf}#view=FitH`
+                            )
+                                svg.product-detail-spec-link-icon(viewBox='0 0 24 24', aria-hidden='true', focusable='false')
+                                    path(d='M7 3h7l5 5v13H7z')
+                                    path(d='M14 3v6h5')
+                                span(data-i18n='productDetail.specButton', data-en='View Specification PDF', data-zh='查看规格书 PDF') View Specification PDF
+    if hasProductPdf
+        .product-pdf-modal(hidden data-product-pdf-modal='true' aria-hidden='true')
+            .product-pdf-modal-backdrop(data-product-pdf-close='true')
+            .product-pdf-modal-dialog(role='dialog' aria-modal='true' aria-labelledby='productPdfModalTitle')
+                .product-pdf-modal-header
+                    h3#productPdfModalTitle.product-pdf-modal-title(data-i18n='productDetail.specModalTitle', data-en='Product Specification', data-zh='产品规格预览') Product Specification
+                    button.product-pdf-modal-close(type='button', aria-label='Close specification preview', data-product-pdf-close='true')
+                        span(aria-hidden='true') ×
+                .product-pdf-modal-body
+                    iframe.product-pdf-modal-frame(
+                        src=productPdf,
+                        title=productNameEn,
+                        loading='lazy'
+                    )
