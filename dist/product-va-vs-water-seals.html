@@ -89,8 +89,27 @@
                                     <p data-i18n="productDetail.feature3.text" data-en="The flexible rubber design can be fitted over shafts and adjacent parts with practical assembly convenience." data-zh="柔性橡胶结构便于跨越轴上零件安装，适合维护和更换。">The flexible rubber design can be fitted over shafts and adjacent parts with practical assembly convenience.</p>
                                 </div>
                             </div>
+                            <div class="product-detail-actions">
+                                <button class="product-detail-spec-link" type="button" data-product-pdf-trigger="true" data-product-pdf-src="product_pdfs/V型圈.pdf#view=FitH">
+                                    <svg class="product-detail-spec-link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                                        <path d="M7 3h7l5 5v13H7z"></path>
+                                        <path d="M14 3v6h5"></path>
+                                    </svg>
+                                    <span data-i18n="productDetail.specButton" data-en="View Specification PDF" data-zh="查看规格书 PDF">View Specification PDF</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="product-pdf-modal" hidden data-product-pdf-modal="true" aria-hidden="true">
+                <div class="product-pdf-modal-backdrop" data-product-pdf-close="true"></div>
+                <div class="product-pdf-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="productPdfModalTitle">
+                    <div class="product-pdf-modal-header">
+                        <h3 class="product-pdf-modal-title" id="productPdfModalTitle" data-i18n="productDetail.specModalTitle" data-en="Product Specification" data-zh="产品规格预览">Product Specification</h3>
+                        <button class="product-pdf-modal-close" type="button" aria-label="Close specification preview" data-product-pdf-close="true"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="product-pdf-modal-body"><iframe class="product-pdf-modal-frame" src="product_pdfs/V型圈.pdf" title="VA / VS Water Seals" loading="lazy"></iframe></div>
                 </div>
             </div>
         </section>
