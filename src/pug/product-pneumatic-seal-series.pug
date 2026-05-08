@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - Pneumatic Seal Series'
+    const pageTitleEn = 'CHX - Pneumatic Seal Series'
+    const pageTitleZh = '创鸿信 - 气动密封系列'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.pneumaticSealSeries.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'MAY / PDU / PSD / PDI / EM / EU Series'
+    const heroTitleZh = 'MAY / PDU / PSD / PDI / EM / EU 等系列'
+    const heroTextEn = 'Practical pneumatic sealing profiles for cylinders and air-driven systems requiring smooth motion and reliable air retention.'
+    const heroTextZh = '适用于气缸和空气驱动系统的实用型气动密封系列，兼顾动作顺畅与稳定气密性能。'
+    const heroText = heroTextEn
+    const productImage = 'assets/img/portfolio/6.jpg'
+    const productNameEn = 'MAY / PDU / PSD / PDI / EM / EU Series'
+    const productNameZh = 'MAY / PDU / PSD / PDI / EM / EU 等系列'
+    const productLeadEn = 'Designed for pneumatic cylinders and reciprocating air systems with attention to low friction and consistent sealing behavior.'
+    const productLeadZh = '面向气缸及往复空气系统，重点兼顾低摩擦运行与稳定密封效果。'
+    const productDescriptionEn = 'CHX pneumatic sealing series cover practical groove standards and structural forms used in air cylinders, helping customers match suitable sealing profiles for speed, pressure, and assembly conditions.'
+    const productDescriptionZh = '创鸿信气动密封系列覆盖常见气缸沟槽标准与结构形式，便于根据速度、压力和装配条件选择更合适的密封方案。'
+    const featureTitle1En = 'Low-Friction Motion'
+    const featureTitle1Zh = '低摩擦动作'
+    const featureText1En = 'Supports smoother reciprocating motion in air cylinders where start-up resistance matters.'
+    const featureText1Zh = '适合对启动阻力和动作顺畅性有要求的气缸往复工况。'
+    const featureTitle2En = 'Pneumatic Sealing'
+    const featureTitle2Zh = '气密稳定'
+    const featureText2En = 'Helps maintain reliable air sealing across different cylinder structures and groove styles.'
+    const featureText2Zh = '适用于不同气缸结构和沟槽形式，帮助维持稳定气密表现。'
+    const featureTitle3En = 'Series-Based Selection'
+    const featureTitle3Zh = '系列化选型'
+    const featureText3En = 'Multiple profile families are available to match installation space, operating speed, and maintenance needs.'
+    const featureText3Zh = '可根据安装空间、运行速度和维护需求，在不同系列结构间进行匹配。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

@@ -1,0 +1,42 @@
+-
+    const pageTitle = 'CHX - DH Dust Seals'
+    const pageTitleEn = 'CHX - DH Dust Seals'
+    const pageTitleZh = '创鸿信 - DH防尘密封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.dhDustSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'DH Dust Seals'
+    const heroTitleZh = 'DH防尘密封'
+    const heroTextEn = 'Dust-excluding sealing elements designed to protect hydraulic rods and cylinders from external contamination.'
+    const heroTextZh = '用于保护液压活塞杆与油缸，阻隔外部灰尘、泥沙和杂质进入系统的防尘密封件。'
+    const heroText = heroTextEn
+    const productImage = 'products/DH防尘油封/DH_1.jpg'
+    const productNameEn = 'DH Dust Seals'
+    const productNameZh = 'DH防尘密封'
+    const productLeadEn = 'A practical wiper-style sealing profile that helps extend cylinder life by keeping contaminants out.'
+    const productLeadZh = '常用于液压缸外部防护，帮助减少污染物侵入并延长系统寿命。'
+    const productDescriptionEn = 'CHX DH Dust Seals are used at rod-entry positions to remove dust and surface contaminants before they enter hydraulic assemblies, supporting cleaner operation and improved sealing reliability.'
+    const productDescriptionZh = '创鸿信 DH防尘密封通常安装在活塞杆进入壳体的位置，通过刮除灰尘和表面污染物，帮助系统保持更清洁、更稳定的运行状态。'
+    const featureTitle1En = 'Contamination Exclusion'
+    const featureTitle1Zh = '阻隔污染'
+    const featureText1En = 'Helps block dust, mud, and foreign particles from entering the cylinder structure.'
+    const featureText1Zh = '有助于阻止灰尘、泥沙和外部颗粒进入油缸结构。'
+    const featureTitle2En = 'Rod Protection'
+    const featureTitle2Zh = '杆件保护'
+    const featureText2En = 'Protects rod surfaces and internal seals by reducing abrasive contamination at the entry point.'
+    const featureText2Zh = '通过减少入口位置的磨蚀性污染，保护活塞杆表面及内部密封件。'
+    const featureTitle3En = 'Hydraulic Compatibility'
+    const featureTitle3Zh = '系统适配'
+    const featureText3En = 'Can be selected for hydraulic cylinders and reciprocating assemblies with matching groove standards.'
+    const featureText3Zh = '适用于常见液压缸和往复运动结构，可按沟槽标准进行匹配选型。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

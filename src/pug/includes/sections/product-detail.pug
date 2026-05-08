@@ -4,13 +4,16 @@ section.page-section.product-detail-section
             ? productImages
             : [{ src: productImage, altEn: productNameEn, altZh: productNameZh }]
         const galleryAutoMs = typeof productGalleryAutoMs !== 'undefined' ? productGalleryAutoMs : 2200
+        const galleryThemeClass = typeof productGalleryTheme !== 'undefined' && productGalleryTheme
+            ? `product-detail-media-${productGalleryTheme}`
+            : ''
     .container
         a.product-back-link(href='products.html', data-product-back-link='true')
             span.product-back-icon(aria-hidden='true') ←
             span(data-i18n='productDetail.back', data-en='Back to Product Center', data-zh='返回产品中心') Back to Product Center
         .row.g-5.align-items-start
             .col-lg-5
-                .product-detail-media(data-product-gallery='true', data-gallery-interval=galleryAutoMs)
+                .product-detail-media(class=galleryThemeClass, data-product-gallery='true', data-gallery-interval=galleryAutoMs)
                     .product-detail-gallery-track(data-product-gallery-track='true')
                         each image, imageIndex in galleryImages
                             .product-detail-gallery-slide(class=imageIndex === 0 ? 'is-active' : '', data-product-gallery-slide='true')

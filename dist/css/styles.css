@@ -12542,6 +12542,19 @@ html[lang=en] .product-center .product-overview-text-en {
      object-fit: cover;
   transition: transform 0.28s ease;
 }
+.product-center .product-card-media-white {
+  background: #fff;
+  border: 1px solid rgba(33, 37, 41, 0.08);
+}
+.product-center .product-card-media-white::after {
+  display: none;
+}
+.product-center .product-card-media-white img {
+  padding: 0.35rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #fff;
+}
 .product-center .product-card-body {
   display: flex;
   flex: 1 1 auto;
@@ -12698,6 +12711,18 @@ html[lang=zh-CN] .product-center .product-card-title-zh {
   border-radius: 1.5rem;
   background-color: #fff;
   box-shadow: 0 1.5rem 3rem rgba(33, 37, 41, 0.08);
+}
+.product-detail-section .product-detail-media-white-frame {
+  border: 1px solid rgba(33, 37, 41, 0.08);
+}
+.product-detail-section .product-detail-media-white-frame .product-detail-gallery-slide {
+  background-color: #fff;
+}
+.product-detail-section .product-detail-media-white-frame .product-detail-gallery-slide img {
+  padding: 0.65rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #fff;
 }
 .product-detail-section .product-detail-gallery-track {
   display: flex;

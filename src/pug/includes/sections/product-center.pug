@@ -52,7 +52,7 @@ section#productCenter.page-section.product-center
                             .product-card-grid
                                 each item in category.items
                                     a.product-card(href=item.link)
-                                        .product-card-media
+                                        .product-card-media(class=item.imageFrame === 'white' ? 'product-card-media-white' : '')
                                             img(src=item.image, alt=item.nameEn)
                                         .product-card-body
                                             p.product-card-series= category.titleEn

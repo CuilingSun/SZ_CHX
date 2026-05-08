@@ -51,6 +51,20 @@
         box-shadow: 0 1.5rem 3rem rgba($gray-900, 0.08);
     }
 
+    .product-detail-media-white-frame {
+        border: 1px solid rgba($gray-900, 0.08);
+
+        .product-detail-gallery-slide {
+            background-color: $white;
+
+            img {
+                padding: 0.65rem;
+                object-fit: contain;
+                background-color: $white;
+            }
+        }
+    }
+
     .product-detail-gallery-track {
         display: flex;
         min-height: 100%;
