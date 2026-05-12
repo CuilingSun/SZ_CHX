@@ -1,0 +1,60 @@
+-
+    const pageTitle = 'CHX - VS Water Seals'
+    const pageTitleEn = 'CHX - VS Water Seals'
+    const pageTitleZh = '创鸿信 - VS 水封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.vsWaterSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'VS Water Seals'
+    const heroTitleZh = 'VS 水封'
+    const heroTextEn = 'Auxiliary shaft sealing elements designed for splash resistance and contaminant exclusion in rotary equipment.'
+    const heroTextZh = '适用于旋转设备辅助防水、防溅和防污染保护的轴向密封元件。'
+    const heroText = heroTextEn
+    const productImage = 'products/VS/VS_1-padded.jpg'
+    const productImages = [
+        {
+            src: 'products/VS/VS_1-padded.jpg',
+            altEn: 'VS Water Seal product image 1',
+            altZh: 'VS 水封产品图片 1'
+        },
+        {
+            src: 'products/VS/VS_2-padded.jpg',
+            altEn: 'VS Water Seal product image 2',
+            altZh: 'VS 水封产品图片 2'
+        },
+        {
+            src: 'products/VS/VS_3.png',
+            altEn: 'VS Water Seal product image 3',
+            altZh: 'VS 水封产品图片 3'
+        }
+    ]
+    const productNameEn = 'VS Water Seals'
+    const productNameZh = 'VS 水封'
+    const productPdf = 'product_pdfs/V型圈.pdf'
+    const productLeadEn = 'A useful auxiliary sealing option where rotary shafts need additional protection from water, dust, and environmental splash.'
+    const productLeadZh = '适用于需要额外防水、防尘和防飞溅保护的旋转轴结构，可作为辅助密封使用。'
+    const productDescriptionEn = 'VS Water Seals rely on a flexible axial-contact rubber lip to support contaminant exclusion and help improve the service protection of the main sealing position.'
+    const productDescriptionZh = 'VS 水封依靠柔性轴向接触式橡胶唇口提供防污染能力，并辅助提升主密封位置的整体防护效果。'
+    const featureTitle1En = 'Rotary Protection'
+    const featureTitle1Zh = '旋转防护'
+    const featureText1En = 'Suitable for shaft systems that benefit from extra protection against splash, dust, and surface contaminants.'
+    const featureText1Zh = '适用于需要额外防飞溅、防灰尘和防表面污染物保护的轴系结构。'
+    const featureTitle2En = 'Auxiliary Sealing Role'
+    const featureTitle2Zh = '辅助密封'
+    const featureText2En = 'Works alongside primary shaft seals to improve environmental shielding and overall operating cleanliness.'
+    const featureText2Zh = '可与主轴封配合使用，提升环境隔离能力和整体运行洁净度。'
+    const featureTitle3En = 'Simple Serviceability'
+    const featureTitle3Zh = '维护方便'
+    const featureText3En = 'The rubber structure supports practical assembly and replacement in equipment maintenance scenarios.'
+    const featureText3Zh = '橡胶结构便于设备维护中的安装和更换，适合常规服务场景。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

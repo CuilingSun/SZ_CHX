@@ -1,0 +1,65 @@
+-
+    const pageTitle = 'CHX - VA Water Seals'
+    const pageTitleEn = 'CHX - VA Water Seals'
+    const pageTitleZh = '创鸿信 - VA 水封'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.vaWaterSeals.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'VA Water Seals'
+    const heroTitleZh = 'VA 水封'
+    const heroTextEn = 'Axial-contact sealing elements for splash protection, contaminant exclusion, and light sealing duty on rotating shafts.'
+    const heroTextZh = '适用于旋转轴防水、防溅和防污染的轴向接触式密封元件。'
+    const heroText = heroTextEn
+    const productImage = 'products/VA/VA_1.jpg'
+    const productImages = [
+        {
+            src: 'products/VA/VA_1.jpg',
+            altEn: 'VA Water Seal product image 1',
+            altZh: 'VA 水封产品图片 1'
+        },
+        {
+            src: 'products/VA/VA_2-padded.jpg',
+            altEn: 'VA Water Seal product image 2',
+            altZh: 'VA 水封产品图片 2'
+        },
+        {
+            src: 'products/VA/VA_3-padded.jpg',
+            altEn: 'VA Water Seal product image 3',
+            altZh: 'VA 水封产品图片 3'
+        },
+        {
+            src: 'products/VA/VA_4.png',
+            altEn: 'VA Water Seal product image 4',
+            altZh: 'VA 水封产品图片 4'
+        }
+    ]
+    const productNameEn = 'VA Water Seals'
+    const productNameZh = 'VA 水封'
+    const productPdf = 'product_pdfs/V型圈.pdf'
+    const productLeadEn = 'A practical choice for rotating equipment exposed to splash, dust, and light contaminants where flexible installation is important.'
+    const productLeadZh = '适用于接触水、粉尘和飞溅介质的旋转设备，兼顾柔性安装与基础防护需求。'
+    const productDescriptionEn = 'VA Water Seals use an all-rubber axial lip structure that rotates with the shaft to help keep out contaminants and reinforce the protection of the primary sealing arrangement.'
+    const productDescriptionZh = 'VA 水封采用全橡胶轴向唇口结构，随轴旋转工作，可作为防尘防水屏障并辅助主密封提升整体防护效果。'
+    const featureTitle1En = 'Axial Sealing Lip'
+    const featureTitle1Zh = '轴向唇口'
+    const featureText1En = 'Seals against a stationary counterface and can also act as a flinger in wet environments.'
+    const featureText1Zh = '通过轴向接触静止端面形成密封，并在潮湿环境中起到甩液和防护作用。'
+    const featureTitle2En = 'Contaminant Barrier'
+    const featureTitle2Zh = '防污染'
+    const featureText2En = 'Helps keep water, mud, and dust away from bearings and primary shaft seals.'
+    const featureText2Zh = '有助于阻隔水、泥沙和粉尘进入轴承及主轴封位置。'
+    const featureTitle3En = 'Flexible Installation'
+    const featureTitle3Zh = '安装灵活'
+    const featureText3En = 'The elastic rubber design can be fitted over shafts and adjacent parts with practical assembly convenience.'
+    const featureText3Zh = '柔性橡胶结构便于跨越轴上零件安装，适合维护和更换。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug
