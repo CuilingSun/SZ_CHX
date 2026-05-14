@@ -1,0 +1,64 @@
+-
+    const pageTitle = 'CHX - PDU Series'
+    const pageTitleEn = 'CHX - PDU Series'
+    const pageTitleZh = '创鸿信 - PDU 系列'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.pneumaticSealSeries.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'PDU Series'
+    const heroTitleZh = 'PDU 系列'
+    const heroTextEn = 'Pneumatic sealing profiles for reciprocating cylinder applications requiring low friction and reliable sealing.'
+    const heroTextZh = '适用于往复气缸工况的气动密封系列，具有低摩擦与可靠密封性能。'
+    const heroText = heroTextEn
+    const productImage = 'products/PDU/PDU_1.jpg'
+    const productImages = [
+        {
+            src: 'products/PDU/PDU_1.jpg',
+            altEn: 'PDU Series product image 1',
+            altZh: 'PDU 系列产品图片 1'
+        },
+        {
+            src: 'products/PDU/PDU_2.jpg',
+            altEn: 'PDU Series product image 2',
+            altZh: 'PDU 系列产品图片 2'
+        },
+        {
+            src: 'products/PDU/PDU_3.jpg',
+            altEn: 'PDU Series product image 3',
+            altZh: 'PDU 系列产品图片 3'
+        },
+        {
+            src: 'products/PDU/PDU_4.jpg',
+            altEn: 'PDU Series product image 4',
+            altZh: 'PDU 系列产品图片 4'
+        }
+    ]
+    const productNameEn = 'PDU Series'
+    const productNameZh = 'PDU 系列'
+    const productLeadEn = 'Designed for pneumatic cylinders that need dependable sealing contact, low running resistance, and steady reciprocating performance.'
+    const productLeadZh = '适用于要求密封接触稳定、运行阻力较低且往复动作平稳的气缸系统。'
+    const productDescriptionEn = 'PDU series profiles are often used in reciprocating pneumatic cylinders where sealing efficiency, wear balance, and service consistency are important for long-term operation.'
+    const productDescriptionZh = 'PDU 系列常用于往复气缸密封位置，兼顾密封效率、耐磨平衡和长期使用稳定性。'
+    const featureTitle1En = 'Reciprocating Service'
+    const featureTitle1Zh = '往复工况'
+    const featureText1En = 'Suitable for cylinder applications with frequent reciprocating motion and continuous sealing contact.'
+    const featureText1Zh = '适用于频繁往复动作和持续密封接触的气缸工况。'
+    const featureTitle2En = 'Low Running Resistance'
+    const featureTitle2Zh = '低运行阻力'
+    const featureText2En = 'Helps reduce friction during cylinder travel while maintaining dependable air retention.'
+    const featureText2Zh = '在保持稳定气密的同时，有助于降低气缸运行过程中的摩擦阻力。'
+    const featureTitle3En = 'Stable Service Life'
+    const featureTitle3Zh = '稳定寿命'
+    const featureText3En = 'Supports practical wear performance and service consistency in routine pneumatic applications.'
+    const featureText3Zh = '在常规气动应用中具备较好的耐磨寿命和使用一致性。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

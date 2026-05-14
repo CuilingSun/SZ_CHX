@@ -1,0 +1,54 @@
+-
+    const pageTitle = 'CHX - MYA Series'
+    const pageTitleEn = 'CHX - MYA Series'
+    const pageTitleZh = '创鸿信 - MYA 系列'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.pneumaticSealSeries.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'MYA Series'
+    const heroTitleZh = 'MYA 系列'
+    const heroTextEn = 'Compact pneumatic sealing profiles designed for smooth cylinder motion and stable air retention.'
+    const heroTextZh = '适用于气缸系统的紧凑型气动密封系列，兼顾动作顺畅性与稳定气密性能。'
+    const heroText = heroTextEn
+    const productImage = 'products/MYA/MYA_1-cropped.png'
+    const productImages = [
+        {
+            src: 'products/MYA/MYA_1-cropped.png',
+            altEn: 'MYA Series product image 1',
+            altZh: 'MYA 系列产品图片 1'
+        },
+        {
+            src: 'products/MYA/MYA_2-cropped.jpg',
+            altEn: 'MYA Series product image 2',
+            altZh: 'MYA 系列产品图片 2'
+        }
+    ]
+    const productNameEn = 'MYA Series'
+    const productNameZh = 'MYA 系列'
+    const productLeadEn = 'Suitable for pneumatic cylinder assemblies that require compact installation, smooth actuation, and dependable sealing response.'
+    const productLeadZh = '适用于安装空间紧凑、动作顺畅性要求较高的气缸组件，兼顾稳定气密与装配适应性。'
+    const productDescriptionEn = 'MYA series profiles are commonly selected for compact pneumatic cylinder grooves where reliable air sealing, low breakaway force, and practical maintenance performance are all important.'
+    const productDescriptionZh = 'MYA 系列常用于紧凑型气缸沟槽结构，在稳定气密、较低启动阻力和实际维护便利性之间取得平衡。'
+    const featureTitle1En = 'Compact Installation'
+    const featureTitle1Zh = '紧凑安装'
+    const featureText1En = 'Designed for pneumatic structures with limited groove space and compact assembly layouts.'
+    const featureText1Zh = '适用于沟槽空间有限、装配结构紧凑的气动系统。'
+    const featureTitle2En = 'Smooth Motion'
+    const featureTitle2Zh = '动作顺畅'
+    const featureText2En = 'Helps support stable reciprocating movement in cylinders where low friction behavior matters.'
+    const featureText2Zh = '适合对低摩擦动作表现有要求的气缸往复工况。'
+    const featureTitle3En = 'Practical Service Use'
+    const featureTitle3Zh = '实用维护'
+    const featureText3En = 'A practical series for standard pneumatic service conditions and routine replacement work.'
+    const featureText3Zh = '适合常规气动应用与日常维修更换场景。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

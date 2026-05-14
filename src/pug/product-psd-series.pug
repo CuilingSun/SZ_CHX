@@ -1,0 +1,59 @@
+-
+    const pageTitle = 'CHX - PSD Series'
+    const pageTitleEn = 'CHX - PSD Series'
+    const pageTitleZh = '创鸿信 - PSD 系列'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.pneumaticSealSeries.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'PSD Series'
+    const heroTitleZh = 'PSD 系列'
+    const heroTextEn = 'Pneumatic sealing profiles suitable for air cylinder systems with stable dynamic sealing requirements.'
+    const heroTextZh = '适用于空气缸动态密封场景的气动密封系列，兼顾稳定性与耐用性。'
+    const heroText = heroTextEn
+    const productImage = 'products/PSD/PSD_1.jpg'
+    const productImages = [
+        {
+            src: 'products/PSD/PSD_1.jpg',
+            altEn: 'PSD Series product image 1',
+            altZh: 'PSD 系列产品图片 1'
+        },
+        {
+            src: 'products/PSD/PSD_2-padded.png',
+            altEn: 'PSD Series product image 2',
+            altZh: 'PSD 系列产品图片 2'
+        },
+        {
+            src: 'products/PSD/PSD_3.jpg',
+            altEn: 'PSD Series product image 3',
+            altZh: 'PSD 系列产品图片 3'
+        }
+    ]
+    const productNameEn = 'PSD Series'
+    const productNameZh = 'PSD 系列'
+    const productLeadEn = 'Suitable for pneumatic systems that prioritize stable dynamic sealing, practical wear resistance, and predictable operation.'
+    const productLeadZh = '适用于重视动态密封稳定性、耐磨表现和运行可预期性的气动系统。'
+    const productDescriptionEn = 'PSD series profiles are commonly used where cylinders require stable dynamic sealing behavior, balanced wear performance, and reliable air control across repeated motion cycles.'
+    const productDescriptionZh = 'PSD 系列常用于需要稳定动态密封表现、耐磨平衡和重复动作中气密控制可靠的气缸系统。'
+    const featureTitle1En = 'Dynamic Sealing Stability'
+    const featureTitle1Zh = '动态密封稳定'
+    const featureText1En = 'Helps maintain sealing consistency during repeated reciprocating motion in pneumatic cylinders.'
+    const featureText1Zh = '在气缸反复往复动作中帮助维持稳定的密封表现。'
+    const featureTitle2En = 'Balanced Wear'
+    const featureTitle2Zh = '耐磨平衡'
+    const featureText2En = 'Supports practical service life under routine cylinder movement and contact conditions.'
+    const featureText2Zh = '在常规气缸运动与接触条件下具备较好的耐磨寿命。'
+    const featureTitle3En = 'Operational Consistency'
+    const featureTitle3Zh = '运行一致性'
+    const featureText3En = 'A practical choice for air systems requiring repeatable motion and dependable sealing response.'
+    const featureText3Zh = '适合对动作重复性和密封响应一致性有要求的空气系统。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

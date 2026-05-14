@@ -1,0 +1,60 @@
+-
+    const pageTitle = 'CHX - O-Ring Kits'
+    const pageTitleEn = 'CHX - O-Ring Kits'
+    const pageTitleZh = '创鸿信 - O型圈套装'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.oRings.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'O-Ring Kits'
+    const heroTitleZh = 'O型圈套装'
+    const heroTextEn = 'Maintenance-ready O-Ring kits for fast size selection, field replacement, and workshop stock management.'
+    const heroTextZh = '面向维修保养和现场更换需求的 O 型圈套装，便于快速选型与备件管理。'
+    const heroText = heroTextEn
+    const productImage = 'products/O型圈套装/O型圈套装_1.JPG'
+    const productImages = [
+        {
+            src: 'products/O型圈套装/O型圈套装_1.JPG',
+            altEn: 'O-Ring kit product image 1',
+            altZh: 'O型圈套装产品图片 1'
+        },
+        {
+            src: 'products/O型圈套装/O型圈套装_2.jpg',
+            altEn: 'O-Ring kit product image 2',
+            altZh: 'O型圈套装产品图片 2'
+        },
+        {
+            src: 'products/O型圈套装/O型圈套装_3.jpg',
+            altEn: 'O-Ring kit product image 3',
+            altZh: 'O型圈套装产品图片 3'
+        }
+    ]
+    const productNameEn = 'O-Ring Kits'
+    const productNameZh = 'O型圈套装'
+    const productPdf = 'product_pdfs/O-Ring.pdf'
+    const productLeadEn = 'Prepared for maintenance teams that need quick access to common O-Ring sizes for service and replacement work.'
+    const productLeadZh = '适合维修和保养场景，便于快速取用常见规格 O 型圈进行更换作业。'
+    const productDescriptionEn = 'O-Ring kits group commonly used sealing sizes into portable assortments, helping improve maintenance efficiency, spare-parts control, and现场 replacement readiness.'
+    const productDescriptionZh = 'O型圈套装将常用规格集中配置，便于提升维修效率、备件管理便利性和现场更换响应速度。'
+    const featureTitle1En = 'Quick Selection'
+    const featureTitle1Zh = '快速选取'
+    const featureText1En = 'Organized size assortments help technicians identify and retrieve the right seal faster.'
+    const featureText1Zh = '通过常用规格分类收纳，便于维修人员更快找到合适密封件。'
+    const featureTitle2En = 'Maintenance Efficiency'
+    const featureTitle2Zh = '维护效率'
+    const featureText2En = 'Suitable for workshops, service teams, and equipment maintenance stock management.'
+    const featureText2Zh = '适合车间、售后服务和设备保养库存管理使用。'
+    const featureTitle3En = 'Practical Assortment'
+    const featureTitle3Zh = '常用组合'
+    const featureText3En = 'Supports common industrial replacement needs with a practical range of sizes in one set.'
+    const featureText3Zh = '通过一套常用规格满足多种工业设备的更换和备件需求。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

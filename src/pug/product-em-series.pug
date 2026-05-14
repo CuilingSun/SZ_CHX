@@ -1,0 +1,49 @@
+-
+    const pageTitle = 'CHX - EM Series'
+    const pageTitleEn = 'CHX - EM Series'
+    const pageTitleZh = '创鸿信 - EM 系列'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.pneumaticSealSeries.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'EM Series'
+    const heroTitleZh = 'EM 系列'
+    const heroTextEn = 'Pneumatic seal profiles for general cylinder sealing needs with balanced wear resistance and air retention.'
+    const heroTextZh = '适用于常规气缸密封需求的气动密封系列，兼顾耐磨性与气密保持能力。'
+    const heroText = heroTextEn
+    const productImage = 'products/EM/EM_1.jpg'
+    const productImages = [
+        {
+            src: 'products/EM/EM_1.jpg',
+            altEn: 'EM Series product image 1',
+            altZh: 'EM 系列产品图片 1'
+        }
+    ]
+    const productNameEn = 'EM Series'
+    const productNameZh = 'EM 系列'
+    const productLeadEn = 'Suited to general pneumatic cylinder service where wear balance, stable sealing, and routine replacement practicality are important.'
+    const productLeadZh = '适用于常规气缸使用场景，兼顾耐磨平衡、稳定密封和日常更换便利性。'
+    const productDescriptionEn = 'EM series profiles are commonly selected for general pneumatic equipment because they offer practical sealing behavior, balanced durability, and broad suitability across standard air-cylinder applications.'
+    const productDescriptionZh = 'EM 系列常用于通用气动设备，在标准空气缸应用中兼顾密封实用性、耐用性和适配广度。'
+    const featureTitle1En = 'General-Purpose Use'
+    const featureTitle1Zh = '通用应用'
+    const featureText1En = 'A practical series for standard cylinder assemblies and routine pneumatic operating conditions.'
+    const featureText1Zh = '适合标准气缸装配与常规气动运行条件。'
+    const featureTitle2En = 'Balanced Wear Resistance'
+    const featureTitle2Zh = '耐磨平衡'
+    const featureText2En = 'Supports practical wear life while maintaining consistent air sealing behavior.'
+    const featureText2Zh = '在保持稳定气密表现的同时具备较好的耐磨寿命。'
+    const featureTitle3En = 'Easy Replacement'
+    const featureTitle3Zh = '更换便利'
+    const featureText3En = 'Well suited to maintenance and replacement work in widely used pneumatic equipment.'
+    const featureText3Zh = '适合在常见气动设备中进行维护和更换作业。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug

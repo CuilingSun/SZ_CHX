@@ -1,0 +1,54 @@
+-
+    const pageTitle = 'CHX - EU Series'
+    const pageTitleEn = 'CHX - EU Series'
+    const pageTitleZh = '创鸿信 - EU 系列'
+    const currentPage = 'products'
+    const heroKey = 'productDetail.pneumaticSealSeries.hero'
+    const heroEyebrowEn = 'Product Details'
+    const heroEyebrowZh = '产品详情'
+    const heroTitleEn = 'EU Series'
+    const heroTitleZh = 'EU 系列'
+    const heroTextEn = 'Pneumatic sealing profiles for cylinder assemblies requiring efficient sealing and stable reciprocating performance.'
+    const heroTextZh = '适用于要求高效密封与稳定往复性能的气缸组件的气动密封系列。'
+    const heroText = heroTextEn
+    const productImage = 'products/EU/EU_1.png'
+    const productImages = [
+        {
+            src: 'products/EU/EU_1.png',
+            altEn: 'EU Series product image 1',
+            altZh: 'EU 系列产品图片 1'
+        },
+        {
+            src: 'products/EU/EU_2.jpg',
+            altEn: 'EU Series product image 2',
+            altZh: 'EU 系列产品图片 2'
+        }
+    ]
+    const productNameEn = 'EU Series'
+    const productNameZh = 'EU 系列'
+    const productLeadEn = 'Designed for pneumatic cylinder assemblies that emphasize efficient sealing response and stable reciprocating operation.'
+    const productLeadZh = '适用于重视密封效率与往复运行稳定性的气缸组件。'
+    const productDescriptionEn = 'EU series profiles are commonly applied where pneumatic cylinders need efficient sealing behavior, steady motion performance, and dependable operation over repeated service cycles.'
+    const productDescriptionZh = 'EU 系列常用于需要密封效率高、动作稳定且可长期重复运行的气缸系统。'
+    const featureTitle1En = 'Efficient Sealing'
+    const featureTitle1Zh = '密封高效'
+    const featureText1En = 'Helps improve air retention efficiency in pneumatic cylinders with repeated operating cycles.'
+    const featureText1Zh = '适用于需要在重复工况下保持较高气密效率的气缸系统。'
+    const featureTitle2En = 'Stable Reciprocation'
+    const featureTitle2Zh = '往复稳定'
+    const featureText2En = 'Supports smoother cylinder travel and consistent sealing behavior through repeated motion.'
+    const featureText2Zh = '有助于在反复动作中保持较平稳的气缸运行与密封表现。'
+    const featureTitle3En = 'Reliable Operation'
+    const featureTitle3Zh = '运行可靠'
+    const featureText3En = 'A practical profile option for equipment that requires repeatable pneumatic performance.'
+    const featureText3Zh = '适合对气动性能重复性和运行可靠性有要求的设备。'
+
+doctype html
+html(lang='en')
+    include includes/site-head.pug
+
+    body(data-page='products', data-title-en=pageTitleEn, data-title-zh=pageTitleZh)
+        include includes/site-nav.pug
+        include includes/subpage-hero.pug
+        include includes/sections/product-detail.pug
+        include includes/site-footer.pug
