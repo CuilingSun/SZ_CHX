@@ -206,6 +206,15 @@
         line-height: 1.7;
     }
 
+    .product-directory-link-materials {
+        margin-top: -0.2rem;
+        margin-bottom: 0.8rem;
+        color: shade-color($primary, 20%);
+        font-size: 0.84rem;
+        font-weight: $font-weight-semibold;
+        line-height: 1.6;
+    }
+
     .product-directory-link-count {
         display: flex;
         align-items: baseline;
@@ -328,6 +337,14 @@
         margin-bottom: 0;
         color: $gray-700;
         line-height: 1.8;
+    }
+
+    .product-category-panel-materials {
+        margin-top: 0.55rem;
+        color: shade-color($primary, 20%);
+        font-size: 0.95rem;
+        font-weight: $font-weight-semibold;
+        line-height: 1.7;
     }
 
     .product-category-panel-summary {

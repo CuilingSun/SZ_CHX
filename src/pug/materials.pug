@@ -68,7 +68,7 @@
         },
         {
             key: 'silicone',
-            nameEn: 'Silicone',
+            nameEn: 'Silicone / VMQ',
             nameZh: '硅橡胶',
             oilEn: 'Fair',
             oilZh: '一般',
@@ -85,8 +85,8 @@
             costEn: 'Medium',
             costZh: '中',
             costClass: 'medium',
-            typicalEn: 'Food-grade seals, medical parts, special-environment sealing',
-            typicalZh: '食品级密封、医疗部件、特殊环境密封'
+            typicalEn: 'Food-grade seals, medical parts, electronics, special-environment sealing',
+            typicalZh: '食品级密封、医疗部件、电子设备、特殊环境密封'
         },
         {
             key: 'hnbr',
@@ -111,14 +111,36 @@
             typicalZh: '汽车系统、高要求液压密封'
         },
         {
+            key: 'acm',
+            nameEn: 'ACM',
+            nameZh: '丙烯酸酯橡胶',
+            oilEn: 'Excellent',
+            oilZh: '优',
+            oilClass: 'excellent',
+            tempEn: '-20°C to 150°C',
+            tempZh: '-20°C 至 150°C',
+            tempClass: 'good',
+            chemicalEn: 'Moderate',
+            chemicalZh: '中',
+            chemicalClass: 'medium',
+            wearEn: 'Fair',
+            wearZh: '一般',
+            wearClass: 'medium',
+            costEn: 'Medium-High',
+            costZh: '中高',
+            costClass: 'high',
+            typicalEn: 'Transmission seals, engine oil seals, high-temperature lubricant sealing',
+            typicalZh: '变速箱密封、发动机油封、高温润滑介质密封'
+        },
+        {
             key: 'epdm',
             nameEn: 'EPDM',
             nameZh: '三元乙丙橡胶',
             oilEn: 'Weak',
             oilZh: '弱',
             oilClass: 'weak',
-            tempEn: '-40°C to 150°C',
-            tempZh: '-40°C 至 150°C',
+            tempEn: '-50°C to 150°C',
+            tempZh: '-50°C 至 150°C',
             tempClass: 'good',
             chemicalEn: 'Excellent',
             chemicalZh: '优',
@@ -155,6 +177,28 @@
             typicalZh: '液压密封、高压动态密封'
         },
         {
+            key: 'ptfe',
+            nameEn: 'PTFE',
+            nameZh: '聚四氟乙烯',
+            oilEn: 'Excellent',
+            oilZh: '优',
+            oilClass: 'excellent',
+            tempEn: '-200°C to 260°C',
+            tempZh: '-200°C 至 260°C',
+            tempClass: 'excellent',
+            chemicalEn: 'Excellent',
+            chemicalZh: '优',
+            chemicalClass: 'excellent',
+            wearEn: 'Moderate',
+            wearZh: '中',
+            wearClass: 'medium',
+            costEn: 'High',
+            costZh: '高',
+            costClass: 'high',
+            typicalEn: 'Chemical seals, low-friction seal rings, PTFE-based engineered seals',
+            typicalZh: '化工密封、低摩擦密封圈、PTFE 基工程密封件'
+        },
+        {
             key: 'cr',
             nameEn: 'CR',
             nameZh: '氯丁橡胶',
@@ -189,13 +233,13 @@
             featuresZh: ['耐油性能优异', '耐磨性良好', '加工性能稳定', '适合常规工业密封需求'],
             tempEn: '-30°C to 100°C',
             tempZh: '-30°C 至 100°C',
-            productsEn: ['O-Rings', 'Oil Seals', 'Hydraulic Seals'],
-            productsZh: ['O 型圈', '油封', '液压密封件'],
+            products: [
+                { en: 'O-Ring', zh: 'O 型圈', href: 'product-o-rings.html' },
+                { en: 'TC Oil Seal', zh: 'TC骨架油封', href: 'product-tc-oil-seals.html' },
+                { en: 'U-Cup', zh: 'U型密封', href: 'product-u-cups.html' }
+            ],
             industriesEn: ['Mechanical equipment', 'Automotive', 'General industrial manufacturing'],
-            industriesZh: ['机械设备', '汽车', '通用工业制造'],
-            productLink: 'products.html?filter=o-rings',
-            productLabelEn: 'View Related Products',
-            productLabelZh: '查看相关产品'
+            industriesZh: ['机械设备', '汽车', '通用工业制造']
         },
         {
             key: 'fkm',
@@ -207,31 +251,31 @@
             featuresZh: ['耐高温性能突出', '耐化学腐蚀能力强', '适用于燃油及高温油介质', '适合严苛工况密封'],
             tempEn: '-20°C to 200°C',
             tempZh: '-20°C 至 200°C',
-            productsEn: ['High-temperature O-Rings', 'Automotive Oil Seals', 'Special Sealing Parts'],
-            productsZh: ['高温 O 型圈', '汽车油封', '特殊密封件'],
+            products: [
+                { en: 'O-Ring', zh: 'O 型圈', href: 'product-o-rings.html' },
+                { en: 'Automotive Oil Seal', zh: '汽车油封', href: 'product-automotive-oil-seals.html' },
+                { en: 'TC Oil Seal', zh: 'TC骨架油封', href: 'product-tc-oil-seals.html' }
+            ],
             industriesEn: ['Petrochemical', 'Automotive', 'High-temperature equipment'],
-            industriesZh: ['石油化工', '汽车', '高温设备'],
-            productLink: 'products.html?filter=o-rings',
-            productLabelEn: 'View Related Products',
-            productLabelZh: '查看相关产品'
+            industriesZh: ['石油化工', '汽车', '高温设备']
         },
         {
             key: 'silicone',
-            nameEn: 'Silicone',
+            nameEn: 'Silicone / VMQ',
             nameZh: '硅橡胶',
-            introEn: 'Known for wide temperature tolerance, softness, and insulation performance in special environments.',
-            introZh: '硅橡胶具有优异的耐高低温性能、柔软性和绝缘性，适合食品、医疗及特殊环境应用。',
-            featuresEn: ['Excellent high and low temperature range', 'Good environmental and electrical properties', 'Soft and elastic', 'Suitable for special environment sealing'],
-            featuresZh: ['耐高低温范围广', '环保及绝缘性能好', '柔软弹性佳', '适用于特殊环境密封'],
+            introEn: 'Known for excellent high- and low-temperature performance, weather resistance, and electrical insulation in special sealing environments.',
+            introZh: '硅橡胶兼具优异的耐高低温性能、耐候耐臭氧能力和电绝缘特性，适合食品、医疗、电子及特殊环境密封应用。',
+            featuresEn: ['Excellent low and high temperature flexibility', 'Strong resistance to weather, ozone, and UV', 'Good electrical insulation properties', 'Specific formulations can be used with water up to 100°C and selected aliphatic oils'],
+            featuresZh: ['高低温适应范围广', '耐候、耐臭氧及耐紫外表现好', '电绝缘性能优良', '部分配方可用于 100°C 以下水介质及特定脂肪族油类环境'],
             tempEn: '-60°C to 200°C',
             tempZh: '-60°C 至 200°C',
-            productsEn: ['Rubber products', 'Special O-Rings', 'Non-standard seals'],
-            productsZh: ['橡胶制品', '特殊 O 型圈', '非标密封件'],
-            industriesEn: ['Electronics', 'Medical support environments', 'Food-related equipment'],
-            industriesZh: ['电子', '医疗辅助环境', '食品相关设备'],
-            productLink: 'products.html?filter=rubber-products',
-            productLabelEn: 'View Related Products',
-            productLabelZh: '查看相关产品'
+            products: [
+                { en: 'O-Ring', zh: 'O 型圈', href: 'product-o-rings.html' },
+                { en: 'X-Ring', zh: '星型圈', href: 'product-x-rings.html' },
+                { en: 'O-Ring Kits / Repair Box', zh: 'O型圈套装 / 修理盒', href: 'product-o-ring-kits.html' }
+            ],
+            industriesEn: ['Electronics', 'Medical equipment', 'Food-related equipment'],
+            industriesZh: ['电子', '医疗设备', '食品相关设备']
         },
         {
             key: 'hnbr',
@@ -243,13 +287,31 @@
             featuresZh: ['耐热性优于普通 NBR', '耐油及耐老化能力更强', '机械性能优良', '适合高要求工业应用'],
             tempEn: '-30°C to 150°C',
             tempZh: '-30°C 至 150°C',
-            productsEn: ['Automotive oil seals', 'Hydraulic seals', 'Dynamic sealing parts'],
-            productsZh: ['汽车油封', '液压密封件', '动态密封件'],
+            products: [
+                { en: 'Automotive Oil Seal', zh: '汽车油封', href: 'product-automotive-oil-seals.html' },
+                { en: 'U-Cup', zh: 'U型密封', href: 'product-u-cups.html' },
+                { en: 'X-Ring', zh: '星型圈', href: 'product-x-rings.html' }
+            ],
             industriesEn: ['Automotive', 'Mechanical equipment', 'Hydraulic systems'],
-            industriesZh: ['汽车', '机械设备', '液压系统'],
-            productLink: 'products.html?filter=y-rings',
-            productLabelEn: 'View Related Products',
-            productLabelZh: '查看相关产品'
+            industriesZh: ['汽车', '机械设备', '液压系统']
+        },
+        {
+            key: 'acm',
+            nameEn: 'ACM',
+            nameZh: '丙烯酸酯橡胶',
+            introEn: 'ACM is an oil- and heat-resistant elastomer mainly used in automotive sealing positions exposed to hot lubricants and additive-rich oils.',
+            introZh: 'ACM 以耐高温润滑油和耐热老化见长，常用于汽车动力系统中与热油、添加剂型润滑介质接触的密封位置。',
+            featuresEn: ['Excellent resistance to mineral oils and hot lubricants', 'Good ozone, weathering, and hot-air resistance', 'Suitable for automotive transmission and engine sealing', 'Limited low-temperature flexibility'],
+            featuresZh: ['对矿物油及高温润滑油耐受性优异', '耐臭氧、耐候和耐热空气性能良好', '适用于发动机和变速箱等汽车密封场景', '低温柔性相对有限'],
+            tempEn: '-20°C to 150°C',
+            tempZh: '-20°C 至 150°C',
+            products: [
+                { en: 'Automotive Oil Seal', zh: '汽车油封', href: 'product-automotive-oil-seals.html' },
+                { en: 'Steering Gear Oil Seal', zh: '方向机油封', href: 'product-steering-gear-oil-seals.html' },
+                { en: 'TC Oil Seal', zh: 'TC骨架油封', href: 'product-tc-oil-seals.html' }
+            ],
+            industriesEn: ['Automotive', 'Transmission systems', 'Motor drive equipment'],
+            industriesZh: ['汽车', '传动系统', '电机驱动设备']
         },
         {
             key: 'epdm',
@@ -259,15 +321,15 @@
             introZh: 'EPDM 具有出色的耐候、耐臭氧及耐水蒸气性能，适用于户外、防水及抗老化场景，但不适合强油环境。',
             featuresEn: ['Excellent weather resistance', 'Strong ozone and steam resistance', 'Good outdoor durability', 'Not recommended for strong oil exposure'],
             featuresZh: ['耐候性优异', '耐臭氧和耐水蒸气能力强', '适合户外长期使用', '不适用于强油介质环境'],
-            tempEn: '-40°C to 150°C',
-            tempZh: '-40°C 至 150°C',
-            productsEn: ['Rubber products', 'Waterproof sealing parts', 'General industrial seals'],
-            productsZh: ['橡胶制品', '防水密封件', '通用工业密封件'],
+            tempEn: '-50°C to 150°C',
+            tempZh: '-50°C 至 150°C',
+            products: [
+                { en: 'O-Ring', zh: 'O 型圈', href: 'product-o-rings.html' },
+                { en: 'ED Ring', zh: 'ED圈', href: 'product-ed-rings.html' },
+                { en: 'O-Ring Kits / Repair Box', zh: 'O型圈套装 / 修理盒', href: 'product-o-ring-kits.html' }
+            ],
             industriesEn: ['Electrical appliances', 'Outdoor equipment', 'Water systems'],
-            industriesZh: ['电器', '户外设备', '水系统'],
-            productLink: 'products.html?filter=rubber-products',
-            productLabelEn: 'View Related Products',
-            productLabelZh: '查看相关产品'
+            industriesZh: ['电器', '户外设备', '水系统']
         },
         {
             key: 'pu',
@@ -279,13 +341,31 @@
             featuresZh: ['耐磨性能极强', '适合高压密封环境', '适用于动态运动工况', '结构韧性良好'],
             tempEn: '-30°C to 100°C',
             tempZh: '-30°C 至 100°C',
-            productsEn: ['Hydraulic seals', 'Y-Rings', 'Dynamic sealing components'],
-            productsZh: ['液压密封件', 'Y 型圈', '动态密封元件'],
+            products: [
+                { en: 'U-Cup', zh: 'U型密封', href: 'product-u-cups.html' },
+                { en: 'DH Dust Seal', zh: 'DH防尘密封', href: 'product-dh-dust-seals.html' },
+                { en: 'Guide Ring / Wear Ring', zh: '导向带 / 耐磨带', href: 'product-guide-rings.html' }
+            ],
             industriesEn: ['Hydraulic equipment', 'Mechanical equipment', 'Heavy-duty manufacturing'],
-            industriesZh: ['液压设备', '机械设备', '重载制造'],
-            productLink: 'products.html?filter=y-rings',
-            productLabelEn: 'View Related Products',
-            productLabelZh: '查看相关产品'
+            industriesZh: ['液压设备', '机械设备', '重载制造']
+        },
+        {
+            key: 'ptfe',
+            nameEn: 'PTFE',
+            nameZh: '聚四氟乙烯',
+            introEn: 'PTFE is a low-friction, chemically inert sealing material used where aggressive media, high purity, or wide temperature range are important.',
+            introZh: 'PTFE 具备极低摩擦、优异耐化学介质性能和很宽的温度适用范围，适合强腐蚀、高清洁度及复杂介质密封环境。',
+            featuresEn: ['Exceptional chemical resistance', 'Very low friction and self-lubricating behavior', 'Wide operating temperature range', 'Often used in engineered seals for demanding media'],
+            featuresZh: ['耐化学介质能力极强', '摩擦系数低且具有自润滑特性', '适用温度范围宽', '常用于严苛介质下的工程密封方案'],
+            tempEn: '-200°C to 260°C',
+            tempZh: '-200°C 至 260°C',
+            products: [
+                { en: 'Glyd Rings / Step Seals', zh: '格莱圈 / 斯特封', href: 'product-glyd-rings.html' },
+                { en: 'Guide Ring / Wear Ring', zh: '导向带 / 耐磨带', href: 'product-guide-rings.html' },
+                { en: 'ED Ring', zh: 'ED圈', href: 'product-ed-rings.html' }
+            ],
+            industriesEn: ['Petrochemical', 'Electronics / clean systems', 'High-purity fluid equipment'],
+            industriesZh: ['石油化工', '电子 / 洁净系统', '高纯流体设备']
         },
         {
             key: 'cr',
@@ -297,13 +377,13 @@
             featuresZh: ['耐候性能良好', '具备一定阻燃特性', '通用工业性能均衡', '适用于防护与密封件'],
             tempEn: '-30°C to 120°C',
             tempZh: '-30°C 至 120°C',
-            productsEn: ['Rubber products', 'Protective components', 'General sealing parts'],
-            productsZh: ['橡胶制品', '防护类元件', '通用密封件'],
+            products: [
+                { en: 'VA Water Seal', zh: 'VA 水封', href: 'product-va-water-seals.html' },
+                { en: 'VS Water Seal', zh: 'VS 水封', href: 'product-vs-water-seals.html' },
+                { en: 'ED Ring', zh: 'ED圈', href: 'product-ed-rings.html' }
+            ],
             industriesEn: ['General industrial manufacturing', 'Electrical appliances', 'Outdoor equipment'],
-            industriesZh: ['通用工业制造', '电器', '户外设备'],
-            productLink: 'products.html?filter=rubber-products',
-            productLabelEn: 'View Related Products',
-            productLabelZh: '查看相关产品'
+            industriesZh: ['通用工业制造', '电器', '户外设备']
         }
     ];
 
@@ -312,8 +392,8 @@
             key: 'highTemp',
             titleEn: 'High Temperature',
             titleZh: '高温环境',
-            materialsEn: 'Recommended: FKM / Viton, Silicone',
-            materialsZh: '推荐材料：FKM / Viton、Silicone',
+            materialsEn: 'Recommended: FKM / Viton, Silicone / VMQ',
+            materialsZh: '推荐材料：FKM / Viton、Silicone / VMQ',
             textEn: 'Suitable for high-temperature oil media, engine compartments, and long-duration thermal exposure.',
             textZh: '适用于高温油介质、发动机周边及持续受热工况。'
         },
@@ -325,6 +405,15 @@
             materialsZh: '推荐材料：NBR、HNBR',
             textEn: 'A practical choice for general industrial oil sealing and demanding lubricating media.',
             textZh: '适合常规耐油密封和要求较高的润滑油介质环境。'
+        },
+        {
+            key: 'chemical',
+            titleEn: 'Aggressive Chemicals / Low Friction',
+            titleZh: '强腐蚀介质 / 低摩擦工况',
+            materialsEn: 'Recommended: PTFE',
+            materialsZh: '推荐材料：PTFE',
+            textEn: 'Well suited for aggressive media, clean process systems, and sealing applications that prioritize chemical resistance and low friction.',
+            textZh: '适用于强腐蚀介质、洁净工艺系统及重视耐化学性与低摩擦表现的密封场景。'
         },
         {
             key: 'wear',

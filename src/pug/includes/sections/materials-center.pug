@@ -74,15 +74,16 @@ section.materials-page
                         .material-meta-block
                             h4(data-i18n='materials.detail.products', data-en='Recommended Products', data-zh='推荐产品') Recommended Products
                             .material-tag-row
-                                each product, index in item.productsEn
-                                    span.material-tag(data-i18n=`materials.detail.${item.key}.products.${index}`, data-en=item.productsEn[index], data-zh=item.productsZh[index])= product
+                                each product, index in item.products
+                                    if product.href
+                                        a.material-tag.material-tag-link(href=product.href, data-i18n=`materials.detail.${item.key}.products.${index}`, data-en=product.en, data-zh=product.zh)= product.en
+                                    else
+                                        span.material-tag(data-i18n=`materials.detail.${item.key}.products.${index}`, data-en=product.en, data-zh=product.zh)= product.en
                         .material-meta-block
                             h4(data-i18n='materials.detail.industries', data-en='Industries / Typical Scenarios', data-zh='适用行业 / 典型场景') Industries / Typical Scenarios
                             .material-tag-row
                                 each industry, index in item.industriesEn
                                     span.material-tag.muted(data-i18n=`materials.detail.${item.key}.industries.${index}`, data-en=item.industriesEn[index], data-zh=item.industriesZh[index])= industry
-                        .material-card-actions
-                            a.btn.btn-primary.material-link(href=item.productLink, data-i18n=`materials.detail.${item.key}.button`, data-en=item.productLabelEn, data-zh=item.productLabelZh)= item.productLabelEn
 
         section#materialsScenes.materials-scenes-panel.page-section
             .materials-section-heading

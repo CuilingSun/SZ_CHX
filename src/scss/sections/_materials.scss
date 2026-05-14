@@ -345,13 +345,21 @@
         }
     }
 
-    .material-card-actions {
-        margin-top: auto;
-        padding-top: 0.5rem;
-    }
+    .material-tag-link {
+        border: 1px solid rgba($primary, 0.28);
+        background-color: rgba($primary, 0.1);
+        color: shade-color($primary, 34%);
+        text-decoration: none;
+        transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 
-    .material-link {
-        width: 100%;
+        &:hover,
+        &:focus {
+            transform: translateY(-1px);
+            border-color: rgba($primary, 0.46);
+            background-color: rgba($primary, 0.16);
+            color: shade-color($primary, 42%);
+            box-shadow: 0 0.5rem 1rem rgba($primary, 0.14);
+        }
     }
 
     .materials-scene-grid {

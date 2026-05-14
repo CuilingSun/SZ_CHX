@@ -31,6 +31,7 @@ section#productCenter.page-section.product-center
                                     span.product-directory-link-title-en= category.titleEn
                             .product-directory-link-detail
                                 p.product-directory-link-copy(data-i18n=`products.category.${category.key}.description`, data-en=category.descriptionEn, data-zh=category.descriptionZh)= category.descriptionEn
+                                p.product-directory-link-copy.product-directory-link-materials(data-i18n=`products.category.${category.key}.materials`, data-en=category.materialsEn, data-zh=category.materialsZh)= category.materialsEn
                                 p.product-directory-link-count
                                     span.product-directory-link-count-label(data-i18n='products.overview.summaryLabel', data-en='Product Count', data-zh='产品数量') Product Count
                                     strong= category.items.length
@@ -46,6 +47,7 @@ section#productCenter.page-section.product-center
                                         span.product-category-panel-title-zh= category.titleZh
                                         span.product-category-panel-title-en= category.titleEn
                                     p.product-category-panel-copy(data-i18n=`products.category.${category.key}.description`, data-en=category.descriptionEn, data-zh=category.descriptionZh)= category.descriptionEn
+                                    p.product-category-panel-copy.product-category-panel-materials(data-i18n=`products.category.${category.key}.materials`, data-en=category.materialsEn, data-zh=category.materialsZh)= category.materialsEn
                                 .product-category-panel-summary
                                     p.product-category-summary-label(data-i18n='products.overview.summaryLabel', data-en='Product Count', data-zh='产品数量') Product Count
                                     p.product-category-summary-value= category.items.length
