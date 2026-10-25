@@ -1,6 +1,6 @@
 nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
     .container
-        a.navbar-brand(href='index.html')
+        a.navbar-brand(href='home.html')
             img(src='assets/img/CHX_logo.png', alt='CHX logo')
         button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
             span(data-i18n='nav.menu', data-en='Menu', data-zh='菜单') Menu
@@ -8,7 +8,7 @@ nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
         #navbarResponsive.collapse.navbar-collapse
             ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                 li.nav-item
-                    a.nav-link(class=currentPage === 'home' ? 'active' : '', href='index.html', data-i18n='nav.home', data-en='Home', data-zh='首页') Home
+                    a.nav-link(class=currentPage === 'home' ? 'active' : '', href='home.html', data-i18n='nav.home', data-en='Home', data-zh='首页') Home
                 li.nav-item
                     a.nav-link(class=currentPage === 'about' ? 'active' : '', href='about.html', data-i18n='nav.about', data-en='About', data-zh='关于我们') About
                 li.nav-item

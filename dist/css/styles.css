@@ -11064,7 +11064,7 @@ p {
   display: block;
   padding: 2rem 1.5rem;
   border: 1px solid rgba(13, 34, 64, 0.1);
-  border-top: 3px solid transparent;
+  border-top: 3px solid rgba(13, 34, 64, 0.1);
   border-radius: 0.75rem;
   background: #fff;
   text-decoration: none;

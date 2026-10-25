@@ -5,7 +5,7 @@
 // Override the default Bootstrap base font family
 // 
 // Roboto Slab is being used below and is brought in
-// via Google fonts in the head of src/pug/index.pug.
+// via Google fonts in the head of src/pug/home.pug.
 // The fonts listed afterwards are fallbacks.
 
 $font-family-base: "Roboto Slab",
@@ -24,7 +24,7 @@ sans-serif,
 // Override the default Bootstrap headings font family
 // 
 // Montserrat is being used below and is brought in
-// via Google fonts in the head of src/pug/index.pug.
+// via Google fonts in the head of src/pug/home.pug.
 // The fonts listed afterwards are fallbacks.
 
 $headings-font-family: "Montserrat",
