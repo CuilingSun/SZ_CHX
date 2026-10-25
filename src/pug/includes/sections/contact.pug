@@ -2,35 +2,11 @@ section#contact.page-section
     .container
         .contact-layout
             .contact-info-col
-                p.contact-kicker(data-i18n='contact.kicker', data-en='Reach Us', data-zh='联系我们') Reach Us
-                h2(data-i18n='contact.heading', data-en='Get in Touch', data-zh='与我们沟通') Get in Touch
-                p.contact-intro(data-i18n='contact.intro', data-en='For product selection, quotations, and technical support, our team responds promptly.', data-zh='如需产品选型、报价或技术支持，我们的团队将迅速响应。') For product selection, quotations, and technical support, our team responds promptly.
+                //- p.contact-kicker(data-i18n='contact.kicker', data-en='Reach Us', data-zh='联系我们') Reach Us
+                //- h2(data-i18n='contact.heading', data-en='Get in Touch', data-zh='与我们沟通') Get in Touch
+                //- p.contact-intro(data-i18n='contact.intro', data-en='For product selection, quotations, and technical support, our team responds promptly.', data-zh='如需产品选型、报价或技术支持，我们的团队将迅速响应。') For product selection, quotations, and technical support, our team responds promptly.
 
                 .contact-details
-                    .contact-detail
-                        .contact-detail-icon
-                            i.fas.fa-map-marker-alt(aria-hidden='true')
-                        div
-                            span.contact-detail-label(data-i18n='contact.info.address', data-en='Address', data-zh='地址') Address
-                            span.contact-detail-value 深圳市宝安西乡大道221号（丽景城1栋125号）
-                    .contact-detail
-                        .contact-detail-icon
-                            i.fas.fa-phone(aria-hidden='true')
-                        div
-                            span.contact-detail-label(data-i18n='contact.info.telephone', data-en='Telephone', data-zh='电话') Telephone
-                            span.contact-detail-value 0755-29566383 &nbsp;/&nbsp; 0755-29566380
-                    .contact-detail
-                        .contact-detail-icon
-                            i.fas.fa-fax(aria-hidden='true')
-                        div
-                            span.contact-detail-label(data-i18n='contact.info.fax', data-en='Fax', data-zh='传真') Fax
-                            span.contact-detail-value 0755-29566381
-                    .contact-detail
-                        .contact-detail-icon
-                            i.fas.fa-mobile-alt(aria-hidden='true')
-                        div
-                            span.contact-detail-label(data-i18n='contact.info.mobile', data-en='Mobile', data-zh='手机') Mobile
-                            a.contact-detail-link(href='tel:+8618925269628') +86 189 2526 9628
                     .contact-detail
                         .contact-detail-icon
                             i.fas.fa-envelope(aria-hidden='true')
@@ -39,18 +15,43 @@ section#contact.page-section
                             a.contact-detail-link(href='mailto:szchx188@163.com') szchx188@163.com
                     .contact-detail
                         .contact-detail-icon
+                            i.fab.fa-weixin(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.wechat', data-en='WeChat', data-zh='微信') WeChat
+                            span.contact-detail-value 18925269628
+                    .contact-detail
+                        .contact-detail-icon
                             i.fas.fa-comments(aria-hidden='true')
                         div
                             span.contact-detail-label(data-i18n='contact.info.qq', data-en='QQ', data-zh='QQ') QQ
                             span.contact-detail-value 790360920 &nbsp;·&nbsp; 785645609 &nbsp;·&nbsp; 793799080
                     .contact-detail
                         .contact-detail-icon
-                            i.fab.fa-weixin(aria-hidden='true')
+                            i.fas.fa-phone(aria-hidden='true')
                         div
-                            span.contact-detail-label(data-i18n='contact.info.wechat', data-en='WeChat', data-zh='微信') WeChat
-                            span.contact-detail-value 18925269628
+                            span.contact-detail-label(data-i18n='contact.info.telephone', data-en='Telephone', data-zh='电话') Telephone
+                            span.contact-detail-value 0755-29566383 &nbsp;/&nbsp; 0755-29566380
+                    //- .contact-detail
+                    //-     .contact-detail-icon
+                    //-         i.fas.fa-fax(aria-hidden='true')
+                    //-     div
+                    //-         span.contact-detail-label(data-i18n='contact.info.fax', data-en='Fax', data-zh='传真') Fax
+                    //-         span.contact-detail-value 0755-29566381
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-mobile-alt(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.mobile', data-en='Mobile', data-zh='手机') Mobile
+                            a.contact-detail-link(href='tel:+8618925269628') +86 189 2526 9628
+                    .contact-detail
+                        .contact-detail-icon
+                            i.fas.fa-map-marker-alt(aria-hidden='true')
+                        div
+                            span.contact-detail-label(data-i18n='contact.info.address', data-en='Address', data-zh='地址') Address
+                            span.contact-detail-value(data-i18n='contact.info.address.value', data-en='No. 221 Xixiang Ave., Bao’an District, Shenzhen, China', data-zh='广东省深圳市宝安西乡大道221号（丽景城1栋125号）') No. 221 Xixiang Ave., Bao’an District, Shenzhen, China
 
-            .contact-form-col
+
+            //- .contact-form-col
                 .contact-form-card
                     p.contact-form-kicker(data-i18n='contact.form.kicker', data-en='Send an Inquiry', data-zh='发送询盘') Send an Inquiry
                     h3(data-i18n='contact.form.title', data-en='Request a Quote or Consultation', data-zh='申请报价或技术咨询') Request a Quote or Consultation

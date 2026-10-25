@@ -13338,14 +13338,12 @@ section#contact .container {
 }
 
 .contact-layout {
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-  gap: 5rem;
-  align-items: start;
+  max-width: 52rem;
+  margin: 0 auto;
 }
 
 .contact-info-col {
-  padding-top: 0.5rem;
+  text-align: center;
 }
 
 .contact-kicker {
@@ -13390,13 +13388,24 @@ section#contact .container {
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  align-items: stretch;
+  gap: 1.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .contact-detail {
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+  text-align: left;
+}
+.contact-detail > div:last-child {
+  min-width: 0;
 }
 
 .contact-detail-icon {
@@ -13410,7 +13419,6 @@ section#contact .container {
   background: rgba(224, 92, 26, 0.1);
   color: #e05c1a;
   font-size: 0.9rem;
-  margin-top: 0.1rem;
 }
 
 .contact-detail-label {
@@ -13529,12 +13537,6 @@ section#contact .container {
   letter-spacing: 0.04em;
 }
 
-@media (max-width: 991.98px) {
-  .contact-layout {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-}
 @media (max-width: 767.98px) {
   section#contact {
     padding: 3.5rem 0;
