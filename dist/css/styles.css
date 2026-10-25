@@ -12763,6 +12763,11 @@ html[lang=zh-CN] .product-center .product-card-title-zh {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.product-detail-section .product-detail-gallery-slide-contain img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #fff;
+}
 .product-detail-section .product-detail-gallery-control {
   position: absolute;
   top: 50%;

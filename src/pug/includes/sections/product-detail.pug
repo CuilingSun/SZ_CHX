@@ -17,7 +17,7 @@ section.page-section.product-detail-section
                 .product-detail-media(class=galleryThemeClass, data-product-gallery='true', data-gallery-interval=galleryAutoMs)
                     .product-detail-gallery-track(data-product-gallery-track='true')
                         each image, imageIndex in galleryImages
-                            .product-detail-gallery-slide(class=imageIndex === 0 ? 'is-active' : '', data-product-gallery-slide='true')
+                            .product-detail-gallery-slide(class=[imageIndex === 0 ? 'is-active' : '', image.fit === 'contain' ? 'product-detail-gallery-slide-contain' : ''], data-product-gallery-slide='true')
                                 img.img-fluid(
                                     src=image.src,
                                     alt=image.altEn,

@@ -84,6 +84,11 @@
         }
     }
 
+    .product-detail-gallery-slide-contain img {
+        object-fit: contain;
+        background-color: $white;
+    }
+
     .product-detail-gallery-control {
         position: absolute;
         top: 50%;
